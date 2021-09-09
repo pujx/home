@@ -1,0 +1,30 @@
+@charset "utf-8";
+@font-face {
+	font-family: 'Gotham-Light'; 
+   	src: 
+   		url('../fonts/Gotham/Gotham-Light.otf'); 
+   }
+   
+@font-face {
+	font-family: 'Gotham-Bold'; 
+   	src: 
+   		url('../fonts/Gotham/Gotham-Bold.otf'); 
+   }
+   @font-face {
+	font-family: 'Gotham-Thin'; 
+   	src: 
+   		url('../fonts/Gotham/Gotham-Thin.otf'); 
+   }
+      @font-face {
+	font-family: 'Gotham-Book'; 
+   	src: 
+   		url('../fonts/Gotham/Gotham-Book.otf'); 
+   }
+         @font-face {
+	font-family: 'MyriadPro-Regular'; 
+   	src: 
+   		url('../fonts/MyriadPro/MyriadPro-Regular.otf'); 
+   }
+body,button,.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	font-family:"Gotham-Light","Roboto","微软雅黑";
+}

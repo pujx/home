@@ -1,0 +1,71 @@
+@charset "utf-8";
+.home-banner-box .banner-text-tit{font-size:40px;margin-bottom:20px;}
+.home-banner-box .banner-text-btn{font-size: 18px;}
+.banner-text-tit,.banner-text .banner-slogan{font-family: "Gotham-Light","微软雅黑";}
+.tools-banner-text h3.banner-text-tit{font-family: "Gotham-Thin","微软雅黑";}
+.home-banner-box .banner-text-btn a.btn-white{padding: 2px 20px;}
+.swiper-box1 .swiper-box1-text h4{line-height:40px;font-size:26px;font-family: "Gotham-Light","微软雅黑";}
+.swiper-box1 .swiper-box1-text p{font-size: 18px;line-height: 26px;}
+.banner-text-tit{font-size:30px;line-height:46px}
+.news-more-detail p{font-size:15px}
+.apply-bonus-form form button{padding:6px 45px}
+.promotion-icon-ul ul li,.single-service-wrap .single-service-details h5{font-size:16px}
+.account-login p{font-size:15px}
+.tools-btm-box .btm-box-l p{font-size:15px;margin-top:10px}
+.start-here-box a.btn-black,.account-login .btn-black,.account-steps .btn-black{font-size:16px;padding:6px 45px}
+.start-here-box span{font-size:16px}
+.news-detail-title,.product-text-box h3,.economic-text-box h2,.product-text-box h2,.news-search .news-search-title h3,.account-steps h3,.spreads-box-title,.tools-btm-box .btm-box-l h3,.swiper-box2 .swiper-box2-text p,.home-platform-box .home-platform-text h4,.about-public-content h3,.product-table h3,.section-title h2,.economic-text-box,.edu-second-text h2{font-size:24px;line-height:30px}
+.edu-second-menu ul li a{font-size:22px}
+.section-title p{font-size:15px}
+.news-search-ipt input{font-size:15px}
+.news-search-ipt img{width:22px;top:10px}
+.tools-banner-text h3{font-size:60px}
+.leagal-document-contents h3,.leagal-document-sidebar-title{font-size:22px}
+.leagal-document-box{font-size:14px}
+.product-table .product-table-title{font-size:16px}
+.news-headlines-img h4{font-size:16px}
+.news-title,.news-detail-text h5{font-size:18px}
+.news-detail,.news-detail-text p{font-size:15px}
+.news-read-more a{font-size:14px}
+.account-list h3{font-size:16px}
+.account-login span{font-size:16px}
+.tabs.tabs_rotate{height:331px}
+.tabs.tabs_rotate>ul li,.tabs.tabs_rotate table td{height:55px;line-height:54px}
+.tabs.tabs_rotate table th{height:54px;line-height:54px}
+.tabs.tabs_rotate>ul li a span,.tabs.tabs_rotate table tbody,.tabs.tabs_rotate table thead{font-size:16px}
+.about-public-content,.economic-text-box p,.edu-second-text p,.product-text-box,.tools-btm-box .btm-box-r>p,.list-ul li,.promo-toggle-wrap{font-size:15px}
+.tools-link{font-size:16px}
+.promo-toggle-top span{font-size:18px;width:190px}
+.account-steps h4{margin-top:0}
+.edu-tabs-text .tabs-text-title{font-size:24px;margin-bottom:30px}
+.edu-slide-box .edu-tabs-nav{top:155px}
+.edu-slide-box .list-group-item,.edu-tabs-text{font-size:15px}
+.contact-form.apply-bonus-form .piaochecked{font-size:13px}
+.promo-toggle-top span,.promo-panel h4{font-size:18px}
+.bottom-box h5{font-size:20px;line-height:30px}
+@media screen and (min-width:1199px){.edu-tabs-r hr{margin:0 40px}
+}@media screen and (min-width:1200px) and (max-width:1649px){}
+@media screen and (min-width:992px){.news-headlines-list a{font-size:18px}
+.banner-text .banner-slogan{font-size:20px;line-height:30px}
+}@media screen and (max-width:991px){.banner-text .banner-text-tit{font-size:26px;line-height:32px}
+.home-banner-box .banner-text-btn {
+    font-size: 16px;
+}
+.home-banner-box .banner-text .banner-text-tit{font-size:28px;line-height:34px}
+/*.swiper-box1 .swiper-box1-text h4{    font-size:26px;
+    line-height:40px;}*/
+   .swiper-box1 .swiper-box1-text p{font-size: 16px;}
+.tools-link{font-size:14px}
+.tools-banner-text h3{font-size:32px !important;margin-top:20px;line-height:38px !important}
+.edu-second-menu ul li a{font-size:18px}
+.tools-banner-text>a{margin:10px 0}
+.edu-tabs-text .tabs-text-title{font-size:20px}
+.contact-form .single-input-wrap .form-control{font-size:14px}
+.news-detail-title,.product-text-box h3,.economic-text-box h2,.product-text-box h2,.news-search .news-search-title h3,.account-steps h3,.spreads-box-title,.tools-btm-box .btm-box-l h3,.swiper-box2 .swiper-box2-text p,.home-platform-box .home-platform-text h4,.about-public-content h3,.product-table h3,.section-title h2,.economic-text-box,.edu-second-text h2{font-size:20px;line-height:26px}
+
+.news-read-more a{font-size:14px}
+.section-title p{font-size:14px}
+}@media only screen and (max-width:767px){.promo-toggle-top span{font-size:16px}
+.promotion-icon-ul ul li{font-size:14px}
+.promo-toggle-wrap{font-size:14px}
+}
