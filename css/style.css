@@ -3,9 +3,10 @@ body>div>img{width: 100%;}
 @media only screen and (min-width: 1921px){
 	body>div>img{display: none;}
 	.product-table{padding-top: 20px}
-	.home-platform-box.bg-eee{background-color: #eee;margin-top: 45px}
 	.bg-393939{background-color: #393939;}
+	.home-platform-box.bg-eee{background-color: #eee;margin-top: 45px}
 }
+
 b,strong{font-family:"Gotham-bold","微软雅黑"}
 th{font-weight:bold}
 p{line-height:22px;margin-bottom:15px}
@@ -290,14 +291,16 @@ header.no-shadow-header:before{background:none}
 .swiper-box2 .swiper-box2-text p{font-size: 24px;line-height: 30px;}
 .swiper-box2 .swiper-box2-img p img{width: 150px;}
 }.tab_content{display:none}
-.live-spreads-box{margin:45px 0;min-height:400px;padding:0 40px}
+.live-spreads-box{margin:45px 0;padding:0 40px;
+/*min-height:400px;*/
+}
 .text-green{color:#18ad00}
 .text-red{color:#dd0000}
 .table-responsive::-webkit-scrollbar{height:8px;width:8px;background:rgba(165,165,165,.1)}
 .table-responsive::-webkit-scrollbar-thumb{border-radius:10px;background:rgba(165,165,165,.8)}
 .live-spreads-box .hl-live-spreads-table::-webkit-scrollbar{height:8px;width:8px;background:rgba(165,165,165,.1)}
 .live-spreads-box .hl-live-spreads-table::-webkit-scrollbar-thumb{border-radius:10px;background:rgba(165,165,165,.8)}
-.tabs.tabs_rotate{border-top:1px solid #000;border-bottom:1px solid #000;position:relative;padding-left:300px;height:350px}
+.tabs.tabs_rotate{border-top:1px solid #000;border-bottom:1px solid #000;position:relative;padding-left:300px;height:291px}
 .tabs.tabs_rotate>ul{list-style-type:none;padding:0;margin:0;position:absolute;left:0;top:0;width:300px;border-right:1px solid #000}
 .tabs.tabs_rotate table tbody,.tabs.tabs_rotate table thead{font-size:18px}
 .tabs.tabs_rotate table tfoot{font-size:13px}
@@ -321,7 +324,7 @@ header.no-shadow-header:before{background:none}
 .tabs.tabs_rotate table tbody td:first-child{border-right:1px solid #666}
 .tabs.tabs_rotate table th{text-align:center;padding:0 5px;border:none;border-bottom:1px solid #666;height:58px;line-height:52px}
 .spreads-box-title{font-size:30px;text-align:right;padding:20px 0;border-top:1px solid #000;text-transform:uppercase;margin:0}
-@media only screen and (max-width:991px){.live-spreads-box{margin:0;padding:0}
+@media only screen and (max-width:991px){.live-spreads-box{margin:15px 0 45px;padding:0}
 .live-spreads-box .live-spreads-table{overflow:auto}
 .tabs.tabs_rotate{width:750px;padding-left:245px}
 .spreads-box-title{text-align:left;font-size:24px}
