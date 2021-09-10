@@ -237,9 +237,10 @@ header.is-isticky:before{background:none}
 header.no-shadow-header:before{background:none}
 #app{height:405px}
 .banner-text.banner-text-r{text-align:center !important;right:0}
-.banner-text .banner-text-tit{font-size:30px;line-height:36px}
+.banner-text .banner-text-tit{font-size: 32px;
+    line-height: 40px;}
 .banner-text .banner-slogan{font-size:20px;line-height:26px}
-.banner-text-btn{font-size:12px}
+/*.banner-text-btn{font-size:12px}*/
 }@media only screen and (max-width:1200px){.header-middle .logo{margin-left:0}
 }@media screen and (max-width:767px){
 		.header-middle .logo a{display: inline-block;}
