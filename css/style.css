@@ -264,8 +264,9 @@ header.no-shadow-header:before{background:none}
 .swiper-box1 .swiper-button-next,.swiper-box1 .swiper-container-rtl .swiper-button-next{bottom:0;top:auto}
 @media screen and (min-width:1200px) and (max-width:1360px){.swiper-box1{padding:0 111px 0 84px;margin-top:-45px}
 }@media only screen and (max-width:1199px){.swiper-box1{padding:0 0 15px;margin-top:0}
-.swiper-box1 .swiper-box1-text h4{margin-top:15px;font-size: 24px;
-    line-height: 30px;}
+.swiper-box1 .swiper-box1-text h4{margin-top:15px;
+    font-size: 24px;
+    line-height: 32px;}
 .swiper-box1-img,.swiper-box1-text{margin-bottom:30px}
 .swiper-box1-text{padding:0 15px}
 }@media screen and (max-width:991px){.swiper-box1-img,.swiper-box1-text{width:100%}
@@ -285,6 +286,7 @@ header.no-shadow-header:before{background:none}
 @media only screen and (max-width:991px){.swiper-box2 .swiper-box2-content{padding-top:100px;padding-bottom:90px}
 .swiper-box2{padding:50px 0}
 .swiper-box2 .swiper-box2-text p{font-size: 24px;line-height: 30px;}
+.swiper-box2 .swiper-box2-img p img{width: 150px;}
 }.tab_content{display:none}
 .live-spreads-box{margin:45px 0 30px;min-height:400px;padding:0 40px}
 .text-green{color:#18ad00}
@@ -650,7 +652,7 @@ body>div>img{margin-top: 30px;}
 .news-detail-banner{margin-bottom:40px}
 .news-detail-title{font-size:26px;font-family:"Gotham-Bold","微软雅黑"}
 .news-detail-text h5{font-family:"Gotham-Book","微软雅黑";font-size:20px;margin:20px 0px 15px 0}
-.news-detail-text p{font-size:18px}
+.news-detail-text p{font-size:18px;line-height: 24px;}
 .news-detail-time{margin:25px 0;color:#010101}
 .news-share-box{float:right}
 .news-share-box span{}
