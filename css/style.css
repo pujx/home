@@ -245,7 +245,7 @@ header.no-shadow-header:before{background:none}
 }@media only screen and (max-width:1200px){.header-middle .logo{margin-left:0}
 }@media screen and (max-width:767px){
 		.header-middle .logo a{display: inline-block;}
-	.header-middle .logo img{width:220px}
+	.header-middle .logo img{width:242px}
 }.bg-c-eee{background-color:#eee}
 .bg-eee{background-repeat:no-repeat;background-size:cover;background-position:top center;background-image:url(../images/bg-eee.png)}
 .bg-393939{background-repeat:no-repeat;background-size:cover;background-position:top center;background-image:url(../images/bg-393939.png)}
