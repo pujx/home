@@ -742,7 +742,7 @@ body>div>img{margin-top: 30px;}
 .news-title{font-size:18px}
 .news-detail,.news-detail-text p{font-size:15px}
 .news-headlines-img h4,.news-detail-text h5{font-size:18px}
-.news-read-more a{font-size:14px;padding:3px 20px}
+.news-read-more a{font-size:14px;padding:6px 20px}
 .news-headlines-list a{font-size:18px;margin-bottom:5px;line-height:22px}
 }@media (max-width:576px){.news-search-title{margin-bottom:15px}
 }.edu-banner-box{position:relative;background:url(../images/education-banner.jpg);background-size:cover;background-position:center top}
