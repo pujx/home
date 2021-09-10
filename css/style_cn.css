@@ -10,7 +10,8 @@
 .banner-text-tit{font-size:30px;line-height:46px}
 .news-more-detail p{font-size:15px}
 .apply-bonus-form form button{padding:6px 45px}
-.promotion-icon-ul ul li,.single-service-wrap .single-service-details h5{font-size:16px}
+.promotion-icon-ul ul li{font-size:16px}
+.single-service-wrap .single-service-details h5{font-size: 18px;}
 .account-login p{font-size:15px}
 .tools-btm-box .btm-box-l p{font-size:15px;margin-top:10px}
 .start-here-box a.btn-black,.account-login .btn-black,.account-steps .btn-black{font-size:16px;padding:6px 45px}
@@ -19,7 +20,7 @@
 .edu-second-menu ul li a{font-size:22px}
 .section-title p{font-size:15px}
 .news-search-ipt input{font-size:15px}
-.news-search-ipt img{width:22px;top:10px}
+.news-search-ipt img{width:22px;top:8px}
 .tools-banner-text h3{font-size:60px}
 .leagal-document-contents h3,.leagal-document-sidebar-title{font-size:22px}
 .leagal-document-box{font-size:14px}
