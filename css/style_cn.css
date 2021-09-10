@@ -6,7 +6,7 @@
 .home-banner-box .banner-text-btn a.btn-white{padding: 2px 25px}
 .swiper-box1 .swiper-box1-text h4{line-height:40px;font-size:24px;font-family: "Gotham-Light","微软雅黑";}
 .swiper-box1 .swiper-box1-text p{font-size: 18px;
-    line-height: 30px;}
+    line-height: 26px;}
 .banner-text-tit{font-size:30px;line-height:46px}
 .news-more-detail p{font-size:15px}
 .apply-bonus-form form button{padding:6px 45px}
@@ -53,7 +53,8 @@
 .home-banner-box .banner-text-btn {
     font-size: 16px;
 }
-.home-banner-box .banner-text .banner-text-tit{font-size:28px;line-height:34px}
+.home-banner-box .banner-text .banner-text-tit{font-size: 30px;
+    line-height: 36px;}
 /*.swiper-box1 .swiper-box1-text h4{    font-size:26px;
     line-height:40px;}*/
    .swiper-box1 .swiper-box1-text p{font-size: 16px;}
