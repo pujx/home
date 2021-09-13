@@ -165,7 +165,7 @@ body.offcanvas-open{overflow:hidden}
 .offcanvas .mobile-menu{text-align:center;text-transform:uppercase}
 .mobile-menu .category-sub-menu{display:none}
 .offcanvas .mobile-menu>li{margin-bottom:15px;position:relative}
-.offcanvas .mobile-menu>li>a{padding:6px 20px;display:inline-block;font-weight:bold;color:#000;font-size:15px}
+.offcanvas .mobile-menu>li>a{padding:6px 20px;display:inline-block;font-weight:bold;color:#355d89;font-size:15px}
 .offcanvas .mobile-menu>li>a img{width: 20px;height: 20px;margin-right: 5px;}
 .offcanvas .mobile-menu>li>ul{}
 .offcanvas .mobile-menu>li>ul>li{}
@@ -700,7 +700,9 @@ body>div>img{margin-top: 30px;}
 .news-date{margin-top:15px}
 .news-title{font-size:20px;margin-bottom:15px;font-family:'Gotham-Book','微软雅黑';line-height:26px}
 .news-read-more{position:absolute;right:40px;bottom:15px}
-.news-read-more a{display:inline-block;font-size:15px;border:1px solid #000;text-transform:uppercase;background:#000;color:#fff;padding:5px 20px;border-radius:36px}
+.news-read-more a{display:inline-block;font-size:15px;border:1px solid #000;text-transform:uppercase;background:#000;color:#fff;padding:5px 20px;border-radius:36px;
+text-align: center;
+    min-width: 135px;}
 .news-read-more a:hover{color:#000;border-color:#000;background:#fff}
 .news-detail{font-size:18px}
 .news-pagination ul{display:block}
@@ -948,11 +950,13 @@ input.form-control::placeholder{color:#797979 !important}
 .promo-panel-detail{padding:30px 15px}
 .promotion-icon-ul ul li{font-size:16px}
 .promo-toggle-top span{font-size:18px}
-.apply-bonus-form form button{font-size:16px;padding:3px 30px}
+.apply-bonus-form form button{    font-size: 16px;
+    padding: 6px 30px;
+    min-width: 220px;}
 .promo-toggle-wrap{font-size:15px}
 .promotion-form{padding-top:15px !important}
 .promotion_box{margin-top:45px}
-.promotion_wrap .cashback-bonus-title img{width:306px;}
+.promotion_wrap .cashback-bonus-title img{width:305px;}
 .contact-form .form-group{margin-bottom:15px}
 }@media only screen and (max-width:700px){.promotion-top-shadow{display:block}
 .promotion_tab_ul p{display:none}
