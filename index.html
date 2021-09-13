@@ -20,15 +20,22 @@
 	</head>
 
 	<body>
+ 		<div id="preloader">
+            <p>
+                <video id="video" muted autoplay="autoplay" loop="loop" x5-playsinline="true" playsinline="true" webkit-playsinline="true" x-webkit-airplay="allow" preload="auto" x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                    <source src="mp4/Loading-animation.mp4" type="video/mp4" />
+                </video>
+            </p>
+        </div>
 		<!-- preloader -->
-		<div id="preloader">
+		<!--<div id="preloader">
 			<p>
 				<video id="video"  muted autoplay="autoplay" loop="loop"  x5-playsinline="true" playsinline="true" webkit-playsinline="true" x-webkit-airplay="allow" preload="auto" x5-video-player-type="h5" x5-video-player-fullscreen="true">
 					<source src="mp4/Loading-animation.mp4" type="video/mp4">
 						不支持视频播放
 				</video>
 			</p>
-		</div>
+		</div>-->
 		<!-- preloader end  -->
 		<!-- 透明背景 start -->
 		<div class="offcanvas-overlay"></div>
@@ -1402,7 +1409,13 @@
 		<script src="js/swiper.min.js"></script>
 		<script src="js/swiper.animate1.0.3.min.js"></script>
 		<script src="js/index.js"></script>
-		<!--<script src="js/index-loading.js"></script>-->
+		<script src="js/index-loading.js"></script>
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			document.addEventListener("WeixinJSBridgeReady",function() { 
+	document.getElementById('video').play(); 
+}, false);
+		</script>
 		<script>
 			$(document).ready(function() {
 				var a, b, c;
@@ -1469,6 +1482,7 @@
 				});
 			});
 		</script>
+
 
 	</body>
 
