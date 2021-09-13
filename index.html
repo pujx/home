@@ -16,21 +16,19 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/Gotham-Light.css" />
 		<link rel="stylesheet" href="css/style_cn.css" />
+
 	</head>
 
 	<body>
 		<!-- preloader -->
-		<div>
+		<div id="preloader">
 			<p>
-<video controls="controls" autoplay="autoplay" loop="loop">
-  <!--<source src="movie.ogg" type="video/ogg" />-->
-  <source src="mp4/Loading-animation.mp4" type="video/mp4" />
-Your browser does not support the video tag.
-</video>
-				<!--<video muted autoplay="autoplay" loop="loop" x5-playsinline="true" playsinline="true" webkit-playsinline="true" x-webkit-airplay="allow" preload="auto" x5-video-player-type="h5" x5-video-player-fullscreen="true">
+				<!--<video id="video" muted autoplay="autoplay" loop="loop" x5-playsinline="true" playsinline="true" webkit-playsinline="true" x-webkit-airplay="allow" preload="auto" x5-video-player-type="h5" x5-video-player-fullscreen="true">
 					<source src="mp4/Loading-animation.mp4" type="video/mp4">
 				</video>-->
-
+<video id="video"  name="media" preload="none" x5-playsinline="true" playsinline="true"  webkit-playsinline="true"  muted="muted"  src="mp4/Loading-animation.mp4" class="video-sm">
+	<source data-layzr-src="mp4/Loading-animation.mp4" src="mp4/Loading-animation.mp4" type="video/mp4">
+</video>
 			</p>
 		</div>
 		<!-- preloader end  -->
@@ -1473,7 +1471,12 @@ Your browser does not support the video tag.
 				});
 			});
 		</script>
-
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			document.addEventListener("WeixinJSBridgeReady",function() { 
+	document.getElementById('video').play(); 
+}, false);
+		</script>
 	</body>
 
 </html>
