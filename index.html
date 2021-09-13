@@ -16,13 +16,11 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/Gotham-Light.css" />
 		<link rel="stylesheet" href="css/style_cn.css" />
-		
+
 		<style>
-			video::-webkit-media-controls{ 
-
-display:none !important;
-
-}
+			video::-webkit-media-controls {
+				display: none !important;
+			}
 		</style>
 
 	</head>
@@ -31,10 +29,10 @@ display:none !important;
 		<!-- preloader -->
 		<div id="preloader">
 			<p>
-				<video id="video" controls="controls"  muted autoplay="autoplay" loop="loop" x5-playsinline="true" playsinline="true" webkit-playsinline="true" x-webkit-airplay="allow" preload="auto" x5-video-player-type="h5" x5-video-player-fullscreen="true">
+				<video id="video" controls="controls" muted autoplay="autoplay" loop="loop" x5-playsinline="true" playsinline="true" webkit-playsinline="true" x-webkit-airplay="allow" preload="auto" x5-video-player-type="h5" x5-video-player-fullscreen="true">
 					<source src="mp4/Loading-animation.mp4" type="video/mp4">
 				</video>
-<!--<video id="video"  name="media" preload="none" x5-playsinline="true" playsinline="true"  webkit-playsinline="true"  muted="muted"  src="mp4/Loading-animation.mp4" class="video-sm">
+				<!--<video id="video"  name="media" preload="none" x5-playsinline="true" playsinline="true"  webkit-playsinline="true"  muted="muted"  src="mp4/Loading-animation.mp4" class="video-sm">
 	<source data-layzr-src="mp4/Loading-animation.mp4" src="mp4/Loading-animation.mp4" type="video/mp4">
 </video>-->
 			</p>
@@ -1481,12 +1479,10 @@ display:none !important;
 		</script>
 
 		<script>
-$(function(){
-	var video=$("#video");
-video.controls=false;
-});
-
-
+			$(function() {
+				var vdo = $("#video");
+				vdo.controls = false;
+			});
 		</script>
 	</body>
 
