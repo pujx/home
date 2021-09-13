@@ -319,7 +319,7 @@ padding: 15px;
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-    z-index: 12;
+    z-index:901;
     width: 415px;
     background: #fff;
     border-radius: 4px;
@@ -343,13 +343,12 @@ padding: 15px;
 						.author-image{
 margin: 0;
     background-color: #f9f9f9;
-    background-image: url(images/1.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
     width: 100%;
     height: 140px;
-    background-size: cover;   
     }
+    .author-image img{ width: 100%;
+    height: 100%;
+    object-fit: cover;}
 						.arrow-author{width: 0;
     height: 0;
     border-top: 10px solid transparent;
@@ -378,7 +377,8 @@ margin: 0;
 						.author-detail-follow a img{width:24px;}
 						@media only screen and (max-width:500px) {
 							.news-author-pop{width: 100%;}
-							.author-detail span{}
+							.author-image{height: 120px;}
+						.author-detail span{-webkit-line-clamp:3;min-height: auto;}
 						}
 					</style>
 					<div style="position: relative;">By
@@ -391,7 +391,9 @@ margin: 0;
 							<div >
 								<div class="row">
 									<div class="col-4">
-										<p class="author-image"></p>
+										<p class="author-image">
+											<img src="images/1.jpg" alt="" />
+										</p>
 									</div>
 									<div class="col-8">
 										<div class="author-detail">
