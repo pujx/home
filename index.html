@@ -17,19 +17,13 @@
 		<link rel="stylesheet" href="css/Gotham-Light.css" />
 		<link rel="stylesheet" href="css/style_cn.css" />
 
-		<style>
-			video::-webkit-media-controls {
-				display: none !important;
-			}
-		</style>
-
 	</head>
 
 	<body>
 		<!-- preloader -->
 		<div id="preloader">
 			<p>
-				<video id="video"  muted autoplay="autoplay" loop="loop" x5-playsinline="true" playsinline="true" webkit-playsinline="true" x-webkit-airplay="allow" preload="auto" x5-video-player-type="h5" x5-video-player-fullscreen="true">
+				<video id="video"  muted autoplay="autoplay" loop="loop"  x5-playsinline="true" playsinline="true" webkit-playsinline="true" x-webkit-airplay="allow" preload="auto" x5-video-player-type="h5" x5-video-player-fullscreen="true">
 					<source src="mp4/Loading-animation.mp4" type="video/mp4">
 				</video>
 			</p>
@@ -1475,12 +1469,6 @@
 			});
 		</script>
 
-		<script>
-			$(function() {
-				var vdo = $("#video");
-				vdo.controls = false;
-			});
-		</script>
 	</body>
 
 </html>
