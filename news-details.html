@@ -279,39 +279,37 @@
 				</div>
 			</div>
 		</div>
-				<!--news search-->
+		<!--news search-->
 		<div class="news-search">
-						<div class="container">
-							<div class="p_120">
-							<div class="row align-items-center">
-								<div class="col-sm-6 d-flex justify-content-start ">
-									<div class="news-search-title">
-										<h3>NEWS TODAY</h3>
-									</div>
-								</div>
-								<div class="col-sm-6 d-flex justify-content-end">
-									<div class="news-search-ipt">
-										<img src="images/search-icon.svg" alt="" />
-										<input type="text" placeholder="Search" class="form-control"/>
-									</div>
-								</div>
+			<div class="container">
+				<div class="p_120">
+					<div class="row align-items-center">
+						<div class="col-sm-6 d-flex justify-content-start ">
+							<div class="news-search-title">
+								<h3>NEWS TODAY</h3>
+							</div>
+						</div>
+						<div class="col-sm-6 d-flex justify-content-end">
+							<div class="news-search-ipt">
+								<img src="images/search-icon.svg" alt="" />
+								<input type="text" placeholder="Search" class="form-control" />
 							</div>
 						</div>
 					</div>
+				</div>
+			</div>
 		</div>
 		<div class="container">
 			<section class="news-detail-area p_120">
 				<div class="news-detail-banner"><img src="images/microsoft.jpg" alt="" /></div>
 				<h2 class="news-detail-title">Microsoft closes above $2 trillion market cap for the first time</h2>
-				
-				
+
 				<div class="news-detail-time">
 					<style type="text/css">
-									.news-author-pop{
-    padding: 15px;
-        position: relative;
+						.news-author-pop {
+padding: 15px;
+    position: relative;
     position: absolute;
-    right: 0;
     visibility: hidden;
     opacity: 0;
     transform: translateY(10px);
@@ -322,40 +320,96 @@
     -ms-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     z-index: 12;
-    width: 100px;
+    width: 415px;
     background: #fff;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
-    text-align: center;
-    top: 40px;
     left: 0;
-    margin: 0 auto;
-    border: 1px solid #f0f0f0;
-    display: inline-block;
-									}
-									.news-author-pop-active{
-										visibility: visible;
-    opacity: 1;
-    transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
+    top: 30px;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0px 8px 0px #a5a5a5;
+
+						}
+						
+						.news-author-pop-active {
+							visibility: visible;
+							opacity: 1;
+							transform: translateY(0px);
+							-moz-transform: translateY(0px);
+							-ms-transform: translateY(0px);
+							display: block;
+						}
+						.author-image{
+margin: 0;
+    background-color: #f9f9f9;
+    background-image: url(images/1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 140px;
+    background-size: cover;   
+    }
+						.arrow-author{width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #ffffff;
+    border-left: 10px solid transparent;
+    position: absolute;
     display: block;
-									}
-								</style>
-					<div>By <a href="javascript:" class="news-author-pop-btn" style="color: #0861c4;display: inline-block; padding: -2px 0; border-bottom: 1px solid; font-weight: bold;position: relative;">MARC DAVIS
-					
-							<div class="news-author-pop">
-								<p><a href="">dsasfcsdf</a></p>
-								
-								
+    top: -18px;
+    left: 55px;}
+    
+						.author-detail{}
+						.author-detail span{
+							min-height:85px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:4;}
+						.author-detail>div{}
+						.author-detail>div>a{}
+						.author-detail-follow{    border-top: 1px solid #ececec;
+    padding-top: 15px;
+    margin-top: 20px;}
+						.author-detail-follow a{display: inline-block;
+    margin-left: 12px;}
+						.author-detail-follow a img{width:24px;}
+						@media only screen and (max-width:500px) {
+							.news-author-pop{width: 100%;}
+							.author-detail span{}
+						}
+					</style>
+					<div style="position: relative;">By
+						<a href="javascript:" class="news-author-pop-btn" style="color: #0861c4;display: inline-block; padding: -2px 0; border-bottom: 1px solid; font-weight: bold;position: relative;">MARC DAVIS
+
+						</a> | Updated Stetember 09,2021
+
+						<div class="news-author-pop">
+							<span class="arrow-author"></span>
+							<div >
+								<div class="row">
+									<div class="col-4">
+										<p class="author-image"></p>
+									</div>
+									<div class="col-8">
+										<div class="author-detail">
+											<span>Marc Davis is the author of several books and has 20+ years of experience writing about business, finance,and economics.</span>
+											
+											<div class="author-detail-follow">
+												Follow
+												<a href="" class="" target="_blank"><img src="images/icon_linkedin.svg" alt="" /></a>
+												<a href="" class="" target="_blank"><img src="images/icon_twitter.svg" alt="" /></a>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
-					
-					
-					
-					
-					
-					</a> | Updated Stetember 09,2021</div>
+
+						</div>
+
+					</div>
 					<div class="news-share-box">
 						<span>SHARE</span>
 						<a href=""><i class="fa fa-facebook"></i></a>
@@ -365,53 +419,46 @@
 					</div>
 				</div>
 				<div class="news-detail-text">
-				<p class="news-detail-line"></p>
-						<h5>Heading 1 is here</h5>
-				<p>The software maker first hit that level just after 3 p.m. ET on Tuesday, June 22, but dipped below that mark again before ending Thursday’s trading session at $266.69 per share. The milestone follows the company’s unveiling of Windows 11, its first new version of the flagship operating system in more than five years, on Thursday morning.
-</p>
+					<p class="news-detail-line"></p>
+					<h5>Heading 1 is here</h5>
+					<p>The software maker first hit that level just after 3 p.m. ET on Tuesday, June 22, but dipped below that mark again before ending Thursday’s trading session at $266.69 per share. The milestone follows the company’s unveiling of Windows 11, its first new version of the flagship operating system in more than five years, on Thursday morning.
+					</p>
 					<p>Microsoft’s value has doubled in two years’ time, bolstered by demand for products such as the Teams chat app that kept organizations functioning during the coronavirus pandemic.
-</p>
-<p>The appreciation of the company’s stock price reflects a rejuvenated company, one that has looked beyond its dominant Windows operating system and found growth in cloud computing and acquisitions.</p>
-		
-		<p>Microsoft stock has grown more than 600% since Satya Nadella replaced Steve Ballmer as the company’s CEO in 2014. (During Ballmer’s 14-year tenure as CEO, the company’s stock fell 32%.) One of Nadella’s first moves was to reveal that Office applications like Word and Excel were coming to Apple’s iOS and Google’s Android, rather than restricting those apps to smartphones that ran Windows. A year later, when Windows 10 came out, it was a free update, unlike Windows 7 and Windows 8.</p>
-		<p>Nadella had run the division that includes Microsoft’s Azure public cloud immediately before taking the CEO job, and it shows. In his years as CEO 
-he has made public appearances to talk about uses of Azure at prominent customers such as the National Basketball Association, Volkswagen and Walgreens. Azure is on track to become Microsoft’s largest business.</p>
-		<h5>Heading 2 is here</h5>
-		<p>Microsoft under Nadella has become gentler and more open to working with rivals where it makes sense. It improved relations with rivals such as Red Hat and Salesforce, and it has added the open-source Linux operating system, once seen as a threat to Windows, directly into Windows. On Thursday, the company announced Windows 11 will support apps that run Google’s Android operating system, and Nadella spent the end of the company’s presentation portraying Microsoft as a friendlier option for software developers than Apple.
-</p>
-		<p>These days, venture investor Ben Horowitz has said, Microsoft is a great company for start-ups to partner with, rather than an entity to be feared.
-</p>
-		<p>Nadella’s Microsoft has managed to largely avoid antitrust scrutiny despite its past, which includes a landmark antitrust case brought by the U.S. 
-Justice Department in 1998. Meanwhile, Amazon, Apple, Facebook and Google have all faced pressure from regulators during the Nadella years. However, team communication app maker Slack did file an antitrust complaint in Europe last year after 
-<br />
-Microsoft introduced Teams and released it to clients that subscribe to the Office 365 bundle.</p>
-		
-		
+					</p>
+					<p>The appreciation of the company’s stock price reflects a rejuvenated company, one that has looked beyond its dominant Windows operating system and found growth in cloud computing and acquisitions.</p>
+
+					<p>Microsoft stock has grown more than 600% since Satya Nadella replaced Steve Ballmer as the company’s CEO in 2014. (During Ballmer’s 14-year tenure as CEO, the company’s stock fell 32%.) One of Nadella’s first moves was to reveal that Office applications like Word and Excel were coming to Apple’s iOS and Google’s Android, rather than restricting those apps to smartphones that ran Windows. A year later, when Windows 10 came out, it was a free update, unlike Windows 7 and Windows 8.</p>
+					<p>Nadella had run the division that includes Microsoft’s Azure public cloud immediately before taking the CEO job, and it shows. In his years as CEO he has made public appearances to talk about uses of Azure at prominent customers such as the National Basketball Association, Volkswagen and Walgreens. Azure is on track to become Microsoft’s largest business.</p>
+					<h5>Heading 2 is here</h5>
+					<p>Microsoft under Nadella has become gentler and more open to working with rivals where it makes sense. It improved relations with rivals such as Red Hat and Salesforce, and it has added the open-source Linux operating system, once seen as a threat to Windows, directly into Windows. On Thursday, the company announced Windows 11 will support apps that run Google’s Android operating system, and Nadella spent the end of the company’s presentation portraying Microsoft as a friendlier option for software developers than Apple.
+					</p>
+					<p>These days, venture investor Ben Horowitz has said, Microsoft is a great company for start-ups to partner with, rather than an entity to be feared.
+					</p>
+					<p>Nadella’s Microsoft has managed to largely avoid antitrust scrutiny despite its past, which includes a landmark antitrust case brought by the U.S. Justice Department in 1998. Meanwhile, Amazon, Apple, Facebook and Google have all faced pressure from regulators during the Nadella years. However, team communication app maker Slack did file an antitrust complaint in Europe last year after
+						<br /> Microsoft introduced Teams and released it to clients that subscribe to the Office 365 bundle.</p>
+
 				</div>
-				
-				
-				
+
 				<div class="news-pagination">
-							<ul>
-								<li class="no-underline">
-									<a href="javascript:"><img src="images/prev-32px.png" alt="" /></a>
-								</li>
-								<li></li>
-								<li class="no-underline">
-									<a href="javascript:"><img src="images/return-32px.png" alt="" /></a>
-								</li>
-								<li></li>
-								<li class="no-underline">
-									<a href="javascript:"><img src="images/next-32px.png" alt="" /></a>
-								</li>
-							</ul>
-						</div>
-				
-		</section>
-		
+					<ul>
+						<li class="no-underline">
+							<a href="javascript:"><img src="images/prev-32px.png" alt="" /></a>
+						</li>
+						<li></li>
+						<li class="no-underline">
+							<a href="javascript:"><img src="images/return-32px.png" alt="" /></a>
+						</li>
+						<li></li>
+						<li class="no-underline">
+							<a href="javascript:"><img src="images/next-32px.png" alt="" /></a>
+						</li>
+					</ul>
+				</div>
+
+			</section>
+
 		</div>
 		<!-- news-area end -->
-
 
 		<!--底部-->
 		<footer class="footer-black-bg">
@@ -899,26 +946,20 @@ Microsoft introduced Teams and released it to clients that subscribe to the Offi
 		<script src="js/main.js"></script>
 		<script src="js/index.js"></script>
 		<script>
-			
 			//language
-$('.news-author-pop-btn').on('click', function() {
-	$(".news-author-pop").toggleClass("news-author-pop-active");
-});
+			$('.news-author-pop-btn').on('click', function() {
+				$(".news-author-pop").toggleClass("news-author-pop-active");
+			});
 
-$(".news-author-pop-btn").on("click", function(e) {
-	e.stopPropagation();
-});
-//$(document).click(function(e) {
-//	var _con = $(".news-author-pop");
-//	if(!_con.is(e.target) && _con.has(e.target).length === 0) {
-//		$(".news-author-pop").removeClass("news-author-pop-open");
-//	}
-//});
-
-			
-			
-			
-			
+			$(".news-author-pop-btn").on("click", function(e) {
+				e.stopPropagation();
+			});
+			$(document).click(function(e) {
+				var _con = $(".news-author-pop");
+				if(!_con.is(e.target) && _con.has(e.target).length === 0) {
+					$(".news-author-pop").removeClass("news-author-pop-active");
+				}
+			});
 		</script>
 
 	</body>
