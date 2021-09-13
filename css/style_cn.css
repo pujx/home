@@ -3,7 +3,7 @@
 .home-banner-box .banner-text-btn{font-size: 18px;}
 .banner-text-tit,.banner-text .banner-slogan{font-family: "Gotham-Light","微软雅黑";}
 .tools-banner-text h3.banner-text-tit{font-family: "Gotham-Thin","微软雅黑";}
-.home-banner-box .banner-text-btn a.btn-white{padding: 2px 25px}
+.home-banner-box .banner-text-btn a.btn-white{padding:4px 25px;line-height: 16px;}
 .swiper-box1 .swiper-box1-text h4{line-height:40px;font-size:24px;font-family: "Gotham-Light","微软雅黑";}
 .swiper-box1 .swiper-box1-text p{font-size: 18px;
     line-height: 26px;}
@@ -14,7 +14,7 @@
 .single-service-wrap .single-service-details h5{font-size: 18px;}
 .account-login p{font-size:15px}
 .tools-btm-box .btm-box-l p{font-size:15px;margin-top:10px}
-.start-here-box a.btn-black,.account-login .btn-black,.account-steps .btn-black{font-size:16px;padding:6px 45px}
+.start-here-box a.btn-black,.account-login .btn-black,.account-steps .btn-black{font-size:16px;min-width: 220px;}
 .start-here-box span{font-size:16px}
 .news-detail-title,.product-text-box h3,.economic-text-box h2,.product-text-box h2,.news-search .news-search-title h3,.account-steps h3,.spreads-box-title,.tools-btm-box .btm-box-l h3,.swiper-box2 .swiper-box2-text p,.home-platform-box .home-platform-text h4,.about-public-content h3,.product-table h3,.section-title h2,.economic-text-box,.edu-second-text h2{font-size:24px;line-height:30px}
 .edu-second-menu ul li a{font-size:22px}
@@ -31,7 +31,7 @@
 .news-read-more a{font-size:14px}
 .account-list h3{font-size:16px}
 .account-login span{font-size:16px}
-.tabs.tabs_rotate{height:331px}
+.tabs.tabs_rotate{height:277px}
 .tabs.tabs_rotate>ul li,.tabs.tabs_rotate table td{height:55px;line-height:54px}
 .tabs.tabs_rotate table th{height:54px;line-height:54px}
 .tabs.tabs_rotate>ul li a span,.tabs.tabs_rotate table tbody,.tabs.tabs_rotate table thead{font-size:16px}
@@ -73,6 +73,6 @@
 .promo-toggle-wrap{font-size:14px}
 }
 .bottom-box h5 img {
-    margin-top: 0px;
+    margin-top:-3px;
     height: 16px;
 }
