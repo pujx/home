@@ -453,7 +453,7 @@ body>div>img{margin-top: 30px;}
 .account-steps .col-xl-4>div:hover{-webkit-box-shadow:0 3px 4px -1px #000;box-shadow:0 3px 4px -1px #000}
 }@media only screen and (min-width:768px) and (max-width:991px){.account-login .btn-black,.account-steps .btn-black{font-size:18px}
 }@media only screen and (max-width:991px){.account-login{text-align:center;padding:50px 15px}
-.account-list img{width: 134px;}
+.account-list img{width: 120px;}
 .account-list{padding:30px 0}
 .account-banner-text{text-align:center}
 .account-login p{font-size:16px;text-align:left}
@@ -841,6 +841,7 @@ display:-webkit-box;
 }@media only screen and (min-width:768px) and (max-width:991px){.news-search .news-search-title h3{font-size:24px}
 .news-headlines-list a{font-size:20px}
 }@media (max-width:767px){.news-read-more{position:static;text-align:center;margin-top:20px}
+.news-pagination ul li.no-underline a{width: 30px;}
 .news-search{padding: 25px 0;}
 .news-share-box{
     position: static;
@@ -893,7 +894,7 @@ display:-webkit-box;
 .edu-slide-box .operate{width:50px;height:50px;background:url(../images/adu-icon.jpg) no-repeat center center;cursor:pointer;position:absolute;right:5px;top:-60px;transform:scale(0.7);-webkit-transform:scale(0.7);-moz-transform:scale(0.7);-ms-transform:scale(0.7);transition:right 0.15s cubic-bezier(0.645,0.045,0.355,1);-moz-transition:right 0.15s cubic-bezier(0.645,0.045,0.355,1);-ms-transition:right 0.15s cubic-bezier(0.645,0.045,0.355,1);-webkit-transition:right 0.15s cubic-bezier(0.645,0.045,0.355,1)}
 .tabs-list-menu{width:295px;display:block;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
 .edu-slide-box .switch-wrap{text-align:right;margin-top:10px}
-.edu-slide-box .switch-wrap a{width:32px;height:32px;margin-right:10px;display:inline-block}
+.edu-slide-box .switch-wrap a{width:26px;height:26px;margin-right:10px;display:inline-block}
 .edu-slide-box .operate.hide{background-position:-50px center}
 .edu-slide-box .operate.show{background-position:0 center}
 .edu-tabs-r{transition:all 0.5s;-webkit-transition:all .5s;-moz-transition:all .5s;-ms-transition:all .5s;margin:0 auto;margin-right:145px}
