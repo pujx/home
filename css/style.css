@@ -247,7 +247,7 @@ header.no-shadow-header:before{background:none}
 .header-middle .logo a{display: inline-block;}
 }
 @media screen and(min-width:400px) and (max-width:767px) {
-.header-middle .logo img{width:250px}
+.header-middle .logo img{width:240px}
 }
 @media screen and (max-width:399px){
 .header-middle .logo img{width:220px}
