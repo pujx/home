@@ -20,20 +20,6 @@
 	</head>
 
 	<body>
-		
-	<!--ie不支持video-->
-		<div id="videoPlayerBox"></div>
-<script>
-var mediaUrl = 'https://img-ys011.didistatic.com/static/didiglobal/didi-home-video0626.mp4';
-if(document.getElementById('videoLabel')) {
-	document.getElementById('videoPlayerBox').removeChild(document.getElementById('videoLabel'));
-}
-document.getElementById('videoPlayerBox').innerHTML = '<video id="videoLabel" src="'+mediaUrl+'" autoplay="autoplay" loop  muted style="width:100%"><source  src="'+mediaUrl+'" type="audio/mp4" autoplay="autoplay" loop ></source></video>';
-
-</script>
-		
-		
-		
 		<!-- preloader -->
  		<div id="preloader">
             <p>
@@ -297,21 +283,28 @@ document.getElementById('videoPlayerBox').innerHTML = '<video id="videoLabel" sr
 		<div class="home-banner-box">
 			<style>
 				.home-banner-box{width: 100%;height: 100%;}
-				.banner-ani{width: 100%;
-    height: 82vh;
-    position: absolute;
-    top: 18vh;}
+				.banner-ani{width: 100%;position: absolute;}
 				.banner-ani .video-app-container{width: 100%;height: 100%;}
 				.banner-ani .video-app-container img{width: 100%;height: 100%;}
-				
+				@media only screen and (min-width: 1200px){
+				 .banner-ani{width: 100%;height: 750px;position: absolute;top: 190px;min-height: 750px;}
+				}
 			</style>
 			<!--<div id="app"></div>-->
-			<!--<div class="banner-ani">
-
+			<div class="banner-ani">
 				<div class="video-app-container"></div>
+					<!--ie不支持video-->
+		<!--<div id="videoPlayerBox"></div>-->
+<!--<script>
+var mediaUrl = 'https://img-ys011.didistatic.com/static/didiglobal/didi-home-video0626.mp4';
+if(document.getElementById('videoLabel')) {
+	document.getElementById('videoPlayerBox').removeChild(document.getElementById('videoLabel'));
+}
+document.getElementById('videoPlayerBox').innerHTML = '<video id="videoLabel" src="'+mediaUrl+'" autoplay="autoplay" loop  muted style="width:100%"><source  src="'+mediaUrl+'" type="audio/mp4" autoplay="autoplay" loop ></source></video>';
 
-				
-			</div>-->
+</script>-->
+		
+			</div>
 			
 			<div class="container">
 				<div class="banner">
@@ -1421,7 +1414,7 @@ document.getElementById('videoPlayerBox').innerHTML = '<video id="videoLabel" sr
 				
 				];
 				for(var k=0;k<arryImages.length;k++){
-				var txt='<img src="images/home-ani/'+ arryImages[k] +'" alt="图片丢失" />';
+				var txt='<img src="images/home-ani/'+ arryImages[k] +'"/>';
 						$(".video-app-container").append(txt);
 				}
 				$(".video-app-container").children('img').hide();
@@ -1503,7 +1496,26 @@ document.getElementById('videoPlayerBox').innerHTML = '<video id="videoLabel" sr
 			});
 		</script>
 
-
+		<script>
+			
+		$(document).ready(function() {
+			$(window).resize(function(){
+			var e, f, g;
+				e = $(window).height();
+				var tools = $(".platform-slideImg");
+				$(window).scroll(function() {
+					f = $(this).scrollTop();
+					g = tools.offset().top;
+					if(e + f > g) {
+						
+					}
+				});
+			});
+	
+			});
+			
+			
+		</script>
 	</body>
 
 </html>
