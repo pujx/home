@@ -65,9 +65,9 @@ label .req{padding-left:3px;font-size:16px;font-style:normal}
 .modal-call-back>div{position:absolute;width:95px;top:8px;padding:8px 2px;border-top-left-radius:8px;border-bottom-left-radius:8px;text-align:center;font-size:13px}
 .modal-call-back>div span{border-right:1px solid #eaeaea;display:block}
 .modal-call-back>.input{padding-left:105px;overflow:hidden}
-#preloader{background:#07080b;text-align:center;width:100%;height:100%;position:fixed;top:0;left:0;right:0;bottom:0;z-index:999999}
-#preloader p img{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);max-width:100%;width:1200px}
-#preloader1{background:#fff;text-align:center;width:100%;height:100%;position:fixed;top:0;left:0;right:0;bottom:0;z-index:999999}
+#preloader{background:#07080b;text-align:center;width:100%;height:100%;position:fixed;z-index:999999}
+#preloader p img{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);width:1020px}
+#preloader1{background:#fff;text-align:center;width:100%;height:100%;position:fixed;z-index:999999}
 @media only screen and (min-width:1200px) and (max-width:1440px){#preloader p img{width:70%;max-width:70%}
 }@media only screen and (min-width:992px) and (max-width:1199px){#preloader p img{width:80%;max-width:80%}
 }@media only screen and (min-width:540px) and (max-width:991px){#preloader p img{width:100%;max-width:100%}
@@ -232,7 +232,7 @@ canvas{width:100%;height:100%}
 header:before{position:absolute;content:"";display:block;background:url(../images/banner-overlay-shadow.png) repeat-x 0 0 transparent;width:100%;height:129px;pointer-events:none;top:0;z-index:-1}
 header.is-isticky:before{background:none}
 header.no-shadow-header:before{background:none}
-#app{height:405px}
+#app,.banner-ani{height:375px !important;top: 0 !important;}
 .banner-text.banner-text-r{text-align:center !important;right:0}
 .banner-text .banner-text-tit{font-size: 32px;
     line-height: 40px;}
