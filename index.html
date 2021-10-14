@@ -20,6 +20,20 @@
 	</head>
 
 	<body>
+		
+	<!--ie不支持video-->
+		<div id="videoPlayerBox"></div>
+<script>
+var mediaUrl = 'https://img-ys011.didistatic.com/static/didiglobal/didi-home-video0626.mp4';
+if(document.getElementById('videoLabel')) {
+	document.getElementById('videoPlayerBox').removeChild(document.getElementById('videoLabel'));
+}
+document.getElementById('videoPlayerBox').innerHTML = '<video id="videoLabel" src="'+mediaUrl+'" autoplay="autoplay" loop  muted style="width:100%"><source  src="'+mediaUrl+'" type="audio/mp4" autoplay="autoplay" loop ></source></video>';
+
+</script>
+		
+		
+		
 		<!-- preloader -->
  		<div id="preloader">
             <p>
@@ -283,23 +297,21 @@
 		<div class="home-banner-box">
 			<style>
 				.home-banner-box{width: 100%;height: 100%;}
-				.banner-ani{
-					 width: 100%;
-    height:80vh;
+				.banner-ani{width: 100%;
+    height: 82vh;
     position: absolute;
-    top: 20vh;
-				}
+    top: 18vh;}
 				.banner-ani .video-app-container{width: 100%;height: 100%;}
 				.banner-ani .video-app-container img{width: 100%;height: 100%;}
 				
 			</style>
 			<!--<div id="app"></div>-->
-			<div class="banner-ani">
+			<!--<div class="banner-ani">
 
 				<div class="video-app-container"></div>
 
 				
-			</div>
+			</div>-->
 			
 			<div class="container">
 				<div class="banner">
