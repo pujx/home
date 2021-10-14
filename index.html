@@ -15,7 +15,7 @@
 		<link rel="stylesheet" href="css/plugins.min.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/Gotham-Light.css" />
-		<!--<link rel="stylesheet" href="css/style_cn.css" />-->
+		<link rel="stylesheet" href="css/style_cn.css" />
 
 	</head>
 
@@ -282,25 +282,22 @@
 		<!--banner-->
 		<div class="home-banner-box">
 			<style>
+				.home-banner-box{width: 100%;height: 100%;}
 				.banner-ani{
 					 width: 100%;
-    height: 100%;
+    height:80vh;
     position: absolute;
+    top: 20vh;
 				}
-				
-				
+				.banner-ani .video-app-container{width: 100%;height: 100%;}
+				.banner-ani .video-app-container img{width: 100%;height: 100%;}
 				
 			</style>
 			<!--<div id="app"></div>-->
 			<div class="banner-ani">
-				 <video style="-o-object-fit: cover;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;" id="video" muted autoplay="autoplay"  x5-video-player-type="h5" x-webkit-airplay="true" webkit-playsinline="true" playsinline poster preload="none" autoplay loop>
-                    <source src="https://img-ys011.didistatic.com/static/didiglobal/didi-home-video0626.mp4" type="video/mp4" x5-video-player-type="h5" x-webkit-airplay="true" webkit-playsinline="true" playsinline poster preload="none" autoplay loop/>
-                	当前浏览器版本较低，为了不影响你的使用体验， 请升级到最新版本或者切换到其他版本较新的浏览器，比如Chrome 或者Firefox的最新版
-                	<track kind="captions">
-				 </video>
+
+				<div class="video-app-container"></div>
+
 				
 			</div>
 			
@@ -1048,12 +1045,12 @@
 					<div class="img"><img src="images/float-feedback.svg" alt="" /></div>
 				</a>
 			</div>
-			<div class="service">
+			<!--<div class="service">
 				<span>Chat</span>
 				<a href="javascript:" target="_blank">
 					<div class="img"><img src="images/float-chat.svg" alt="" /></div>
 				</a>
-			</div>
+			</div>-->
 			<div class="call-back">
 				<span>Callback</span>
 				<a href="javascript:" data-toggle="modal" data-target="#call-back-modal">
@@ -1399,169 +1396,34 @@
 		</a>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<!--<script src="js/home-animate/three.min.js"></script>
-		<script src="js/home-animate/postprocessing.min.js"></script>
-		<script src="js/home-animate/InfiniteLights.js"></script>
-		<script src="js/home-animate/Distortions.js"></script>
-		<script src="js/home-animate/canvas.js"></script>-->
 		<script src="js/main.js"></script>
 		<script src="js/swiper.min.js"></script>
 		<script src="js/swiper.animate1.0.3.min.js"></script>
 		<script src="js/index.js"></script>
 		<script src="js/index-loading.js"></script>
-		<script>
-			//判断是否是ie9 以下浏览器
-function isNavigator(){
-    var theUA = window.navigator.userAgent.toLowerCase();
-    if ((theUA.match(/msie\s\d+/) && theUA.match(/msie\s\d+/)[0]) || (theUA.match(/trident\s?\d+/) && theUA.match(/trident\s?\d+/)[0])) {
-        var ieVersion = theUA.match(/msie\s\d+/)[0].match(/\d+/)[0] || theUA.match(/trident\s?\d+/)[0];
-        if (ieVersion < 9){
-          return false;
-        }else{
-          return true;
-        }
-    }else{
-      return true;
-    };    
-  };
-  !(function(a, b) {
-    //判断是否是ie9 以下浏览器
-    if(!isNavigator()){
-      return false;
-    };
-    var d,
-    e = a.document,
-    f = e.documentElement,
-    g = e.querySelector('meta[name="viewport"]'),
-    h = e.querySelector('meta[name="flexible"]'),
-    i = 0,
-    j = 0,
-    k = b.flexible || (b.flexible = {})
-    function c() {
-      var b = f.getBoundingClientRect().width
-      b / i > 540 && (b = 540 * i)
-      var c = b / 10
-      ;(f.style.fontSize = c + 'px'), (k.rem = a.rem = c)
-    }
-    if (g) {
-      // console.warn('将根据已有的meta标签来设置缩放比例')
-      var l = g.getAttribute('content').match(/initial\-scale=([\d\.]+)/)
-      l && ((j = parseFloat(l[1])), (i = parseInt(1 / j,10)))
-    } else if (h) {
-      var m = h.getAttribute('content')
-      if (m) {
-        var n = m.match(/initial\-dpr=([\d\.]+)/),
-          o = m.match(/maximum\-dpr=([\d\.]+)/)
-        n && ((i = parseFloat(n[1])), (j = parseFloat((1 / i).toFixed(2)))),
-          o && ((i = parseFloat(o[1])), (j = parseFloat((1 / i).toFixed(2))))
-      }
-    }
-    if (!i && !j) {
-      var p = (a.navigator.appVersion.match(/android/gi),
-        a.navigator.appVersion.match(/iphone/gi)),
-        q = a.devicePixelRatio
-      ;(i = p
-        ? q >= 3 && (!i || i >= 3) ? 3 : q >= 2 && (!i || i >= 2) ? 2 : 1
-        : 1),
-        (j = 1 / i)
-    }
-    if ((f.setAttribute('data-dpr', i), !g))
-      if (
-        ((g = e.createElement('meta')),
-        g.setAttribute('name', 'viewport'),
-        g.setAttribute(
-          'content',
-          'initial-scale=' +
-            j +
-            ', maximum-scale=' +
-            j +
-            ', minimum-scale=' +
-            j +
-            ', user-scalable=no'
-        ),
-        f.firstElementChild)
-      )
-        f.firstElementChild.appendChild(g)
-      else {
-        var r = e.createElement('div')
-        r.appendChild(g), e.write(r.innerHTML)
-      }
-      //事件监听兼容ie
-      if(document.addEventListener){
-        a.addEventListener(
-          'resize',
-          function() {
-            // clearTimeout(d), (d = setTimeout(c, 300))
-            c();
-          },
-          !1
-        )
-      }else{
-        a.attachEvent(
-          'onresize',
-          function() {
-            // clearTimeout(d), (d = setTimeout(c, 300))
-            c();
-          }
-        )
-      }
-      if(document.addEventListener){
-        a.addEventListener(
-          'pageshow',
-          function(a) {
-            a.persisted && (clearTimeout(d), (d = setTimeout(c, 300)))
-          },
-          !1
-        )
-      }else{
-        a.attachEvent(
-          'onpageshow',
-          function(a) {
-            a.persisted && (clearTimeout(d), (d = setTimeout(c, 300)))
-          }
-        )
-      }
-      if(document.addEventListener){
-        'complete' === e.readyState
-        ? (e.body.style.fontSize = 12 * i + 'px')
-        : e.addEventListener(
-            'DOMContentLoaded',
-            function() {
-              e.body.style.fontSize = 12 * i + 'px'
-            },
-            !1
-          )
-      }else{
-        'complete' === e.readyState
-        ? (e.body.style.fontSize = 12 * i + 'px')
-        : e.attachEvent(
-            'onDOMContentLoaded',
-            function() {
-              e.body.style.fontSize = 12 * i + 'px'
-            }
-          )
-      }
-      c(),
-      (k.dpr = a.dpr = i),
-      (k.refreshRem = c),
-      (k.rem2px = function(a) {
-        var b = parseFloat(a) * this.rem
-        return 'string' === typeof a && a.match(/rem$/) && (b += 'px'), b
-      }),
-      (k.px2rem = function(a) {
-        var b = parseFloat(a) / this.rem
-        return 'string' === typeof a && a.match(/px$/) && (b += 'rem'), b
-      })
-  })(window, window.lib || (window.lib = {}))
+		<script type="text/javascript">
+			$(function() {
+				var arryImages = [
+					'0.png','1.png', '2.png', '3.png', '4.png', '5.png', '6.png', '7.png', '8.png', '9.png', '10.png', '11.png', '12.png', '13.png', '14.png', '15.png', '16.png', '17.png', '18.png', '19.png', '20.png', '21.png', '22.png', '23.png', '24.png', '25.png', '26.png', '27.png', '28.png', '29.png', '30.png', '31.png', '32.png', '33.png', '34.png', '35.png', '36.png', '37.png', '38.png', '39.png', '40.png', '41.png', '42.png', '43.png', '44.png', '45.png', '46.png', '47.png', '48.png', '49.png', '50.png', '51.png', '52.png', '53.png', '54.png', '55.png', '56.png', '57.png', '58.png', '59.png', '60.png', '61.png', '62.png', '63.png', '64.png', '65.png',
+					'66.png', '67.png', '68.png', '69.png', '70.png', '71.png', '72.png', '73.png', '74.png', '75.png', '76.png', '77.png', '78.png', '79.png', '80.png', '81.png', '82.png', '83.png', '84.png', '85.png', '86.png', '87.png', '88.png', '89.png', '90.png', '91.png', '92.png', '93.png', '94.png', '95.png', '96.png', '97.png', '98.png', '99.png', '100.png', '101.png', '102.png', '103.png', '104.png', '105.png'
+				
+				];
+				for(var k=0;k<arryImages.length;k++){
+				var txt='<img src="images/home-ani/'+ arryImages[k] +'" alt="图片丢失" />';
+						$(".video-app-container").append(txt);
+				}
+				$(".video-app-container").children('img').hide();
+				var i = -1;
+				var t1 = setInterval(
+					function() {
+						i++;
+						$(".video-app-container").children('img').eq(i).show().siblings().hide();
+						if(i == arryImages.length - 1) {
+							i = -1;
+						}
+					},100);
+			});
 		</script>
-		
-		
-		
-		
-		
-		
-		
-		
 		<script>
 			$(document).ready(function() {
 				var a, b, c;
