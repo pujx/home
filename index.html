@@ -21,14 +21,14 @@
 
 	<body>
 		<!-- preloader -->
- 		<div id="preloader">
-            <p>
-                <!--<video id="video" muted autoplay="autoplay" loop="loop" x5-playsinline="true" playsinline="true" webkit-playsinline="true" x-webkit-airplay="allow" preload="auto" x5-video-player-type="h5" x5-video-player-fullscreen="true">
+		<div id="preloader">
+			<p>
+				<!--<video id="video" muted autoplay="autoplay" loop="loop" x5-playsinline="true" playsinline="true" webkit-playsinline="true" x-webkit-airplay="allow" preload="auto" x5-video-player-type="h5" x5-video-player-fullscreen="true">
                     <source src="mp4/Loading-animation.mp4" type="video/mp4" />
                 </video>-->
-                <img src="Loading-animation.gif" alt="" />
-            </p>
-        </div>
+				<img src="Loading-animation.gif" alt="" />
+			</p>
+		</div>
 		<!-- preloader end  -->
 		<!-- 透明背景 start -->
 		<div class="offcanvas-overlay"></div>
@@ -282,24 +282,50 @@
 		<!--banner-->
 		<div class="home-banner-box">
 			<style>
-				.home-banner-box{width: 100%;height: 100%;}
-				.banner-ani{width: 100%;position: absolute;}
-				.banner-ani .video-app-container{width: 100%;height: 100%;}
-				.banner-ani .video-app-container img{width: 100%;height: 100%;}
-				@media only screen and (min-width: 1200px){
-				 .banner-ani{width: 100%;height: 750px;position: absolute;top: 190px;min-height: 750px;}
+				.home-banner-box {
+					width: 100%;
+					height: 100%;
 				}
+				
+				.banner-ani {
+					width: 100%;
+					position: absolute;
+					overflow: hidden;
+				}
+				
+				.banner-ani .video-app-container {
+					width: 100%;
+					height: 100%;
+				}
+				
+				.banner-ani .video-app-container img {
+					width: 100%;
+					height: 100%;
+				}
+				
+				@media only screen and (min-width: 1200px) {
+					.banner-ani {
+						width: 100%;
+						height: 750px;
+						position: absolute;
+						top: 190px;
+						min-height: 750px;
+					}
+				}
+				
 				@media only screen and (min-width:992px) and (max-width:1199px) {
-					 .banner-ani{    top: 70px;
-    height: 488px;}
+					.banner-ani {
+						top: 70px;
+						height: 488px;
+					}
 				}
 			</style>
 			<!--<div id="app"></div>-->
 			<div class="banner-ani">
 				<div class="video-app-container"></div>
-					<!--ie不支持video-->
-		<!--<div id="videoPlayerBox"></div>-->
-<!--<script>
+				<!--ie不支持video-->
+				<!--<div id="videoPlayerBox"></div>-->
+				<!--<script>
 var mediaUrl = 'https://img-ys011.didistatic.com/static/didiglobal/didi-home-video0626.mp4';
 if(document.getElementById('videoLabel')) {
 	document.getElementById('videoPlayerBox').removeChild(document.getElementById('videoLabel'));
@@ -307,9 +333,9 @@ if(document.getElementById('videoLabel')) {
 document.getElementById('videoPlayerBox').innerHTML = '<video id="videoLabel" src="'+mediaUrl+'" autoplay="autoplay" loop  muted style="width:100%"><source  src="'+mediaUrl+'" type="audio/mp4" autoplay="autoplay" loop ></source></video>';
 
 </script>-->
-		
+
 			</div>
-			
+
 			<div class="container">
 				<div class="banner">
 					<div class="banner-text banner-text-r">
@@ -793,7 +819,7 @@ document.getElementById('videoPlayerBox').innerHTML = '<video id="videoLabel" sr
 								</table>
 							</div>
 							<p class="text-right">Live prices are indicative only.</p>
-						
+
 						</div>
 					</div>
 				</div>
@@ -1413,13 +1439,11 @@ document.getElementById('videoPlayerBox').innerHTML = '<video id="videoLabel" sr
 		<script type="text/javascript">
 			$(function() {
 				var arryImages = [
-					'0.png','1.png', '2.png', '3.png', '4.png', '5.png', '6.png', '7.png', '8.png', '9.png', '10.png', '11.png', '12.png', '13.png', '14.png', '15.png', '16.png', '17.png', '18.png', '19.png', '20.png', '21.png', '22.png', '23.png', '24.png', '25.png', '26.png', '27.png', '28.png', '29.png', '30.png', '31.png', '32.png', '33.png', '34.png', '35.png', '36.png', '37.png', '38.png', '39.png', '40.png', '41.png', '42.png', '43.png', '44.png', '45.png', '46.png', '47.png', '48.png', '49.png', '50.png', '51.png', '52.png', '53.png', '54.png', '55.png', '56.png', '57.png', '58.png', '59.png', '60.png', '61.png', '62.png', '63.png', '64.png', '65.png',
-					'66.png', '67.png', '68.png', '69.png', '70.png', '71.png', '72.png', '73.png', '74.png', '75.png', '76.png', '77.png', '78.png', '79.png', '80.png', '81.png', '82.png', '83.png', '84.png', '85.png', '86.png', '87.png', '88.png', '89.png', '90.png', '91.png', '92.png', '93.png', '94.png', '95.png', '96.png', '97.png', '98.png', '99.png', '100.png', '101.png', '102.png', '103.png', '104.png', '105.png'
-				
-				];
-				for(var k=0;k<arryImages.length;k++){
-				var txt='<img src="images/home-ani/'+ arryImages[k] +'"/>';
-						$(".video-app-container").append(txt);
+					'0.png', '1.png', '2.png', '3.png', '4.png', '5.png', '6.png', '7.png', '8.png', '9.png', '10.png', '11.png', '12.png', '13.png', '14.png', '15.png', '16.png', '17.png', '18.png', '19.png', '20.png', '21.png', '22.png', '23.png', '24.png', '25.png', '26.png', '27.png', '28.png', '29.png', '30.png', '31.png', '32.png', '33.png', '34.png', '35.png', '36.png', '37.png', '38.png', '39.png', '40.png', '41.png', '42.png', '43.png', '44.png', '45.png', '46.png', '47.png', '48.png', '49.png', '50.png', '51.png', '52.png', '53.png', '54.png', '55.png', '56.png', '57.png', '58.png', '59.png', '60.png', '61.png', '62.png', '63.png', '64.png', '65.png',
+					'66.png', '67.png', '68.png', '69.png', '70.png', '71.png', '72.png', '73.png', '74.png', '75.png', '76.png', '77.png', '78.png', '79.png', '80.png', '81.png', '82.png', '83.png', '84.png', '85.png', '86.png', '87.png', '88.png', '89.png', '90.png', '91.png', '92.png', '93.png', '94.png', '95.png', '96.png', '97.png', '98.png', '99.png', '100.png', '101.png', '102.png', '103.png', '104.png', '105.png'];
+				for(var k = 0; k < arryImages.length; k++) {
+					var txt = '<img src="images/home-ani/' + arryImages[k] + '"/>';
+					$(".video-app-container").append(txt);
 				}
 				$(".video-app-container").children('img').hide();
 				var i = -1;
@@ -1430,7 +1454,9 @@ document.getElementById('videoPlayerBox').innerHTML = '<video id="videoLabel" sr
 						if(i == arryImages.length - 1) {
 							i = -1;
 						}
-					},100);
+					}, 100);	
+					
+					
 			});
 		</script>
 		<script>
