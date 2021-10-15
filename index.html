@@ -329,12 +329,16 @@
 											
 										</style>
     <div class="video-box">
-        <video autoplay="true" loop="true" preload="auto" muted id="video">
+        <video autoplay="true" loop="true" preload="auto" muted id="video" webkit-playsinline playsinline x5-playsinline="" x-webkit-airplay="allow">
             <source src="mp4/home-animate.mp4" type="video/mp4">
-            <!--<source src="mp4/home-animate.mp4" type="video/ogg">-->
+            <source src="mp4/home-animate.mp4" type="video/ogg">
         </video>
     </div>
 </div>
+		
+		<!--<div id="banner-ani-box">
+			
+		</div>-->
 		
 					
 				</div>
@@ -1451,9 +1455,7 @@
 		<!-- 必须加在微信api资源 --> 
 <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script> 
 <script> 
-     //一般情况下，这样就可以自动播放了，但是一些奇葩iPhone机不可以 
-     document.getElementById('video').play(); 
-    //必须在微信Weixin JSAPI的WeixinJSBridgeReady才能生效 
+     document.getElementById('video').play();
     document.addEventListener("WeixinJSBridgeReady", function () { 
         document.getElementById('video').play(); 
     }, false); 
@@ -1469,14 +1471,14 @@
 //					'66.png', '67.png', '68.png', '69.png', '70.png', '71.png', '72.png', '73.png', '74.png', '75.png', '76.png', '77.png', '78.png', '79.png', '80.png', '81.png', '82.png', '83.png', '84.png', '85.png', '86.png', '87.png', '88.png', '89.png', '90.png', '91.png', '92.png', '93.png', '94.png', '95.png', '96.png', '97.png', '98.png', '99.png', '100.png', '101.png', '102.png', '103.png', '104.png', '105.png'];
 //				for(var k = 0; k < arryImages.length; k++) {
 //					var txt = '<img src="images/home-ani/' + arryImages[k] + '"/>';
-//					$(".video-app-container").append(txt);
+//					$("#banner-ani-box").append(txt);
 //				}
-//				$(".video-app-container").children('img').hide();
+//				$("#banner-ani-box").children('img').hide();
 //				var i = -1;
 //				var t1 = setInterval(
 //					function() {
 //						i++;
-//						$(".video-app-container").children('img').eq(i).show().siblings().hide();
+//						$("#banner-ani-box").children('img').eq(i).show().siblings().hide();
 //						if(i == arryImages.length - 1) {
 //							i = -1;
 //						}
