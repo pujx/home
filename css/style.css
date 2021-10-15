@@ -208,7 +208,8 @@ footer .footer-text p{line-height:20px;margin-bottom:15px}
 .online-float-box>div span:after{position:absolute;width:0;height:0;border-left:8px solid #ffffff;border-right:8px solid transparent;border-bottom:8px solid transparent;border-top:8px solid transparent;top:7px;right:-15px;content:"";display:block;clear:both}
 .online-float-box>div:hover span{visibility:visible;opacity:1;transform:translateX(0px);-moz-transform:translateX(0px);-ms-transform:translateX(0px)}
 .online-float-box .call-back{margin:25px 0 0}
-.mobile-online-float{position:fixed;bottom:0;z-index:11;left:0;right:0;width:115px;background:#fff;margin:0 auto;padding:8px 0 40px}
+.mobile-online-float{position:fixed;bottom:0;z-index:11;left:0;right:0;width:115px;background:#fff;margin:0 auto;padding:8px 0 40px;bottom: 38px;
+    overflow: scroll;}
 .mobile-online-float a{display:inline-block;width:55px;height:25px;text-align:center}
 .mobile-online-float a img{width:25px}
 @media screen and (min-width:768px){.mobile-online-float{display:none}
