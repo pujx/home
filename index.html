@@ -16,7 +16,7 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/Gotham-Light.css" />
 		<link rel="stylesheet" href="css/style_cn.css" />
-    <script src="https://cdn.bootcss.com/html5media/1.1.8/html5media.js"></script>
+    	<script src="https://cdn.bootcss.com/html5media/1.1.8/html5media.js"></script>
 
 	</head>
 
@@ -323,11 +323,15 @@
 			<div class="banner-ani">
 				<div class="video-app-container">
 									<div class="video-wrap">
+										<style>
+											
+											video{width: 100%;}
+											
+										</style>
     <div class="video-box">
-        <video autoplay="true" loop="true" preload="auto" >
-            <source src="movie/movie.mp4" type="video/mp4">
-            <source src="movie/movie.ogv" type="video/ogg">
-            <p style="padding: 50px;color:#fff;text-align: center">您的浏览器不支持 HTML5 video 标签。</p>
+        <video autoplay="true" loop="true" preload="auto" muted id="video">
+            <source src="mp4/home-animate.mp4" type="video/mp4">
+            <!--<source src="mp4/home-animate.mp4" type="video/ogg">-->
         </video>
     </div>
 </div>
@@ -1444,6 +1448,20 @@
 		<script src="js/swiper.animate1.0.3.min.js"></script>
 		<script src="js/index.js"></script>
 		<script src="js/index-loading.js"></script>
+		<!-- 必须加在微信api资源 --> 
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script> 
+<script> 
+     //一般情况下，这样就可以自动播放了，但是一些奇葩iPhone机不可以 
+     document.getElementById('video').play(); 
+    //必须在微信Weixin JSAPI的WeixinJSBridgeReady才能生效 
+    document.addEventListener("WeixinJSBridgeReady", function () { 
+        document.getElementById('video').play(); 
+    }, false); 
+</script>
+		
+		
+		
+		
 		<script type="text/javascript">
 //			$(document).ready(function(){
 //								var arryImages = [
