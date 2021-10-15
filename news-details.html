@@ -158,7 +158,7 @@
 					<div class="row align-items-center">
 						<div class="col-12 col-lg-3">
 							<div class="logo">
-								<a href="javascript:"><img src="images/logo.svg" alt="logo"></a>
+								<a href="index.html"><img src="images/logo.svg" alt="logo"></a>
 							</div>
 						</div>
 						<div class="col-md-9 d-none d-lg-block">
@@ -305,25 +305,40 @@
 				<h2 class="news-detail-title">Microsoft closes above $2 trillion market cap for the first time</h2>
 
 				<div class="news-detail-time">
-					<div class="news-detail-author">By
-						<a href="javascript:" class="news-author-pop-btn">MARC DAVIS</a> | Updated Stetember 09,2021
+					<div class="news-detail-author">BY
+						<a href="javascript:" class="news-author-pop-btn">CONNER KUNG</a> | Updated Stetember 09,2021
 						<div class="news-author-pop">
 							<span class="arrow-author"></span>
 								<div class="row">
 									<div class="col-4">
 										<p class="author-image">
-											<img src="images/about-bg.jpg" alt="" />
+											<img src="images/Scott_BWC.jpg" alt="" />
 										</p>
 									</div>
 									<div class="col-8">
-										<div class="author-detail">
-											<span>Marc Davis is the author of several books and has 20+ years of experience writing about business, finance,and economics.</span>
+										<!--如果是中文版用这个-->
+										<div class="author-detail author-detail-cn">
+											<b>CONNER KUNG/瑞德克斯大中華區帳戶經理</b>
+											<span>CONNER KUNG為RADEX MARKETS瑞德克斯大中華區帳戶經理。深入金融市場多年，以市場角度分享特有觀點，並專注於世界經濟走向以及大中華區外匯市場發展。</span>
+											<a href="javascript:" class="read-more">查看更多</a>
 											<div class="author-detail-follow">
 												Follow
-												<a href="" class="" target="_blank"><img src="images/icon_linkedin.svg" alt="" /></a>
-												<a href="" class="" target="_blank"><img src="images/icon_twitter.svg" alt="" /></a>
+												<!--<a href="" target="_blank"><img src="images/icon_linkedin.svg" alt="" /></a>-->
+												<a href="https://twitter.com/ConnerK_Radex" target="_blank"><img src="images/icon_twitter.svg" alt="" /></a>
 											</div>
 										</div>
+										<!--如果是英文版用这个-->
+										<!--<div class="author-detail author-detail-en">
+											<b>SCOTT M/Business Development Manager, RADEX MARKETS</b>
+											<span>Scott M is an expert in the financial industry with an MA in the field, now working as an International Business Developer. Scott is determined to help others in the Retail Trading Industry, he strives to develop opportunities for his clients and partners. With knowledge and experience in margin FX, he contributes positively to the success of his professional network.</span>
+											<a href="javascript:" class="read-more">查看更多</a>
+											<div class="author-detail-follow">
+												Follow
+												<a href="https://www.linkedin.com/in/scott-m-8a9496157/" target="_blank"><img src="images/icon_linkedin.svg" alt="" /></a>
+												<a href="" target="_blank"><img src="images/icon_twitter.svg" alt="" /></a>
+											</div>
+										</div>-->
+										
 									</div>
 								</div>
 						
@@ -883,7 +898,7 @@
 			
 			
 			
-			  var lookAll=document.getElementById('lookall');
+	var lookAll=document.getElementById('lookall');
        var textCon=document.getElementById('text_con');
 
       window.onload=function(){
@@ -900,16 +915,64 @@
         function fnhandler(obj){
           textCon.style.height='auto';
           obj.style.display="none";
-        }
-			
-			
-			
-			
-			
-			
-			
-			
+        }	
 		</script>
+		<script>
+//			作者  查看更多 英文
+		var arr = [];
+        var show = true;
+        function subTxt() {
+            $('.author-detail-en span').each(function(index) {
+                var len = $(this).text().length;
+                var that = $(this);
+                var oldTxt = $(this).text();
+                arr.push(oldTxt);
+                var txt = $(this).text().substr(0, 120) + '...';
+                $(this).text(txt)
+            })
+        }
+        subTxt();
+        $(".author-detail-en .read-more").each(function(index) {
+            $(this).click(function() {
+                if(!show){
+                    subTxt();
+                    show = !show;
+                    $(this).text("查看更多");
+                }else{
+                    $('.author-detail-en span').eq(index).text(arr[index]);
+                    show = !show;
+                    $(this).text("收起");
+                }
+            })
+        });
+        //查看更多 中文
+        var arr1 = [];
+        var show = true;
+        function subTxt1() {
+            $('.author-detail-cn span').each(function(index) {
+                var len = $(this).text().length;
+                var that = $(this);
+                var oldTxt = $(this).text();
+                arr1.push(oldTxt);
+                var txt = $(this).text().substr(0, 60) + '...';
+                $(this).text(txt)
+            })
+        }
+        subTxt1();
+        $(".author-detail-cn .read-more").each(function(index) {
+            $(this).click(function() {
+                if(!show){
+                    subTxt1();
+                    show = !show;
+                    $(this).text("查看更多");
+                }else{
+                    $('.author-detail-cn span').eq(index).text(arr1[index]);
+                    show = !show;
+                    $(this).text("收起");
+                }
+            })
+        });
+</script>
 
 	</body>
 
