@@ -25,6 +25,7 @@
 .leagal-document-contents h3,.leagal-document-sidebar-title{font-size:22px}
 .leagal-document-box{font-size:14px}
 .product-table .product-table-title{font-size:16px}
+.product-text-box ul li i{top: 6px;}
 .news-headlines-img h4{font-size:16px}
 .news-title,.news-detail-text h5{font-size:18px}
 .news-detail,.news-detail-text p{font-size:15px}
@@ -33,7 +34,7 @@
 .account-login span{font-size:16px}
 .tabs.tabs_rotate{height:277px}
 .tabs.tabs_rotate>ul li,.tabs.tabs_rotate table td{height:55px;line-height:54px}
-.tabs.tabs_rotate table th{height:54px;line-height:54px}
+.tabs.tabs_rotate table th{height:54px;line-height:24px}
 .tabs.tabs_rotate>ul li a span,.tabs.tabs_rotate table tbody,.tabs.tabs_rotate table thead{font-size:16px}
 .about-public-content,.economic-text-box p,.edu-second-text p,.product-text-box,.tools-btm-box .btm-box-r>p,.list-ul li,.promo-toggle-wrap{font-size:15px;line-height: 22px;}
 .tools-link{font-size:16px}
@@ -41,7 +42,7 @@
 .account-steps h4{margin-top:0}
 .edu-tabs-text .tabs-text-title{font-size:24px;margin-bottom:30px}
 .edu-slide-box .edu-tabs-nav{top:155px}
-.edu-slide-box .list-group-item, .edu-tabs-text p{font-size:15px}
+.edu-slide-box .list-group-item, .edu-tabs-text p{font-size:15px;line-height: 22px;}
 .contact-form.apply-bonus-form .piaochecked{font-size:13px}
 .promo-toggle-top span,.promo-panel h4{font-size:18px}
 .bottom-box h5{font-size:20px;line-height:30px}
