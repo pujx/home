@@ -330,8 +330,66 @@ if(document.getElementById('videoLabel')) {
 }
 document.getElementById('videoPlayerBox').innerHTML = '<video id="videoLabel" src="'+mediaUrl+'" autoplay="autoplay" loop  muted style="width:100%"><source  src="'+mediaUrl+'" type="audio/mp4" autoplay="autoplay" loop ></source></video>';
 
-</script>
 
+
+
+
+
+</script>
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function () {
+      function audioAutoPlay() {
+          var audio = document.getElementById('videoLabel');
+              audio.play();
+          document.addEventListener("WeixinJSBridgeReady", function () {
+              audio.play();
+          }, false);
+      }
+      audioAutoPlay();
+  });
+    if (/i(Phone|P(o|a)d)/.test(navigator.userAgent)) {
+      $(document).one('touchstart',
+        function(e) {
+            $('#videoLabel').get(0).touchstart = true;
+            $('#videoLabel').get(0).play();
+            return false;
+        });
+    }
+    
+    
+    
+    
+ setTimeout(()=>{
+	var audio = document.getElementById("videoLabel"); 
+		audio.muted = true;		// 加一个静音
+    	audio.play();
+},1000)
+    
+    // 动态加载微信实例，也可直接引用script标签
+if(0 <= navigator.userAgent.toLowerCase().indexOf("micromessenger")
+){
+		const oScript = document.createElement('script');
+		oScript.type = 'text/javascript';
+		oScript.src = 'https://res2.wx.qq.com/open/js/jweixin-1.6.0.js';
+		oScript.onload = this.autoplay	// 加载成功的回调函数
+		document.body.appendChild(oScript);
+}
+    
+   autoplay(){
+		wx.config({ // eslint-disable-line
+			debug:false,
+			appId:"",
+			timestamp:1,
+			nonceStr:"",
+			signature:"",
+			jsApiList:[]
+		});
+		wx.ready(function(){ // eslint-disable-line
+			var audio=document.getElementById("videoLabel");
+			audio.play()
+		})
+	},
+</script>
 			</div>
 
 			<div class="container">
