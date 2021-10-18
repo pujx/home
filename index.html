@@ -8,7 +8,7 @@
 		<meta name="format-detection" content="telephone=no" />
 		<link rel="icon" href="favicon.ico">
 		<title></title>
-		<meta name="keywords" content="外汇，瑞德克斯，外汇平台，外汇交易平台，低点差，MT4"/>
+		<meta name="keywords" content="外汇，瑞德克斯，外汇平台，外汇交易平台，低点差，MT4" />
 		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/swiper.min.css" />
@@ -16,12 +16,11 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/Gotham-Light.css" />
 		<link rel="stylesheet" href="css/style_cn.css" />
-    	<script src="https://cdn.bootcss.com/html5media/1.1.8/html5media.js"></script>
+		<script src="https://cdn.bootcss.com/html5media/1.1.8/html5media.js"></script>
 
 	</head>
 
 	<body>
-		<!-- preloader -->
 		<div id="preloader">
 			<p>
 				<!--<video id="video" muted autoplay="autoplay" loop="loop" x5-playsinline="true" playsinline="true" webkit-playsinline="true" x-webkit-airplay="allow" preload="auto" x5-video-player-type="h5" x5-video-player-fullscreen="true">
@@ -30,11 +29,9 @@
 				<img src="Loading-animation.gif" alt="" />
 			</p>
 		</div>
-		<!-- preloader end  -->
-		<!-- 透明背景 start -->
+	
 		<div class="offcanvas-overlay"></div>
-		<!-- 透明背景 end -->
-		<!-- 移动端菜单 Start -->
+	
 		<div id="offcanvas-cart" class="offcanvas theme1">
 			<div class="inner">
 				<a href="javascript:" class="offcanvas-close"><img src="images/nav-close.png" alt="" /></a>
@@ -158,8 +155,7 @@
 			</div>
 
 		</div>
-		<!-- 移动端菜单  End -->
-		<!-- 头部 start -->
+	
 		<header id="sticky" class="header">
 			<div class="header-middle">
 				<div class="container">
@@ -279,10 +275,10 @@
 				</div>
 			</div>
 		</header>
-		<!-- 头部 end -->
-		<!--banner-->
+	
 		<div class="home-banner-box">
 			<style>
+				video {width: 100%;object-fit: fill;height: 100%;}
 				.home-banner-box {
 					width: 100%;
 					height: 100%;
@@ -292,6 +288,8 @@
 					width: 100%;
 					position: absolute;
 					overflow: hidden;
+					height: 100%;
+					z-index: -1;
 				}
 				
 				.banner-ani .video-app-container {
@@ -304,9 +302,17 @@
 					height: 100%;
 				}
 				
+				.video-wrap {
+					height: 100%;
+				}
+				
+				.video-box {
+					height: 100%;
+				}
+				
 				@media only screen and (min-width: 1200px) {
 					.banner-ani {
-						height: 750px;
+						height:100vh;
 						top: 190px;
 						min-height: 750px;
 					}
@@ -322,29 +328,16 @@
 			<!--<div id="app"></div>-->
 			<div class="banner-ani">
 				<div class="video-app-container">
-									<div class="video-wrap">
-										<style>
-											
-											video{width: 100%;object-fit: fill;}
-											
-										</style>
-    <div class="video-box">
-        <video autoplay="true" loop="true" preload="auto" muted id="video" webkit-playsinline playsinline x5-playsinline="" x-webkit-airplay="allow">
-            <source src="mp4/home-animate.mp4" type="video/mp4">
-            <source src="mp4/home-animate.mp4" type="video/ogg">
-        </video>
-    </div>
-</div>
-		
-		<!--<div id="banner-ani-box">
-			
-		</div>-->
-		
-					
+					<div class="video-wrap">
+						<div class="video-box">
+							<video autoplay="true" loop="true" preload="auto" muted id="video" webkit-playsinline playsinline x5-playsinline="" x-webkit-airplay="allow">
+								<source src="mp4/home-animate.mp4" type="video/mp4">
+								<!--<source src="movie_movie.ogv" type="video/ogg">-->
+							</video>
+						</div>
+					</div>
 				</div>
-
 			</div>
-
 			<div class="container">
 				<div class="banner">
 					<div class="banner-text banner-text-r">
@@ -360,9 +353,7 @@
 			</div>
 		</div>
 
-		<!--banner end-->
-
-		<!--轮播图1-->
+	
 		<div class="container ">
 			<div class="swiper-box1">
 				<div class="swiper-container swiper-container1">
@@ -420,8 +411,8 @@
 			</div>
 
 		</div>
-		<!--轮播图1 end-->
-		<!--轮播图2-->
+		
+	
 		<div class="bg-393939 d-none d-lg-block">
 			<div class="container">
 				<div class="swiper-box2">
@@ -503,8 +494,7 @@
 			</div>
 
 		</div>
-		<!--轮播图2 end-->
-		<!--轮播图2-1-->
+	
 		<div class="swiper-box2 bg-393939 d-block d-lg-none">
 			<div class="container">
 				<div class="swiper-box2">
@@ -587,8 +577,7 @@
 
 		</div>
 
-		<!--轮播图2-1 end-->
-		<!--点差表格-->
+		
 		<div class="container">
 			<div class="live-spreads-box">
 				<p class="spreads-box-title">Live Spreads</p>
@@ -834,9 +823,7 @@
 				</div>
 			</div>
 		</div>
-		<!--点差表格 end-->
 
-		<!--平台-->
 
 		<div class="bg-eee home-platform-box" id="home-platform-box">
 			<div class="container">
@@ -885,11 +872,8 @@
 			</div>
 		</div>
 
-		<!--平台 end-->
 
-		<!--11-->
 		<div class="container">
-
 			<div class="bottom-box">
 				<div class="row">
 					<div class="col-lg-4 d-block d-lg-none">
@@ -934,6 +918,7 @@
 							<div class="col-lg-4">
 								<div class="bottom-box-r">
 									<a href="" class="bottom-box4">
+										<img src="images/home-bottom3.jpg" alt="" />
 										<h5><b>News</b> <br /> Today</h5>
 										<!--<span class="sub-text">Who Let the Bulls Out? <br /> Bitcoin Breaks Past $23K</span>-->
 									</a>
@@ -956,9 +941,6 @@
 			</div>
 		</div>
 
-		<!--11-->
-
-		<!--底部-->
 		<footer class="footer-black-bg">
 			<div class="container">
 				<div class="footer">
@@ -1080,7 +1062,7 @@
 			</div>
 		</footer>
 
-		<!--底部 end-->
+	
 
 		<div class="online-float-box">
 			<div class="feedback">
@@ -1102,7 +1084,7 @@
 				</a>
 			</div>
 		</div>
-		<!--feedback-->
+		
 		<div class="modal" id="feedback-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 			<div class="modal-dialog">
 				<div class="modal-content">
@@ -1169,7 +1151,7 @@
 			</div>
 		</div>
 
-		<!--call-back-->
+	
 		<div class="modal" id="call-back-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 			<div class="modal-dialog">
 				<div class="modal-content">
@@ -1405,29 +1387,32 @@
 									<label for="" class="input-label">Phone Number<i class="req">*</i></label>
 									<p>
 										<div class="modal-call-back">
-											<div><span id="CountryNumber">+86</span></div><input type="text" class="form-control input" id="phonenumber"></div>
-								</div>
+											<div>
+												<input type="text" id="CountryNumber" value="+86" />
+											</div>
+											<input type="text" class="form-control input" id="phonenumber">
+										</div>
 
-								</p>
-							</div>
-
-							<div class="form-group">
-								<div class="input-box">
-									<label for="" class="input-label">Comments<i class="req">*</i></label>
-									<p>
-										<textarea name="" rows="5" cols="5" placeholder="请将您的建议反馈给我们！" class="form-control input"></textarea>
 									</p>
 								</div>
 							</div>
-							<div class="form-group">
-								<button type="button" class="buttons" disabled="disabled">Submit <i class="fa fa-circle-o-notch fa-spin"></i></button>
-							</div>
+								<div class="form-group">
+									<div class="input-box">
+										<label for="" class="input-label">Comments<i class="req">*</i></label>
+										<p>
+											<textarea name="" rows="5" cols="5" placeholder="请将您的建议反馈给我们！" class="form-control input"></textarea>
+										</p>
+									</div>
+								</div>
+								<div class="form-group">
+									<button type="button" class="buttons" disabled="disabled">Submit <i class="fa fa-circle-o-notch fa-spin"></i></button>
+								</div>
 						</form>
+						</div>
 					</div>
 				</div>
-			</div>
 
-		</div>
+			</div>
 
 		<div class="float-account">
 			<a href="javascript:" class="float-login-btn">LOGIN</a>
@@ -1435,122 +1420,116 @@
 		</div>
 		<div class="fixed-mobile-risk">
 			<div class="d-flex align-items-center">
-				<p>
-					<em>Risk Warning : </em>
-					<span>Trading derivatives and leveraged products carries a high level of risk.</span>
-				</p>
+				<p><em>Risk Warning : </em><span>Trading derivatives and leveraged products carries a high level of risk.</span></p>
 				<a href="javascript:">OPEN ACCOUNT</a>
 			</div>
 		</div>
 		<a href="javascript:" class="toTop">
 			<img src="images/to-top.svg" alt="" />
 		</a>
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/main.js"></script>
-		<script src="js/swiper.min.js"></script>
-		<script src="js/swiper.animate1.0.3.min.js"></script>
-		<script src="js/index.js"></script>
-		<script src="js/index-loading.js"></script>
-		<!-- 必须加在微信api资源 --> 
-<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script> 
-<script> 
-     document.getElementById('video').play();
-    document.addEventListener("WeixinJSBridgeReady", function () { 
-        document.getElementById('video').play(); 
-    }, false); 
-</script>
-		
-		
-		
-		
-		<script type="text/javascript">
-//			$(document).ready(function(){
-//								var arryImages = [
-//					'0.png', '1.png', '2.png', '3.png', '4.png', '5.png', '6.png', '7.png', '8.png', '9.png', '10.png', '11.png', '12.png', '13.png', '14.png', '15.png', '16.png', '17.png', '18.png', '19.png', '20.png', '21.png', '22.png', '23.png', '24.png', '25.png', '26.png', '27.png', '28.png', '29.png', '30.png', '31.png', '32.png', '33.png', '34.png', '35.png', '36.png', '37.png', '38.png', '39.png', '40.png', '41.png', '42.png', '43.png', '44.png', '45.png', '46.png', '47.png', '48.png', '49.png', '50.png', '51.png', '52.png', '53.png', '54.png', '55.png', '56.png', '57.png', '58.png', '59.png', '60.png', '61.png', '62.png', '63.png', '64.png', '65.png',
-//					'66.png', '67.png', '68.png', '69.png', '70.png', '71.png', '72.png', '73.png', '74.png', '75.png', '76.png', '77.png', '78.png', '79.png', '80.png', '81.png', '82.png', '83.png', '84.png', '85.png', '86.png', '87.png', '88.png', '89.png', '90.png', '91.png', '92.png', '93.png', '94.png', '95.png', '96.png', '97.png', '98.png', '99.png', '100.png', '101.png', '102.png', '103.png', '104.png', '105.png'];
-//				for(var k = 0; k < arryImages.length; k++) {
-//					var txt = '<img src="images/home-ani/' + arryImages[k] + '"/>';
-//					$("#banner-ani-box").append(txt);
-//				}
-//				$("#banner-ani-box").children('img').hide();
-//				var i = -1;
-//				var t1 = setInterval(
-//					function() {
-//						i++;
-//						$("#banner-ani-box").children('img').eq(i).show().siblings().hide();
-//						if(i == arryImages.length - 1) {
-//							i = -1;
-//						}
-//					}, 100);
-//			});
-		</script>
-		<script>
-			$(document).ready(function() {
-				var a, b, c;
-				a = $(window).height();
-				var tools = $(".platform-slideImg");
-				$(window).scroll(function() {
-					b = $(this).scrollTop();
-					c = tools.offset().top;
-					if(a + b > c) {
-						$(".p-slide-pad").animate({
-							right: '8%'
-						}, 800);
-						$(".p-slide-PC").animate({
-							left: '4%'
-						}, 800);
-						$(".p-slide-phone").animate({
-							left: '46%'
-						}, 800);
-					}
-				});
-			});
-		</script>
-		<script>
-			$(document).ready(function() {
-				var mySwiper1 = new Swiper('.swiper-container1', {
-					loop: true,
-					prevButton: '.swiper-button-prev',
-					nextButton: '.swiper-button-next',
-					autoplay: 6000,
-					effect: 'fade',
+			<script src="js/jquery.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/main.js"></script>
+			<script src="js/swiper.min.js"></script>
+			<script src="js/swiper.animate1.0.3.min.js"></script>
+			<script src="js/index.js"></script>
+			<script src="js/index-loading.js"></script>
+			<!-- 必须加在微信api资源 -->
+			<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+			<script>
+				document.getElementById('video').play();
+				document.addEventListener("WeixinJSBridgeReady", function() {
+					document.getElementById('video').play();
+				}, false);
+			</script>
 
-					onInit: function(swiper) {
-						swiperAnimateCache(swiper);
-						swiperAnimate(swiper);
-					},
-					onSlideChangeEnd: function(swiper) {
-						swiperAnimate(swiper);
-					}
+			<script type="text/javascript">
+				//			$(document).ready(function(){
+				//								var arryImages = [
+				//					'0.png', '1.png', '2.png', '3.png', '4.png', '5.png', '6.png', '7.png', '8.png', '9.png', '10.png', '11.png', '12.png', '13.png', '14.png', '15.png', '16.png', '17.png', '18.png', '19.png', '20.png', '21.png', '22.png', '23.png', '24.png', '25.png', '26.png', '27.png', '28.png', '29.png', '30.png', '31.png', '32.png', '33.png', '34.png', '35.png', '36.png', '37.png', '38.png', '39.png', '40.png', '41.png', '42.png', '43.png', '44.png', '45.png', '46.png', '47.png', '48.png', '49.png', '50.png', '51.png', '52.png', '53.png', '54.png', '55.png', '56.png', '57.png', '58.png', '59.png', '60.png', '61.png', '62.png', '63.png', '64.png', '65.png',
+				//					'66.png', '67.png', '68.png', '69.png', '70.png', '71.png', '72.png', '73.png', '74.png', '75.png', '76.png', '77.png', '78.png', '79.png', '80.png', '81.png', '82.png', '83.png', '84.png', '85.png', '86.png', '87.png', '88.png', '89.png', '90.png', '91.png', '92.png', '93.png', '94.png', '95.png', '96.png', '97.png', '98.png', '99.png', '100.png', '101.png', '102.png', '103.png', '104.png', '105.png'];
+				//				for(var k = 0; k < arryImages.length; k++) {
+				//					var txt = '<img src="images/home-ani/' + arryImages[k] + '"/>';
+				//					$("#banner-ani-box").append(txt);
+				//				}
+				//				$("#banner-ani-box").children('img').hide();
+				//				var i = -1;
+				//				var t1 = setInterval(
+				//					function() {
+				//						i++;
+				//						$("#banner-ani-box").children('img').eq(i).show().siblings().hide();
+				//						if(i == arryImages.length - 1) {
+				//							i = -1;
+				//						}
+				//					}, 100);
+				//			});
+			</script>
+			<script>
+				$(document).ready(function() {
+					var a, b, c;
+					a = $(window).height();
+					var tools = $(".platform-slideImg");
+					$(window).scroll(function() {
+						b = $(this).scrollTop();
+						c = tools.offset().top;
+						if(a + b > c) {
+							$(".p-slide-pad").animate({
+								right: '8%'
+							}, 800);
+							$(".p-slide-PC").animate({
+								left: '4%'
+							}, 800);
+							$(".p-slide-phone").animate({
+								left: '46%'
+							}, 800);
+						}
+					});
 				});
-				var mySwiper2 = new Swiper('.swiper-container2', {
-					slidesPerView: 3,
-					slidesPerGroup: 1,
-					loop: true,
-					prevButton: '.swiper-button-prev',
-					nextButton: '.swiper-button-next',
-					autoplay: 3000,
-				});
-				var mySwiper3 = new Swiper('.swiper-container3', {
-					slidesPerView: 1,
-					slidesPerGroup: 1,
-					loop: true,
-					prevButton: '.swiper-button-prev',
-					nextButton: '.swiper-button-next',
-					autoplay: 3000,
-				});
+			</script>
+			<script>
+				$(document).ready(function() {
+					var mySwiper1 = new Swiper('.swiper-container1', {
+						loop: true,
+						prevButton: '.swiper-button-prev',
+						nextButton: '.swiper-button-next',
+						autoplay: 6000,
+						effect: 'fade',
 
-			});
-			$(function() {
-				$(".tabs ul li").click(function() {
-					var $this = $(this),
-						idx = $this.index();
-					$this.addClass("active").siblings("li").removeClass("active");
-					$(".tab_content_box .tab_content").eq(idx).show().siblings('div').hide();
+						onInit: function(swiper) {
+							swiperAnimateCache(swiper);
+							swiperAnimate(swiper);
+						},
+						onSlideChangeEnd: function(swiper) {
+							swiperAnimate(swiper);
+						}
+					});
+					var mySwiper2 = new Swiper('.swiper-container2', {
+						slidesPerView: 3,
+						slidesPerGroup: 1,
+						loop: true,
+						prevButton: '.swiper-button-prev',
+						nextButton: '.swiper-button-next',
+						autoplay: 3000,
+					});
+					var mySwiper3 = new Swiper('.swiper-container3', {
+						slidesPerView: 1,
+						slidesPerGroup: 1,
+						loop: true,
+						prevButton: '.swiper-button-prev',
+						nextButton: '.swiper-button-next',
+						autoplay: 3000,
+					});
+
 				});
-			});
-		</script>
+				$(function() {
+					$(".tabs ul li").click(function() {
+						var $this = $(this),
+							idx = $this.index();
+						$this.addClass("active").siblings("li").removeClass("active");
+						$(".tab_content_box .tab_content").eq(idx).show().siblings('div').hide();
+					});
+				});
+			</script>
 
 	</body>
 
