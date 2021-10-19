@@ -24,6 +24,13 @@ ul{margin:0;padding:0}
 li{list-style:none}
 ::-moz-selection{background:#595757;color:#fff;text-shadow:none}
 ::selection{background:#595757;color:#fff;text-shadow:none}
+input:-webkit-autofill , textarea:-webkit-autofill, select:-webkit-autofill {
+-webkit-text-fill-color: transparent !important;
+background-color:transparent;
+background-image: none;
+}
+input {background-color:transparent;
+}
 input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{color:#84949a!important}
 input::-moz-placeholder,textarea::-moz-placeholder{color:#84949a!important}
 input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#84949a!important}
@@ -41,7 +48,7 @@ select{appearance:none;-webkit-appearance:none;-moz-appearance:none;background-i
 .modal .buttons:hover{background:#fff;color: #313131;border: 1px solid #313131;}
 .form-control:focus{outline:none !important;box-shadow:none;-webkit-box-shadow:none}
 button[disabled],button[disabled]:hover{background:#eee !important;color:#c5c5c5 !important;cursor:not-allowed;border-color: transparent !important;}
-input,textarea,select{box-shadow:none;-webkit-box-shadow:none;transition:all .5s ease;-moz-transition:all .5s ease;-ms-transition:all .5s ease;-webkit-transition:all .5s ease;border-radius:4px;-webkit-border-radius:4px;outline:none;border:1px solid #dfe6e9;outline:none;-webkit-tap-highlight-color:rgba(0,0,0,0);background:#fff;-webkit-appearance:none}
+input,textarea,select{background-color:transparent;box-shadow:none;-webkit-box-shadow:none;transition:all .5s ease;-moz-transition:all .5s ease;-ms-transition:all .5s ease;-webkit-transition:all .5s ease;border-radius:4px;-webkit-border-radius:4px;outline:none;border:1px solid #dfe6e9;outline:none;-webkit-tap-highlight-color:rgba(0,0,0,0);background:#fff;-webkit-appearance:none}
 input:focus,select:focus,textarea:focus{border-color:#c5c5c5 !important;transition:border-color .8s;-webkit-transition:border-color .8s;-moz-transition:border-color .8s;-ms-transition:border-color .8s;outline:none !important}
 .form-control{color:#2d3436}
 select.form-control:not([size]):not([multiple]){height:44px}
