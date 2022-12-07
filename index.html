@@ -38,10 +38,10 @@
 											</button>
 											<ul class="dropdown-menu dropdown-menu-right">
 												<li>
-													<a href="step3-1_en.html"><img src="images/uk.png" height="18" alt="zh-hans" width="27" />英文</a>
+													<a href="step3_en.html"><img src="images/uk.png" height="18" alt="zh-hans" width="27" />英文</a>
 												</li>
 												<li>
-													<a href="step3-1_vi.html"><img src="images/vi.png" height="18" alt="vi" width="27" />越南文</a>
+													<a href="step3_vi.html"><img src="images/vi.png" height="18" alt="vi" width="27" />越南文</a>
 												</li>
 											</ul>
 										</div>
@@ -70,12 +70,12 @@
 			<div class="step-header">
 				<div class="container">
 					<div class="step-bar">
-					<div class="step-bar-active" style="width: 56%;"></div>
+					<div class="step-bar-active" style="width: 49%;"></div>
 				</div>
 				<ul class="row">
 					<li class="step-active step-finish col-xs-offset-1 col-xs-2">
 						<span></span>
-							<p>开户申请</p>
+						<p>开户申请</p>
 					</li>
 					<li class="step-active step-finish col-xs-2">
 						<span></span>
@@ -99,190 +99,146 @@
 		</aside>
 		<section class="main-content">
 			<div class="container">
-			<form class="form-horizontal" name="reg_testdate">
 				<div class="box">
-					<h5 class="box-title"><i></i><span>请填写您的真实信息</h5>
-					<div class="title-line">
-						<p></p>
-					</div>
+					<h5 class="box-title"><i></i>请填写您的真实信息</h5>
+					<div class="title-line"><p></p></div>
 					<div class="box-body">
+						<form class="form-horizontal">
 							<div class="form-group">
-								<label for="" class="col-lg-3 control-label"><em>*</em>中文姓名：</label>
+								<label for="" class="col-lg-3 control-label"><em>*</em>城市：</label>
 								<div class="col-lg-5">
-									<input type="text" class="form-control" placeholder="请输入您的中文姓名">
-								</div>
-								<p class="col-lg-4 help-block"><img src="images/check.png" alt="" /></p>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-lg-3 control-label"><em>*</em>性别：</label>
-								<div class="col-lg-5">
-									<select name="" class="form-control form-control-chosen" data-placeholder="请选择一项...">
-										<option value="">请选择一项...</option>
-										<option value="">男</option>
-										<option value="">女</option>
-									</select>
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-lg-3 control-label"><em>*</em>证件类型：</label>
-								<div class="col-lg-5">
-									<select name="" class="form-control form-control-chosen" data-placeholder="请选择一项...">
-										<option value="">请选择一项...</option>
-										<option value="">居民身份证</option>
-										<option value="">护照</option>
-										<option value="">驾驶证</option>
-										<option value="">其它</option>
-									</select>
+									<div class="row change-address">
+										<div class="col-lg-4">
+											<select class="form-control form-control-chosen" data-placeholder="请选择一项">
+												<option value="">请选择一项</option>
+												<option value="">中国</option>
+											</select>
+										</div>
+										<div class="col-lg-4">
+											<select name="" class="form-control form-control-chosen" data-placeholder="请选择一项">
+												<option value="">请选择一项</option>
+												<option value="">上海</option>
+											</select>
+										</div>
+										<div class="col-lg-4">
+											<select name="" class="form-control form-control-chosen" data-placeholder="请选择一项">
+												<option value="">请选择一项</option>
+												<option value="">黄浦</option>
+											</select>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="" class="col-lg-3 control-label"><em>*</em>证件号码：</label>
+								<label for="" class="col-lg-3 control-label"><em>*</em>地址：</label>
 								<div class="col-lg-5">
 									<input type="text" class="form-control" placeholder="">
 								</div>
 								<p class="col-lg-4 help-block">error!</p>
 							</div>
 							<div class="form-group">
-								<label for="" class="col-lg-3 control-label"><em>*</em>出生日期：</label>
+								<label for="" class="col-lg-3 control-label"><em>*</em>邮编：</label>
 								<div class="col-lg-5">
-									<div class="row change-address">
-										<div class="col-lg-4">
-											<select name="YYYY" class="form-control form-control-chosen" data-placeholder="请选择一项" onChange="YYYYDD(this.value)">
-												<option value="">请选择一项</option>
-											</select>
-										</div>
-										<div class="col-lg-4">
-											<select name="MM" class="form-control form-control-chosen" data-placeholder="请选择一项" onChange="MMDD(this.value)">
-												<option value="">请选择一项</option>
-											</select>
-										</div>
-										<div class="col-lg-4">
-											<select name="DD" class="form-control form-control-chosen" data-placeholder="请选择一项">
-												<option value="">请选择一项</option>
-											</select>
-										</div>
-									</div>
+									<input type="text" class="form-control" placeholder="">
+								</div>
+								<p class="col-lg-4 help-block"></p>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-lg-3 control-label"><em>*</em>收入来源：</label>
+								<div class="col-lg-5">
+								<select name="" class="form-control form-control-chosen" data-placeholder="请选择一项">
+									<option value="">请选择一项</option>
+									<option value="">工资收入</option>
+									<option value="">个人经营</option>
+									<option value="">投资红利</option>
+									<option value="">退休金/养老金</option>
+									<option value="">存款储蓄金</option>
+									<option value="">其他来源</option>
+								</select>
 								</div>
 							</div>
-					
-
-					</div>
-				</div>
-
-				<div class="box">
-					<h5 class="box-title"><i></i>交易知识和经验</h5>
-					<div class="title-line">
-						<p></p>
-					</div>
-					<div class="box-body">
-						<div class="experience-box">
-								<div class="qustion">
-									<div class="row">
-										<div class="col-lg-6">
-											<p><em>*</em>您之前是否有过相关产品的交易经验？</p>
-										</div>
-										<div class="col-md-6 col-lg-2">
-											<a href="#answer-box1" class=""><i class="fa fa-circle-o"></i><input type="radio"/>是</a>
-										</div>
-										<div class="col-md-6 col-lg-2">
-											<a href="#answer-box2" class=""><i class="fa fa-circle-o"></i><input type="radio"/>否</a>
-										</div>
-									</div>
+							<div class="form-group">
+								<label for="" class="col-lg-3 control-label"><em>*</em>职业：</label>
+								<div class="col-lg-5">
+									<select name="" class="form-control form-control-chosen" data-placeholder="请选择一项">
+										<option value="">请选择一项</option>
+										<option value="">无</option>
+										<option value="">管理人员/行政人员</option>
+										<option value="">文员</option>
+										<option value="">农民</option>
+										<option value="">家庭主妇</option>
+										<option value="">学生</option>
+										<option value="">教师</option>
+										<option value="">离退休人员</option>
+										<option value="">自雇</option>
+										<option value="">未受雇用的自由职业</option>
+									</select>
 								</div>
-								<div class="answer-box" id="answer-box1">
-									<p>1.杠杆（或保证金）交易涉及使用较少的资金来控制较大的头寸。</p>
-									<div class="answer-chosen">
-										<a href="javascript:"><i class="fa fa-circle-o"></i><input type="radio"/>正确</a>
-										<a href="javascript:"><i class="fa fa-circle-o"></i><input type="radio"/>错误</a>
-									</div>
-									<p>2.如果我没有足够的资金来弥补交易亏损，我的未结仓位将会以现有市场价格被强制平仓。</p>
-									<div class="answer-chosen">
-										<a href="javascript:"><i class="fa fa-circle-o"></i><input type="radio"/>正确</a>
-										<a href="javascript:"><i class="fa fa-circle-o"></i><input type="radio"/>错误</a>
-									</div>
-									<p>3.使用 Expert Advisor（EA, 自动交易程序）仍需要仔细监控仓位。</p>
-									<div class="answer-chosen">
-										<a href="javascript:"><i class="fa fa-circle-o"></i><input type="radio"/>正确</a>
-										<a href="javascript:"><i class="fa fa-circle-o"></i><input type="radio"/>错误</a>
-									</div>
+							</div>
+								<div class="form-group">
+								<label for="" class="col-lg-3 control-label"><em>*</em>您的净资产是：</label>
+								<div class="col-lg-5">
+									<select name="" class="form-control form-control-chosen" data-placeholder="请选择一项">
+										<option value="">请选择一项</option>
+										<option value="">少于 $25,000</option>
+										<option value="">$25,001~$50,000</option>
+										<option value="">$50,001~$1,000,000</option>
+										<option value="">超过 $1,000,000</option>
+									</select>
 								</div>
-								<div class="answer-box" id="answer-box2">
-									<p>1.市场行情不会快速波动。</p>
-									<div class="answer-chosen">
-										<a href="javascript:"><i class="fa fa-circle-o"></i><input type="radio"/>正确</a>
-										<a href="javascript:"><i class="fa fa-circle-o"></i><input type="radio"/>错误</a>
-									</div>
-									<p>2.止损订单可以用来减少进一步的潜在损失。</p>
-									<div class="answer-chosen">
-										<a href="javascript:"><i class="fa fa-circle-o"></i><input type="radio"/>正确</a>
-										<a href="javascript:"><i class="fa fa-circle-o"></i><input type="radio"/>错误</a>
-									</div>
-									<p>3.在交易外汇/差价合约交易中，买入价和卖出价之间的差异通常称为“点差“。</p>
-									<div class="answer-chosen">
-										<a href="javascript:"><i class="fa fa-circle-o"></i><input type="radio"/>正确</a>
-										<a href="javascript:"><i class="fa fa-circle-o"></i><input type="radio"/>错误</a>
-									</div>
+							</div>
+								<div class="form-group">
+								<label for="" class="col-lg-3 control-label"><em>*</em>账户交易类型：</label>
+								<div class="col-lg-5">
+									<select name="" class="form-control form-control-chosen" data-placeholder="请选择一项">
+										<option value="">请选择一项</option>
+										<option value="">标准账户（最低入金 500USD）</option>
+										<option value="">PRO 账户（最低入金 500USD）</option>
+									</select>
 								</div>
-
-
-						</div>
-					</div>
-
-				</div>
-				<div class="box">
-					<h5 class="box-title"><i></i>确认并接受协议</h5>
-					<div class="title-line">
-						<p></p>
-					</div>
-					<div class="box-body">
-							<div class="agreement-box">
-								<p><i class="fa fa-square-o"></i><input type="checkbox"/>我确认在此申请中所提供的都是真实正确的信息。</p>
-								<p><i class="fa fa-square-o"></i><input type="checkbox" />我理解外汇交易和和差价合约保证金交易含有较高损失风险，甚至包括超过投资本金的损失额度。杠杆交易的影响是同时放大收益和损失。我能够承担并了解所述风险。交易金融衍生品可能不适合所有类型的投资者，我已完全理解将要面临的有关风险。</p>
-								<p><i class="fa fa-square-o"></i><input type="checkbox" />本人/吾等接受并确认 GO Markets 向介绍人支付介绍费 。</p>
-								<ul class="agreement-text agreement-text-zh">
-									<li>如您由您的介绍人推介至 GO Markets，则介绍人将根据您的交易活动收取介绍费。</li>
-									<li>本人/吾等（客户）同意 GO Markets 根据本人/吾等在 GO Markets 进行的外汇和衍生品交易向介绍人支付介绍费。本人/吾等指示并授权 GO Markets 代表本人/吾等向介绍人支付介绍费，并理解该款项的支付仅与交易服务相关，并不视为任何财务建议的报酬。</li>
-								</ul>
-								<p><i class="fa fa-square-o"></i><input type="checkbox" />我承诺账户只用于本人的交易和操作，不被第三方使用。一旦被他人使用而导致的风险和损失，我愿意自行承担。</p>
-								<p id="checkAll"><i class="fa fa-square-o"></i><input type="checkbox" />我已阅读，理解并同意接受 GO Markets 高汇提供有关的金融产品账户条款和条件的法律约束。</p>
-								<div class="agreement-clause">
-									<div class="row agreement-clause-check">
-										<div class="col-md-6 col-lg-3">
-											<span><i class="fa fa-square-o"></i><input type="checkbox"/><a target="_blank" href="https://chn.gomarkets.com/About/LegalDocuments">GO Markets 高汇产品披露声明</a></span>
-										</div>
-										<div class="col-md-6 col-lg-3">
-											<span><i class="fa fa-square-o"></i><input type="checkbox"/><a target="_blank" href="https://chn.gomarkets.com/About/LegalDocuments">GO Markets 高汇金融服务指南</a></span>
-										</div>
-										<div class="col-md-6 col-lg-3">
-											<span><i class="fa fa-square-o"></i><input type="checkbox"/><a target="_blank" href="https://chn.gomarkets.com/About/LegalDocuments">GO Markets 高汇隐私权政策</a></span>
-										</div>
-										<div class="col-md-6 col-lg-3">
-											<span><i class="fa fa-square-o"></i><input type="checkbox"/><a target="_blank" href="https://chn.gomarkets.com/About/LegalDocuments">GO Markets 高汇条款及细则</a></span>
-										</div>
-										<div class="col-md-6 col-lg-3">
-											<span><i class="fa fa-square-o"></i><input type="checkbox"/><a target="_blank" href="https://chn.gomarkets.com/About/LegalDocuments">GO Markets 	高汇外汇智能指南</a></span>
-										</div>
-										<div class="col-md-6 col-lg-3">
-											<span><i class="fa fa-square-o"></i><input type="checkbox"/><a target="_blank" href="https://chn.gomarkets.com/About/LegalDocuments">GO Markets 高汇风险警告</a></span>
-										</div>
-										<div class="col-md-6 col-lg-3">
-											<span><i class="fa fa-square-o"></i><input type="checkbox"/><a target="_blank" href="https://chn.gomarkets.com/About/LegalDocuments">GO Markets 高汇公平使用政策</a></span>
-										</div>
-									</div>
+							</div>
+								<div class="form-group">
+								<label for="" class="col-lg-3 control-label"><em>*</em>基础货币：</label>
+								<div class="col-lg-5">
+									<select name="" class="form-control form-control-chosen" data-placeholder="请选择一项">
+										<option value="">请选择一项</option>
+										<option value="" selected="selected">USD 美元</option>
+										<option value="">EUR 欧元</option>
+										<option value="">GBP 英镑</option>
+										<option value="">AUD 澳元</option>
+										<option value="">NZD 新西兰元</option>
+										<option value="">SGD 新加坡元</option>
+									</select>
 								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-lg-3 control-label">推荐人：</label>
+								<div class="col-lg-5">
+									<input type="text" class="form-control" placeholder="">
+								</div>
+								<p class="col-lg-4 help-block"></p>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-lg-3 control-label"><em>*</em>您要交易的产品种类：</label>
+								<div class="col-lg-5">
+									<span id="trade-type">
+										<i class="fa fa-square-o"></i>外汇保证金和差价合约
+									</span>
+								</div>
+								<p class="col-lg-4 help-block"></p>
 							</div>
 							<div class="form-group buttons-group">
-								<div class="col-lg-offset-3 col-md-6 col-lg-3">
-									<button type="button" class="buttons buttons-success" onclick="window.open('step3_zh.html','_self')"><i class="fa fa-spinner fa-spin"></i>Previous</button>
+								<div class="col-lg-offset-3 col-md-6 col-lg-2">
+									<button type="button" class="buttons buttons-success" onclick="window.open('step2_zh.html','_self')"><i class="fa fa-spinner fa-spin"></i>上一步</button>
 								</div>
-								<div class="col-md-6 col-lg-3">
-									<button type="button" class="buttons buttons-success" onclick="window.open('step3-2_zh.html','_self')"><i class="fa fa-spinner fa-spin"></i>Save and Next</button>
+								<div class="col-md-6 col-lg-2">
+									<button type="button" class="buttons buttons-success"  onclick="window.open('step3-1_zh.html','_self')"><i class="fa fa-spinner fa-spin"></i>保存并下一步</button>
 								</div>
 							</div>
-						
+						</form>
+
 					</div>
 				</div>
-</form>
 			</div>
 
 		</section>
@@ -542,7 +498,5 @@
 		<script src="js/telInput.js"></script>
 		<script src="js/chosen.js"></script>
 		<script src="js/common.js"></script>
-		<script src="js/chosen-birthday.js"></script>
 	</body>
-
 </html>
