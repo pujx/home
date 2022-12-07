@@ -1,1710 +1,548 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 
 	<head>
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		<meta name="format-detection" content="telephone=no" />
 		<link rel="icon" href="favicon.ico">
 		<title></title>
-		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
-		<link rel="stylesheet" href="css/plugins.min.css" />
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/Gotham-Light.css" />
-		<link rel="stylesheet" href="css/style_cn.css"  />
-
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/jquery-confirm.min.css" />
+		<link rel="stylesheet" href="css/chosen-1.0.8.min.css" />
+		<link rel="stylesheet" href="css/interInput.css" />
+		<link rel="stylesheet" href="css/index.css">
+		<!--[if lt IE 9]>
+      			<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      			<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script> 
+       <![endif]-->
+		<!--[if lte IE 8]>
+ 				<script>window.location.href='https://support.dmeng.net/upgrade-your-browser.html?referrer='+location.href;</script>
+ 		<![endif]-->
 	</head>
 
-	<body data-spy="scroll" data-target=".nav-list" data-offset="300">
-		<!-- preloader -->
-		<div id="preloader1"></div>
-		<!-- preloader end  -->
-		<!-- 透明背景 start -->
-		<div class="offcanvas-overlay"></div>
-		<!-- 透明背景 end -->
-		<!-- 移动端菜单 Start -->
-		<div id="offcanvas-cart" class="offcanvas theme1">
-			<div class="inner">
-				<a href="javascript:" class="offcanvas-close"><img src="images/nav-close.png" alt="" /></a>
-				<div class="">
-					<ul class="mobile-menu" id="offcanvas-menu2">
-						<li>
-							<a href="javascript:">ABOUT</a>
-							<ul class="category-sub-menu">
-								<li>
-									<a href="why-radex-markets.html">Why RADEX MARKETS</a>
+	<body>
+		<header class="main-header">
+			<div class="container">
+				<nav class="navbar">
+				<a href="https://chn.gomarkets.com/" target="_blank" class="logo"><img src="images/logo.png" alt="logo"></a>
+					<div class="navbar-custom-menu">
+						<ul>
+							<li>
+									<div class="header-dropdown btn-group">
+											<button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                								<img src="images/zh-hans.png" height="18" alt="en" width="27" />中文          
+					                			<span class="fa fa-angle-down"></span>
+											</button>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li>
+													<a href="step3-1_en.html"><img src="images/uk.png" height="18" alt="zh-hans" width="27" />英文</a>
+												</li>
+												<li>
+													<a href="step3-1_vi.html"><img src="images/vi.png" height="18" alt="vi" width="27" />越南文</a>
+												</li>
+											</ul>
+										</div>
 								</li>
-								<li>
-									<a href="regulation-safety.html">Regulation & Safety</a>
-								</li>
-								<li>
-									<a href="rm-news-room.html">RM News Room</a>
-								</li>
-								<li>
-									<a href="contact-radex-markets.html">Contact RADEX MARKETS</a>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a href="javascript:">PRODUCTS</a>
-							<ul class="category-sub-menu">
-								<li>
-									<a href="forex.html">Forex</a>
-								</li>
-								<li>
-									<a href="metals.html">Metals</a>
-								</li>
-								<li>
-									<a href="indices.html">CFD/Indices</a>
-								</li>
-								<li>
-									<a href="share-cfds.html">SHARE CFDs</a>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a href="javascript:">ACCOUNT</a>
-							<ul class="category-sub-menu">
-								<li>
-									<a href="standard-account.html">Standard Account</a>
-								</li>
-								<li>
-									<a href="raw-account.html">RAW Account</a>
-								</li>
-								<li>
-									<a href="promos.html">Promos</a>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a href="javascript:">Tools</a>
-							<ul class="category-sub-menu">
-								<li>
-									<a href="trading-platform.html">Trading Platform</a>
-								</li>
-								<li class="disabled">
-									<a href="javascript:">Social Trading (coming soon)</a>
-								</li>
-								<li class="disabled">
-									<a href="trading-central.html">Trading Central (coming soon)</a>
-								</li>
-								<li>
-									<a href="education.html">Education</a>
-								</li>
-								<li>
-									<a href="forex-news.html">Forex News</a>
-								</li>
-								<li>
-									<a href="economic-calendar.html">Economic Calendar</a>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a href="javascript:" target="_blank">Login</a>
-						</li>
-						<li>
-							<a href="javascript:" target="_blank" class="nav-linked">OPEN ACCOUNT</a>
-						</li>
-						<li class="m-nav-line">
-							<hr />
-						</li>
-						<li class="right-bar-toogle right-bar-language">
-							<a href="javascript:">
-								<img src="images/top-language.svg" alt="" />
-								<i class="fa fa-angle-down"></i>
-							</a>
-							<ul class="scale-up">
-								<li>
-									<a href="javascript:">English</a>
-								</li>
-								<li>
-									<a href="javascript:">简体中文</a>
-								</li>
-								<li>
-									<a href="javascript:">繁體中文</a>
-								</li>
-								<li>
-									<a href="javascript:">TH ภาษาไทย</a>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-
-			</div>
-			<div class="mobile-online-float">
-				<a href="javascript:" data-toggle="modal" data-target="#feedback-modal" id="feedback">
-					<img src="images/float-feedback-m.svg" alt="" />
-				</a>
-				<a href="javascript:" target="_blank">
-					<img src="images/float-chat-m.svg" alt="" />
-				</a>
-				<a href="javascript:" data-toggle="modal" data-target="#call-back-modal">
-					<img src="images/float-tel-m.svg" alt="" />
-				</a>
-
-			</div>
-
-		</div>
-		<!-- 移动端菜单  End -->
-		<!-- 头部 start -->
-		<header id="sticky" class="header">
-			<div class="header-middle">
-				<div class="container">
-					<div class="row align-items-center">
-						<div class="col-12 col-lg-3">
-							<div class="logo">
-								<a href="index.html"><img src="images/logo.svg" alt="logo"></a>
-							</div>
-						</div>
-						<div class="col-md-9 d-none d-lg-block">
-							<nav class="header-bottom theme1">
-								<ul class="main-menu d-flex align-items-center justify-content-end">
-									<li>
-										<a href="javascript:">ABOUT</a>
-										<ul class="sub-menu">
-											<li>
-												<a href="why-radex-markets.html">Why RADEX MARKETS</a>
-											</li>
-											<li>
-												<a href="regulation-safety.html">Regulation & Safety</a>
-											</li>
-											<li>
-												<a href="rm-news-room.html">RM News Room</a>
-											</li>
-											<li>
-												<a href="contact-radex-markets.html">Contact RADEX MARKETS</a>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<a href="javascript:">PRODUCTS</a>
-										<ul class="sub-menu">
-											<li>
-												<a href="forex.html">Forex</a>
-											</li>
-											<li>
-												<a href="metals.html">Metals</a>
-											</li>
-											<li>
-												<a href="indices.html">CFD/Indices</a>
-											</li>
-											<li>
-												<a href="share-cfds.html">SHARE CFDs</a>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<a href="javascript:">ACCOUNT</a>
-										<ul class="sub-menu">
-											<li>
-												<a href="standard-account.html">Standard Account</a>
-											</li>
-											<li>
-												<a href="raw-account.html">RAW Account</a>
-											</li>
-											<li>
-												<a href="promos.html">Promos</a>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<a href="javascript:">TOOLS</a>
-										<ul class="sub-menu">
-											<li>
-												<a href="trading-platform.html">Trading Platform</a>
-											</li>
-
-											<li class="disabled">
-												<a href="javascript:">Social Trading (coming soon)</a>
-											</li>
-											<li>
-												<a href="trading-central.html">Trading Central</a>
-											</li>
-											<li>
-												<a href="education.html">Education</a>
-											</li>
-											<li>
-												<a href="forex-news.html">Forex News</a>
-											</li>
-											<li>
-												<a href="economic-calendar.html">Economic Calendar</a>
-											</li>
-										</ul>
-									</li>
-									<li class="nav-login">
-										<a href="javascript:" target="_blank">LOGIN</a>
-									</li>
-									<li class="nav-open-account">
-										<a href="javascript:" class="btn-gray" target="_blank">OPEN ACCOUNT</a>
-									</li>
-									<li class="right-bar-toogle right-bar-language">
-										<a href="javascript:"><img src="images/top-language.svg" alt="" /><i class="fa fa-angle-down"></i></a>
-										<ul class="scale-up">
-											<li>
-												<a href="javascript:">简体中文</a>
-											</li>
-											<li>
-												<a href="javascript:">English</a>
-											</li>
-											<li>
-												<a href="javascript:">繁體中文</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</nav>
-						</div>
-						<div class="mobile-menu-toggle theme1 d-lg-none">
-							<a href="#offcanvas-cart" class="offcanvas-toggle">
-								<img src="images/mobile-menu-toggle.svg" alt="" />
-							</a>
-						</div>
+							<li>
+								<a href="https://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzgwMDAyNDIxMl8yNTcxODdfODAwMDI0MjEyXzJf" target="_blank" class="right-bar-link right-bar-service" title="online service"><i></i></a>
+							</li>
+							<li>
+								<a href="javascript:" class="right-bar-link right-bar-tel" title="call back" data-toggle="modal" data-target="#call-back-modal"><i></i></a>
+							</li>
+							<li>
+								<a href="mailto:AsiaSupport@gomarkets.sc " class="right-bar-link right-bar-mail" title="email"><i></i></a>
+							</li>
+							<li>
+								<a href="tel:400-120-8537" class="right-bar-user">联系我们：<b>400 120 8537</b></a>
+							</li>
+						</ul>
 					</div>
-				</div>
+				</nav>
 			</div>
 		</header>
-		<!-- 头部 end -->
-		<!--banner-->
-		<div class="edu-banner-box">
-			<!--<video muted autoplay="autoplay" loop="loop" x5-playsinline="true" playsinline="true" webkit-playsinline="true" x-webkit-airplay="allow" preload="auto" x5-video-player-type="h5" x5-video-player-fullscreen="true">
-				<source src="mp4/account.mp4" type="video/mp4">
-			</video>-->
+
+		<aside class="step-body">
+			<p class="step-bar-bg"></p>
+			<p class="step-bar-bg-active"></p>
+			<div class="step-header">
+				<div class="container">
+					<div class="step-bar">
+					<div class="step-bar-active" style="width: 56%;"></div>
+				</div>
+				<ul class="row">
+					<li class="step-active step-finish col-xs-offset-1 col-xs-2">
+						<span></span>
+							<p>开户申请</p>
+					</li>
+					<li class="step-active step-finish col-xs-2">
+						<span></span>
+						<p>基本账户</p>
+					</li>
+					<li class="step-active col-xs-2">
+						<span></span>
+						<p>个人信息</p>
+					</li>
+					<li class="col-xs-2">
+						<span></span>
+						<p>提交证明</p>
+					</li>
+					<li class="col-xs-2">
+						<span></span>
+						<p>注册成功</p>
+					</li>
+				</ul>
+				</div>
+			</div>
+		</aside>
+		<section class="main-content">
 			<div class="container">
-				<div class="banner">
-					<div class="edu-banner-text banner-text">
-						<h3 class="banner-text-tit">EDUCATION</h3>
-						<p class="banner-slogan">KNOWLEDGE IS POWER</p>
+			<form class="form-horizontal" name="reg_testdate">
+				<div class="box">
+					<h5 class="box-title"><i></i><span>请填写您的真实信息</h5>
+					<div class="title-line">
+						<p></p>
+					</div>
+					<div class="box-body">
+							<div class="form-group">
+								<label for="" class="col-lg-3 control-label"><em>*</em>中文姓名：</label>
+								<div class="col-lg-5">
+									<input type="text" class="form-control" placeholder="请输入您的中文姓名">
+								</div>
+								<p class="col-lg-4 help-block"><img src="images/check.png" alt="" /></p>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-lg-3 control-label"><em>*</em>性别：</label>
+								<div class="col-lg-5">
+									<select name="" class="form-control form-control-chosen" data-placeholder="请选择一项...">
+										<option value="">请选择一项...</option>
+										<option value="">男</option>
+										<option value="">女</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-lg-3 control-label"><em>*</em>证件类型：</label>
+								<div class="col-lg-5">
+									<select name="" class="form-control form-control-chosen" data-placeholder="请选择一项...">
+										<option value="">请选择一项...</option>
+										<option value="">居民身份证</option>
+										<option value="">护照</option>
+										<option value="">驾驶证</option>
+										<option value="">其它</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-lg-3 control-label"><em>*</em>证件号码：</label>
+								<div class="col-lg-5">
+									<input type="text" class="form-control" placeholder="">
+								</div>
+								<p class="col-lg-4 help-block">error!</p>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-lg-3 control-label"><em>*</em>出生日期：</label>
+								<div class="col-lg-5">
+									<div class="row change-address">
+										<div class="col-lg-4">
+											<select name="YYYY" class="form-control form-control-chosen" data-placeholder="请选择一项" onChange="YYYYDD(this.value)">
+												<option value="">请选择一项</option>
+											</select>
+										</div>
+										<div class="col-lg-4">
+											<select name="MM" class="form-control form-control-chosen" data-placeholder="请选择一项" onChange="MMDD(this.value)">
+												<option value="">请选择一项</option>
+											</select>
+										</div>
+										<div class="col-lg-4">
+											<select name="DD" class="form-control form-control-chosen" data-placeholder="请选择一项">
+												<option value="">请选择一项</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+					
+
+					</div>
+				</div>
+
+				<div class="box">
+					<h5 class="box-title"><i></i>交易知识和经验</h5>
+					<div class="title-line">
+						<p></p>
+					</div>
+					<div class="box-body">
+						<div class="experience-box">
+								<div class="qustion">
+									<div class="row">
+										<div class="col-lg-6">
+											<p><em>*</em>您之前是否有过相关产品的交易经验？</p>
+										</div>
+										<div class="col-md-6 col-lg-2">
+											<a href="#answer-box1" class=""><i class="fa fa-circle-o"></i><input type="radio"/>是</a>
+										</div>
+										<div class="col-md-6 col-lg-2">
+											<a href="#answer-box2" class=""><i class="fa fa-circle-o"></i><input type="radio"/>否</a>
+										</div>
+									</div>
+								</div>
+								<div class="answer-box" id="answer-box1">
+									<p>1.杠杆（或保证金）交易涉及使用较少的资金来控制较大的头寸。</p>
+									<div class="answer-chosen">
+										<a href="javascript:"><i class="fa fa-circle-o"></i><input type="radio"/>正确</a>
+										<a href="javascript:"><i class="fa fa-circle-o"></i><input type="radio"/>错误</a>
+									</div>
+									<p>2.如果我没有足够的资金来弥补交易亏损，我的未结仓位将会以现有市场价格被强制平仓。</p>
+									<div class="answer-chosen">
+										<a href="javascript:"><i class="fa fa-circle-o"></i><input type="radio"/>正确</a>
+										<a href="javascript:"><i class="fa fa-circle-o"></i><input type="radio"/>错误</a>
+									</div>
+									<p>3.使用 Expert Advisor（EA, 自动交易程序）仍需要仔细监控仓位。</p>
+									<div class="answer-chosen">
+										<a href="javascript:"><i class="fa fa-circle-o"></i><input type="radio"/>正确</a>
+										<a href="javascript:"><i class="fa fa-circle-o"></i><input type="radio"/>错误</a>
+									</div>
+								</div>
+								<div class="answer-box" id="answer-box2">
+									<p>1.市场行情不会快速波动。</p>
+									<div class="answer-chosen">
+										<a href="javascript:"><i class="fa fa-circle-o"></i><input type="radio"/>正确</a>
+										<a href="javascript:"><i class="fa fa-circle-o"></i><input type="radio"/>错误</a>
+									</div>
+									<p>2.止损订单可以用来减少进一步的潜在损失。</p>
+									<div class="answer-chosen">
+										<a href="javascript:"><i class="fa fa-circle-o"></i><input type="radio"/>正确</a>
+										<a href="javascript:"><i class="fa fa-circle-o"></i><input type="radio"/>错误</a>
+									</div>
+									<p>3.在交易外汇/差价合约交易中，买入价和卖出价之间的差异通常称为“点差“。</p>
+									<div class="answer-chosen">
+										<a href="javascript:"><i class="fa fa-circle-o"></i><input type="radio"/>正确</a>
+										<a href="javascript:"><i class="fa fa-circle-o"></i><input type="radio"/>错误</a>
+									</div>
+								</div>
+
+
+						</div>
 					</div>
 
 				</div>
-
-			</div>
-
-		</div>
-		<!--banner end-->
-		<div class="edu-second-box">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 col-md-5"></div>
-					<div class="col-12 col-md-7">
-						<div class="edu-second-text">
-							<h2>Guides & Tutorials</h2>
-							<p>Whether you are a beginner or an everyday trader, we encourage you to use our resources to learn and further develop your trading techniques. Offering assistance in getting started as well as helping to take your trading to the next level.</p>
-						</div>
+				<div class="box">
+					<h5 class="box-title"><i></i>确认并接受协议</h5>
+					<div class="title-line">
+						<p></p>
+					</div>
+					<div class="box-body">
+							<div class="agreement-box">
+								<p><i class="fa fa-square-o"></i><input type="checkbox"/>我确认在此申请中所提供的都是真实正确的信息。</p>
+								<p><i class="fa fa-square-o"></i><input type="checkbox" />我理解外汇交易和和差价合约保证金交易含有较高损失风险，甚至包括超过投资本金的损失额度。杠杆交易的影响是同时放大收益和损失。我能够承担并了解所述风险。交易金融衍生品可能不适合所有类型的投资者，我已完全理解将要面临的有关风险。</p>
+								<p><i class="fa fa-square-o"></i><input type="checkbox" />本人/吾等接受并确认 GO Markets 向介绍人支付介绍费 。</p>
+								<ul class="agreement-text agreement-text-zh">
+									<li>如您由您的介绍人推介至 GO Markets，则介绍人将根据您的交易活动收取介绍费。</li>
+									<li>本人/吾等（客户）同意 GO Markets 根据本人/吾等在 GO Markets 进行的外汇和衍生品交易向介绍人支付介绍费。本人/吾等指示并授权 GO Markets 代表本人/吾等向介绍人支付介绍费，并理解该款项的支付仅与交易服务相关，并不视为任何财务建议的报酬。</li>
+								</ul>
+								<p><i class="fa fa-square-o"></i><input type="checkbox" />我承诺账户只用于本人的交易和操作，不被第三方使用。一旦被他人使用而导致的风险和损失，我愿意自行承担。</p>
+								<p id="checkAll"><i class="fa fa-square-o"></i><input type="checkbox" />我已阅读，理解并同意接受 GO Markets 高汇提供有关的金融产品账户条款和条件的法律约束。</p>
+								<div class="agreement-clause">
+									<div class="row agreement-clause-check">
+										<div class="col-md-6 col-lg-3">
+											<span><i class="fa fa-square-o"></i><input type="checkbox"/><a target="_blank" href="https://chn.gomarkets.com/About/LegalDocuments">GO Markets 高汇产品披露声明</a></span>
+										</div>
+										<div class="col-md-6 col-lg-3">
+											<span><i class="fa fa-square-o"></i><input type="checkbox"/><a target="_blank" href="https://chn.gomarkets.com/About/LegalDocuments">GO Markets 高汇金融服务指南</a></span>
+										</div>
+										<div class="col-md-6 col-lg-3">
+											<span><i class="fa fa-square-o"></i><input type="checkbox"/><a target="_blank" href="https://chn.gomarkets.com/About/LegalDocuments">GO Markets 高汇隐私权政策</a></span>
+										</div>
+										<div class="col-md-6 col-lg-3">
+											<span><i class="fa fa-square-o"></i><input type="checkbox"/><a target="_blank" href="https://chn.gomarkets.com/About/LegalDocuments">GO Markets 高汇条款及细则</a></span>
+										</div>
+										<div class="col-md-6 col-lg-3">
+											<span><i class="fa fa-square-o"></i><input type="checkbox"/><a target="_blank" href="https://chn.gomarkets.com/About/LegalDocuments">GO Markets 	高汇外汇智能指南</a></span>
+										</div>
+										<div class="col-md-6 col-lg-3">
+											<span><i class="fa fa-square-o"></i><input type="checkbox"/><a target="_blank" href="https://chn.gomarkets.com/About/LegalDocuments">GO Markets 高汇风险警告</a></span>
+										</div>
+										<div class="col-md-6 col-lg-3">
+											<span><i class="fa fa-square-o"></i><input type="checkbox"/><a target="_blank" href="https://chn.gomarkets.com/About/LegalDocuments">GO Markets 高汇公平使用政策</a></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-group buttons-group">
+								<div class="col-lg-offset-3 col-md-6 col-lg-3">
+									<button type="button" class="buttons buttons-success" onclick="window.open('step3_zh.html','_self')"><i class="fa fa-spinner fa-spin"></i>Previous</button>
+								</div>
+								<div class="col-md-6 col-lg-3">
+									<button type="button" class="buttons buttons-success" onclick="window.open('step3-2_zh.html','_self')"><i class="fa fa-spinner fa-spin"></i>Save and Next</button>
+								</div>
+							</div>
+						
 					</div>
 				</div>
-				<div class="edu-second-menu">
-					<ul>
-						<li class="active">
-							<a href="javascript:">FOREX Introduction <span>start</span></a>
-						</li>
-						<li>
-							<a href="javascript:">FOREX Basics <span>start</span></a>
-						</li>
-						<li>
-							<a href="javascript:">Fundamental Trading <span>start</span></a>
-						</li>
-						<li>
-							<a href="javascript:">Technical Trading <span>start</span></a>
-						</li>
-						<li>
-							<a href="javascript:">Summary <span>start</span></a>
-						</li>
-					</ul>
-				</div>
-
+</form>
 			</div>
 
-		</div>
-
-		<div class="edu-slide-box">
-			<ul>
-				<li style="display: block;">
-					<div class="container tabs-text-scope">
-						<div class="edu-tabs">
-							<div class="edu-tabs-nav">
-								<div class="nav-list">
-									<div class="operate hide"></div>
-									<div class="tabs-list-menu">
-										<div class="list-group">
-											<a class="list-group-item" href="#glance-1">FOREX Overview</a>
-											<a class="list-group-item" href="#glance-2">Why FOREX?</a>
-											<a class="list-group-item" href="#glance-3">FOREX Features</a>
-										</div>
-										<div class="switch-wrap">
-											<a class="btnLeft" href="javascript:;"><img src="images/swiper-button-prev.png" alt="" /></a>
-											<a class="btnRight" href="javascript:;"><img src="images/swiper-button-next.png" alt="" /></a>
-										</div>
-									</div>
-
-								</div>
-							</div>
-
-							<div class="edu-tabs-r">
-								<div class="edu-tabs-text" id="glance-1">
-									<h3 class="tabs-text-title">FOREX Overview</h3>
-									<div class="tabs-text-box">
-										<p>Forex is one of the largest trading markets. </p>
-										<p>Forex (foreign exchange market) where one currency is trad­ed for another currency. Some traders are just looking to exchange their currency for a foreign currency, although most are currency traders, which means they watch the movement between currencies and speculate on the upcoming exchange rates and their movements, very similar to traders that speculate on the stock market. </p>
-										<p>Price movements on the exchange are normally the result of a countries cash flows in addi­tion to global economic conditions. Most news that impacts the market is released publicly, this allows traders to receive the information at the same time to reduce insider trading. </p>
-										<p>Currencies are traded against each other and represented in currency pairs Example:  ''EUR/USD in this pair EUR (Euro) is the first currency, and USD (U.S. dollar) is the second currency. So if you were to trade EUR/USD one unit would be shown at the current exchange rate 1 euro = 1.21 USD.'' </p>
-										<p>Forex has long trading hours 24/5, open Sunday evening until Friday evening.</p>
-									</div>
-								</div>
-								<hr />
-								<div class="edu-tabs-text" id="glance-2">
-									<h3 class="tabs-text-title">Why FOREX?</h3>
-									<div class="tabs-text-box">
-										<p>Only a select number of new traders understand the advantages of trading FOREX. This market is becoming a popular choice due to the advantages that you don't get in other markets.</p>
-										<p>Below we have listed a few key points of the benefits that traders gain when trading FOREX.</p>
-										<p><b>1. Low trading cost. </b>
-											<br />Unlike other markets, FOREX traders do not pay government fees, clearing fees, and exchange fees. 
-											<br />
-          In Forex brokers make their profits from the difference in the bid and ask price.
-
-										</p>
-										<p><b>2. Flexible trading size.</b>
-											<br />Traders can trade from as low as 0.01 lots, which means you can also trade with a smaller fund, making the market available to most.
-										</p>
-										<p><b>3. 24/5 Market hours.</b>
-											<br />The Forex market is open day and night Monday to Friday, which makes this market a good choice for part-time traders who have limited time to trade.
-										</p>
-										<p><b>4.	Leverage.</b>
-											<br />Even traders who have small deposits are able to trade larger contract sizes due to the leverage most brokers offer.
-										</p>
-									</div>
-								</div>
-								<hr />
-								<div class="edu-tabs-text" id="glance-3">
-									<h3 class="tabs-text-title">FOREX Features</h3>
-									<div class="tabs-text-box">
-										<p>Trading FOREX can give the opportunity to get to financial freedom, but there are definitely risks involved.
-Below we have listed some reasons why day trading is so popular.  
-</p>
-										<p>
-1.	No matter your background you can get into the industry, with a lot of tools and materials online with a bit of research and self-education you can become a trader. 
-</p>
-										<p>2.	Work for yourself and control your investment choices.</p>
-										<p>3.	Work/Trade from anywhere with most trading platforms available on mobile applications now, you are not restricted to sitting in front of the computer to trade.</p>
-										<p>4.	Flexible trading hours, as FOREX is 24/5 you can trade when your schedule allows the time, making the market accessible to most.</p>
-										<p>5.	You don't need big sums of money to start your trading business.</p>
-										<p>6.	Fast movement of money you can place a trade and convert to the currency you are trading in seconds, allowing you to get in and out fast.</p>
-										<p>7.	Low fees for your trading allowing you to keep more of the profits.</p>
-										<p>8.	Not many tools are needed to start, you just need internet, a computer, or smartphone, and an online broker. </p>
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-
-				</li>
-				<li>
-					<div class="container tabs-text-scope">
-						<div class="edu-tabs">
-							<div class="edu-tabs-nav">
-								<div class="nav-list">
-									<div class="operate hide"></div>
-									<div class="tabs-list-menu">
-										<div class="list-group">
-											<a class="list-group-item" href="#basic-1">Currency Pairs</a>
-											<a class="list-group-item" href="#basic-2">報價</a>
-											<a class="list-group-item" href="#basic-3">圖表</a>
-											<a class="list-group-item" href="#basic-4">支撐與壓力線</a>
-											<a class="list-group-item" href="#basic-5">趨勢線</a>
-											<a class="list-group-item" href="#basic-6">圖表型態</a>
-											<a class="list-group-item" href="#basic-7">時間區間</a>
-											<a class="list-group-item" href="#basic-8">指標</a>
-											<a class="list-group-item" href="#basic-9">交易時段</a>
-											<a class="list-group-item" href="#basic-10">外匯交易單類型</a>
-											<a class="list-group-item" href="#basic-11">點</a>
-											<a class="list-group-item" href="#basic-12">新聞的重要性</a>
-										</div>
-										<div class="switch-wrap">
-											<a class="btnLeft" href="javascript:;"><img src="images/swiper-button-prev.png" alt="" /></a>
-											<a class="btnRight" href="javascript:;"><img src="images/swiper-button-next.png" alt="" /></a>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="edu-tabs-r">
-								<div class="edu-tabs-text" id="basic-1">
-									<h3 class="tabs-text-title">貨幣對</h3>
-									<div class="tabs-text-box">
-										<p>你可以將貨幣對間匯率變動想像成兩個幣值間的戰鬥。這個過程是不間斷持續的，造就了匯率的波動。這些變動背後的原因可能是兩個國家之間的強勢與弱勢等原因。例如，當你以歐元交易美元時，便形成了EUR/USD的貨幣對。</p>
-										<p>我們常稱的主要貨幣對指的是包含了美元(USD)的商品。在外匯市場中，主要貨幣對是最多交易者交易的商品，也是最有流動性的商品。下列的貨幣對即是常見的主要貨幣對，與相對應的國家。</p>
-										<p>
-											<table class="table table-bordered table-hover table-striped text-center">
-												<thead>
-													<tr>
-														<th width="50%">主要貨幣對</th>
-														<th width="50%">對應之國家</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>EUR/USD</td>
-														<td>歐洲區／美國</td>
-													</tr>
-													<tr>
-														<td>GBP/USD</td>
-														<td>英國／美國</td>
-													</tr>
-													<tr>
-														<td>USD/JPY</td>
-														<td>美國／日本</td>
-													</tr>
-													<tr>
-														<td>USD/CAD</td>
-														<td>美國／加拿大</td>
-													</tr>
-													<tr>
-														<td>NZD/USD</td>
-														<td>新西蘭／美國</td>
-													</tr>
-													<tr>
-														<td>USD/CHF</td>
-														<td>美國／瑞士</td>
-													</tr>
-													<tr>
-														<td>AUD/USD</td>
-														<td>澳洲／美國</td>
-													</tr>
-												</tbody>
-											</table>
-										</p>
-
-										<p>當貨幣對當中不包含美元在其中時，我們稱為交叉貨幣對商品(cross-currency/crosses)，其中有常以歐元、日幣、英鎊為主。常見的交叉貨幣對商品如下：</p>
-										<p>
-											<table class="table table-bordered table-hover table-striped text-center">
-												<thead>
-													<tr>
-														<th colspan="2">歐元相關貨幣對</th>
-													</tr>
-													<tr>
-														<th width="50%">貨幣對</th>
-														<th width="50%">對應之國家</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>EUR/CHF</td>
-														<td>歐洲區／瑞士</td>
-													</tr>
-													<tr>
-														<td>EUR/NZD</td>
-														<td>歐洲區／新西蘭</td>
-													</tr>
-													<tr>
-														<td>EUR/GBP</td>
-														<td>歐洲區／英國</td>
-													</tr>
-													<tr>
-														<td>EUR/AUD</td>
-														<td>歐洲區／澳洲</td>
-													</tr>
-													<tr>
-														<td>EUR/CAD</td>
-														<td>歐洲區／加拿大</td>
-													</tr>
-												</tbody>
-											</table>
-										</p>
-
-										<p>
-											<table class="table table-bordered table-hover table-striped text-center">
-												<thead>
-													<tr>
-														<th colspan="2">日幣相關貨幣對</th>
-													</tr>
-													<tr>
-														<th width="50%">貨幣對</th>
-														<th width="50%">對應之國家</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>EUR/JPY</td>
-														<td>歐洲區／日本</td>
-													</tr>
-													<tr>
-														<td>NZD/JPY</td>
-														<td>新西蘭／日本</td>
-													</tr>
-													<tr>
-														<td>GBP/JPY</td>
-														<td>英國／日本</td>
-													</tr>
-													<tr>
-														<td>AUD/JPY</td>
-														<td>澳洲／日本</td>
-													</tr>
-													<tr>
-														<td>CHF/JPY</td>
-														<td>瑞士／日本</td>
-													</tr>
-													<tr>
-														<td>CAD/JPY</td>
-														<td>加拿大／日本</td>
-													</tr>
-												</tbody>
-											</table>
-										</p>
-
-										<p>
-											<table class="table table-bordered table-hover table-striped text-center">
-												<thead>
-													<tr>
-														<th colspan="2">英鎊相關貨幣</th>
-													</tr>
-													<tr>
-														<th width="50%">貨幣對</th>
-														<th width="50%">對應之國家</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>GBP/CHF</td>
-														<td>英國／瑞士</td>
-													</tr>
-													<tr>
-														<td>GBP/NZD</td>
-														<td>英國／新西蘭</td>
-													</tr>
-													<tr>
-														<td>GBP/AUD</td>
-														<td>英國／澳洲</td>
-													</tr>
-													<tr>
-														<td>GBP/CAD</td>
-														<td>英國／加拿大</td>
-													</tr>
-												</tbody>
-											</table>
-										</p>
-
-										<p>市場中，其實有更多的貨幣對商品可以交易，甚至有些比較少見的交易商品。而這些較罕見的貨幣商品因為市場的交易的人並不多，多半交易的點差成本也相對高出許多。</p>
-									</div>
-								</div>
-								<hr />
-								<div class="edu-tabs-text" id="basic-2">
-									<h3 class="tabs-text-title">報價 </h3>
-									<div class="tabs-text-box">
-										<p>對於一個初入市場的交易者來說，觀測價格走勢去下單決定是讓人生畏的過程。訓練自己的雙眼洞悉毫秒間的變化、並且快速做出決策是至關重要的。你必須先學會如何讀會貨幣的價格。或是當你希望買入，比如說100歐元，下一步你必須知道該用另外一個貨幣付出多少去買入這100歐元。讓我們看看以下的範例：</p>
-										<p class="text-center"><b>EURUSD歐元兌美元 1.226</b></p>
-										<p>這個報價告訴你，一歐元可以換得1.226美金。如果你想要買入100歐元，那麼你需要花費的是122.6美金。這個報價表示了在單一時間點買入或是賣出的價格。目前我們看到的價格1.226並不包含交易之中外匯商盈利的點差（買賣價格的差距），這也是你必須顧慮的，因為這是當你換回原貨幣時你必須負擔的成本。</p>
-										<p>主要貨幣對的買賣價差，也就是點差，是很低的。但是請留意通常在特殊市場新聞點的時刻，可能會有點差擴大的正常現象。身為交易者，這些因素都必須注意，像是交易的時刻、市場的交易情緒、甚至是交易的時區，以上的種種都可能影響市場的報價或是甚至影響你的交易。</p>
-									</div>
-								</div>
-								<hr />
-								<div class="edu-tabs-text" id="basic-3">
-									<h3 class="tabs-text-title">圖表</h3>
-									<div class="tabs-text-box">
-										<p>交易外匯時，多數信息都能夠以接下來介紹的三款圖表判讀。透過這些圖表，幫助你決策該交易哪些商品、交易的方向、或是哪些商品該敬而遠之。</p>
-										<p><b>1. 折線圖：</b>
-											<br /> 折線圖提供了除了阻力／壓力線之外最快速市場走勢的觀測方法。但折線圖多半並不用在交易上，因為他無法提供你個別時間點的價格信息。但若是你只是需要瞥一眼市場的走向，折線圖仍然是你的好幫手。折線圖的線連結了圖表中的相近的兩個價格點，你可以在小時區間或是較長的時間區間上使用這款圖表。
-										</p>
-										<p class="text-center"><img src="images/education/hant/Price-Charts-1.png" alt="" /></p>
-										<p><b>2. 柱狀圖：</b>
-											<br /> 柱狀圖展示既定時間區間的價格表現。你可以選用年區間的柱狀圖表，便能顯示出過去每一年為一個柱的價格走勢與價位。選用月區間的柱狀圖表，就能得到每個月的走勢。此外另有每日、每四個小時等不同的圖表。柱狀圖根據OHLC繪製，分別是Open開始價位、High最高價位、Low最低價位、Close結束價位，每一根柱都顯現了該區間的開盤與收盤價格，以及走到的最高與最低價格。實用性上高於折線圖，因爲能體現的信息較為充足。
-										</p>
-										<p class="text-center"><img src="images/education/hant/Price-Charts-2.png" alt="" /></p>
-										<p><b>3. 蠟燭圖：</b>
-											<br /> 基本上，使用蠟燭圖表所得到的信息與柱狀圖是大致相同的。但是蠟燭圖表更容易閱讀與理解。他使用了直立的線（燭心）去表達單一時間區間的最高與最低的價位。與柱狀圖最主要的差異在於開始／結束報價的顯示形式。燭身代表了該時間段的第一個與最後一個報價，並且運用燭身顏色變化來表示市場走勢，如果燭身是深色的，表示價格走勢在該時間段是往下的。相反則是淺色的，則是表示向上的走勢。蠟燭圖表所提供的是上述幾種圖表中涵蓋最多信息的，也是外匯交易中最熱門的圖表選擇。
-										</p>
-										<p class="text-center"><img src="images/education/hant/Price-Charts-3.png" alt="" /></p>
-									</div>
-								</div>
-								<hr />
-								<div class="edu-tabs-text" id="basic-4">
-									<h3 class="tabs-text-title">支撐與壓力線</h3>
-									<div class="tabs-text-box">
-										<p>在你正式開始交易之前，你必須了解支撐與壓力線的交易觀念。若你能夠熟悉這個判讀技巧並且了解其中的意義，這對走勢的分析有很大的幫助。</p>
-										<p>當市場在一個向上的趨勢中開始回調時，這個轉折前的最高點位即是壓力線。反之，轉折前的最低點為稱為支撐線。這些支撐與壓力線在圖表中描繪出彎曲的市場波動。</p>
-										<p>請記得，圖表中的支撐及壓力線並不是一個固定的點位。你可能會觀察到這兩個點位是有些殘破的，這是因為市場正在測試反彈的接受度。而這些殘破的支撐壓力線也可被視為是測試的支撐壓力線，這在判讀圖表時是很常見的。</p>
-										<p>我們常會見到，當市場收盤價超過原先的水平，其支撐或壓力的線就會是殘破的。但事實這並非總是如此。既然如此，我們可以使用折線圖去觀察支撐及壓力線，因為折線圖標示了市場每段區間的成交價，而非個別的高與低點。高低點因為僅表達了市場當時片刻的反應，因此可能會產生誤導。當我們使用支撐與壓力線時，我們尋求的是市場真實走勢而非單純片刻的反應而已。</p>
-										<p>使用支撐與壓力線判斷市場時，請在不同的時間區間內跳轉觀察市場上真正的高峰與低谷。這些變化能幫助你判讀真正的支撐與壓力線。</p>
-										<p><b>支撐與壓力線之使用要領：</b></p>
-										<p>1. 當價格多次接觸支撐或壓力線時，代表這個市場信號是較為強烈的。</p>
-										<p>2. 支撐與壓力線的破口強弱與先前價格突破過的點位有很大的關係。</p>
-										<p>3. 當價格超越了壓力線，代表這條壓力線有可能成為稍後的支撐線。</p>
-
-										<p class="text-center"><img src="images/education/hant/Support-and-Resistance.png" alt="" /></p>
-									</div>
-								</div>
-								<hr />
-								<div class="edu-tabs-text" id="basic-5">
-									<h3 class="tabs-text-title">趨勢線</h3>
-									<div class="tabs-text-box">
-										<p>趨勢線是當今最廣泛使用的分析市場工具。但是，卻常被交易者們以不正確的方法使用，導致分析錯誤。一條好的趨勢線必須能夠提供你足夠的市場信息。請記得，你所繪製的趨勢線必須符合圖表上面的走勢。</p>
-										<p>該怎麼做呢？首先，先在圖表中找到兩個主要的市場高點（壓力點）或是兩個市場的低點（支撐點）。接著，將個別的這兩組點連結起來，就是如此的簡單。 如果你正在尋找的是市場下行的走勢，你所繪製的趨勢線將是由兩個市場高點連接起來的；相反的，若你想看上升的走勢，你要找的就是兩個市場的低點來繪製你的趨勢線。</p>
-										<p>以下是幾個身為外匯交易者所必須知道的趨勢線形式：</p>
-										<p><b>1. 上升趨勢</b></p>
-										<p class="text-center"><img src="images/education/hant/Trend-Lines-1.png" alt="" /></p>
-										<p><b>2. 向下走勢</b></p>
-										<p class="text-center"><img src="images/education/hant/Trend-Lines-2.png" alt="" /></p>
-										<p><b>3. 震盪趨勢</b></p>
-										<p class="text-center"><img src="images/education/hant/Trend-Lines-3.png" alt="" /></p>
-									</div>
-								</div>
-								<hr />
-								<div class="edu-tabs-text" id="basic-6">
-									<h3 class="tabs-text-title">圖表型態</h3>
-									<div class="tabs-text-box">
-										<p>身為一個外匯交易者，如果你能具備判讀並預測出市場波動的能力，那麼獲利的可能就比其他人來得高。其中交易者最常使用的方式就是依循圖表的型態來預測未來的市場可能，像是突破價格、反轉等。</p>
-										<p>以下的為你介紹六款最常見的圖表型態，也是身為交易者最應該熟悉的。若你能夠掌握這六種，也可以通過這六種的變化型態，更知道靈活運用。</p>
-										<p><b>1.	雙重</b></p>
-										<p>雙重的圖表型態分為兩種，第一種我們稱為「雙重頂」，特別時常出現在延伸的上揚的市場。這些圖表型態的頂端為兩個圖表上的高點，其價格突破了先前的高點。當價格碰觸到了先前市場中的高點價位時，價格在略為下調之後又再度回彈，並且突破了原先的高點的情況就可以稱為「雙重」。當雙重的圖表型態出現時，交易者可將他視為一個市場作多的趨勢稍緩的強烈指標。</p>
-										<p>另外一種「雙重」我們稱為「雙重底」，正是剛剛所說的相反。由價格所形成的低谷，因為市場無法在繼續底下而顯示出市場的賣方力量薄弱，而即將翻轉上升。</p>
-										<p class="text-center"><img src="images/education/hant/Chart-Patterns-1.png" alt="" /></p>
-										<p><b>2.	頭與肩膀</b></p>
-										<p>頭與肩膀的圖表型態由兩個較低的價格高點（肩膀）夾帶著一個較高的價格高點（頭）組成。你可以透過兩個肩膀的低點連線畫出的頸線。如果頸線形成一緩降線，則表示可以判定是市場反轉的指標。交易者可以在價格低至頸線之下時入場空單。</p>
-										<p>此外，頭與肩膀也有完全相反的判讀方法，兩個次低點夾帶著最低的價格點位。以兩高點的頸線作為市場突破的依據，作出多單的價格參考。</p>
-										<p class="text-center"><img src="images/education/hant/Chart-Patterns-2.png" alt="" /></p>
-										<p><b>3.	楔型</b></p>
-										<p>楔形圖表型態區分為兩種，顯示出了市場的停滯狀態與不確定性，不確定該商品應該要往上或是向下的狀態。因此，很常見的，當圖表中發現了楔型型態，接續著可能是市場價格的反轉，或是更長時間的價格震盪。</p>
-										<p>第一種的楔形型態稱為上升楔形，特指在楔形區域間來回擺盪並且價格逐漸向上。所代表的意義為價格的低點逐漸向上調整。當支撐線相較於壓力線陡峭時，也就是高位的低點的走勢比高點來得快，也顯示價格即將突破。因此，上升的楔型所代表的是一個價格向下的突破；另外一個可能，當一個價格下行的市場時，上升楔形代表的時市場持續的走低。</p>
-										<p>第二種的楔型圖表型態為下降楔型，當你看見他時，可視為是市場反轉或是持續的契機。若是是在一個走低的市場中，通常來說價格可能會開始走高；反之，則是持續的走低。</p>
-										<p class="text-center"><img src="images/education/hant/Chart-Patterns-3.png" alt="" /></p>
-										<p><b>4. 長方形</b></p>
-										<p>判別長方形的圖表型態最簡單的方式即是，看圖表是否近乎平行的支撐與壓力線。這顯示的是交易者們的舉棋不定，不知道空多該往哪個方向去。他所代表的意義也是市場本身在測試自己的支撐與壓力，測試是否不堪壓力而發生突破。在交易者的面向來看，通常當突破發生時，多半市場會突破發生的方向上升／下降。當走勢在長方形圖表後向下跌，我們稱為熊市長方形型態，我們可以看到市場都會走得比原先的長方形圖表範圍來得低。相對的，當市場上行，我們稱之為牛市長方形型態。</p>
-										<p class="text-center"><img src="images/education/hant/Chart-Patterns-4.png" alt="" /></p>
-										<p><b>5.	三角旗</b></p>
-										<p>三角旗型態通常出現在強勢的市場動作之後，在急速的走高/走跌過後，交易者們的交易讓圖表短暫震盪的一個區間，好像在思考下一步價格應該往哪個方向走。三角旗的圖表型態的特徵為價格會構成一個對稱的三角形，像是一個三角旗。在這段震盪的區間，通常因爲隨著更多的交易者進入市場，而讓市場往原本相同的方向持續。熊市三角旗通常在震盪之後多為向下的走勢；而牛市三角旗則為市場持續的向上。</p>
-										<p class="text-center"><img src="images/education/hant/Chart-Patterns-5.png" alt="" /></p>
-										<p><b>6.	三角形</b></p>
-										<p>三角形圖表型態可以分為三種。</p>
-										<p>第一種，你可以觀察到這個對等的三角形由一連串的價格高點與低點串連的線組組成，最後三角形的等邊匯集在一起。市場逐步的以不同的低位高點與高位低點並且持續了一段時間。我們可以將它視為市場的不確定性。當這兩條三角形的線逐漸逼近彼此，也可以預期到市場將面臨突破的可能。但單憑至此，你還沒有辦法知道突破的方向。若是你希望從這樣的圖表型態中獲取一些利潤，可以將略高於高點之上或是略低於低點之下進場交易，如此一來，當突破發生時，你就有盈利的機會。</p>
-										<p class="text-center"><img src="images/education/hant/Chart-Patterns-6.png" alt="" /></p>
-										<p>向上三角形圖表由漸高的低點繪成的緩升線與壓力線形成一三角形。當兩條線交會，市場有可能會突破並往上攀升。它的含意為多頭交易者不願接受當前的價格，逼著市場價格往上。當三角型的緩升線漸漸的靠近壓力線，顯示出市場正在施加壓力，在多數的情況之下，突破很快也會隨之發生。</p>
-										<p class="text-center"><img src="images/education/hant/Chart-Patterns-7.png" alt="" /></p>
-										<p>下降三角型圖表型態與上升圖表完全相反，由價格高點連線與支撐線組成三角形。代表著交易者不願接受當下價格，進而將走勢下推。但三角形圖表走勢仍有跳脫圖型，價格持續上彈。因應的方式，可以雙向掛單，當市場行進時再將錯誤的交易單取消即可。</p>
-										<p class="text-center"><img src="images/education/hant/Chart-Patterns-8.png" alt="" /></p>
-									</div>
-								</div>
-								<hr />
-								<div class="edu-tabs-text" id="basic-7">
-									<h3 class="tabs-text-title">時間區間</h3>
-									<div class="tabs-text-box">
-										<p>開始交易外匯時，交易者要先決定交易的時間區間，也就是圖表的時間長短，這可分為長期、中期與短期。</p>
-										<p><b>1. 長期：</b>這個時間區間短則幾個星期、幾個月，長則數年。長期投資會以每日與每周的圖表分析做為交易的基礎。這種時間區間的好處是交易手續費較低、壓力較小(因為你不用一直盯著市場的高低伏)，且不需要時常坐在電腦前。潛在劣勢是止損的設置要提早設置，避免在盤面回調時遭受大筆損失。另外，交易者要很有耐心，並且要有大量的資金以應付市場的變動，最重要的是能夠承受每周與每月的可能損失。</p>
-										<p><b>2. 中期：</b>這類時間區間約為幾個小時或幾天，所以需要分析以小時為單位的圖表區間來進場交易。使用此時間區間的好處是會有更多交易機會，且月內損失的風險較低，同時也可以讓交易者有更多樣化的投資組合。缺點是交易手續費較高，會有潛在的隔夜風險，並要時時盯著市場走向，所以交易者的壓力較高些。</p>
-										<p><b>3. 短期：</b>這種區間只有幾分鐘到幾小時而已，下交易時要分析的是分鐘圖表。為交易機會最多，沒有隔夜風險而且很快就能有交易結果。缺點為交易者的壓力會大增，因為你要時時刻刻盯著市場趨勢走向、獲利有限(當然損失也有限)，且因需要下多筆交易單，也會被收取較多的手續費。</p>
-										<p>交易者要依照個人的特質跟目標來決定要使用哪種時間區間。最好是先在模擬帳戶上練習每種交易區段做交易，這可幫你找出最適合你的投資風格。</p>
-									</div>
-								</div>
-								<hr />
-								<div class="edu-tabs-text" id="basic-8">
-									<h3 class="tabs-text-title">指標</h3>
-									<div class="tabs-text-box">
-										<p>指標是用來量測當前外匯市場交易條件與預測未來趨勢的統計數據。分析指標可預測波動，以利交易者從市場變動中獲利。交易者選擇要使用哪幾個指標之後，也要將其合併應用，這樣你在交易中更能佔有優勢。理想的情況下，多種指標要可以個別提供有用的資訊，而非重複的指標訊息。 以下為外匯交易者最常用的七種圖表指標簡介：</p>
-										<p><b>1.	Bollinger Bands 布林通道</b></p>
-										<p>這種指標是由約翰•布林所發明，用來測量市場的波動，可讓交易者知道市場的熱絡程度。市場交易頻繁時布林通道會擴張；相反的，市場平淡時布林通道則會收縮。這邊提供幾個使用布林通道的方法，來幫助交易者更有效的交易。</p>
-										<p>布林通道回彈時價格又回到了通道的中間點，而回彈的原因是因為整個通道就如同動態的支撐與壓力線，你使用的時間框架越長，布林通道就會越穩健。</p>
-										<p>通道擠壓時意味著價格即將會有突破。在價格鞏固期間通道寬度變窄，且如果價格開始跌破下方的線，代表價格會開始下跌。若價格開始突破上限，則價格則有上升的趨勢。</p>
-										<p class="text-center"><img src="images/education/hant/Chart-Indicators-1.png" alt="" /></p>
-										<p><b>2. Moving Average Convergence Divergence (MACD)平滑異同移動平均線 </b> </p>
-										<p>這種指標用於精確指出移動平均線的潛在新趨勢。MACD圖表上的三個數字可幫交易者理解指標的含義。第一個數字是用來計算較快的移動平均值之周期數；第二個數字計算的是較慢得移動平均值之周期數，而第三個數字計算的是較慢與較快移動平均值間的柱線數之平均差異。</p>
-										<p>你可利用兩條不同的速度的移動線來預測趨勢。比方說， 若兩條線的差異為零，接下來很有可能會出現交叉，也就是潛在的新趨勢之開端MACD指標的唯一缺點是對價格的反應較慢，儘管如此，仍然是許多交易者選用的指標工具。</p>
-										<p class="text-center"><img src="images/education/hant/Chart-Indicators-2.png" alt="" /></p>
-										<p><b>3.	Parabolic Stop And Reversal (SAR) 拋物線指標</b></p>
-										<p>拋物線指標所傳遞的信號並非是趨勢的開端，而是趨勢的尾聲。這可讓交易者知道何時要退場。這種指標在圖表會以點狀呈現並顯示出價格變動的潛在逆轉。若點位於蠟燭的下方，則為買入的信號；如果點在蠟燭上方，則是賣出的信號。在市場趨勢向上或向下時運用拋物線指標效果最理想。價格在橫向波動時，並不適合使用這種指標。</p>
-										<p class="text-center"><img src="images/education/hant/Chart-Indicators-3.png" alt="" /></p>
-										<p><b>4.	Stochastic 隨機指標</b></p>
-										<p>如同拋物線指標一樣，隨機指標也可讓交易者知道趨勢何時會結束。該指標衡量市場中的超賣與超買的情況。隨機指標上有兩條線，類似上述說的MACD，其中一條線移動速度比另一條快速。隨機指標量測的範圍為0到100。若兩條線都高於80，市場則出現超買的情況；如果線低於20，則為市場超賣。交易者通常在超賣市場中購入貨幣，而在超買市場中賣出貨幣。</p>
-										<p class="text-center"><img src="images/education/hant/Chart-Indicators-4.png" alt="" /></p>
-										<p><b>5.	Relative Strength Index (RSI) 相對強弱指數</b></p>
-										<p>相對強弱度指數是另一個可幫助交易者辨識貨幣超賣或超買的指標。其運行範圍也是0到100。數字若超過70，那麼市場已經呈現超買的態勢；低於30的話那麼市場則是超賣的情況。交易者可用這種指標來驗證趨勢，如果你認為市場可能有上升趨勢，相對強弱指數應該會超過50，反之，該指數應低於50。</p>
-										<p class="text-center"><img src="images/education/hant/Chart-Indicators-5.png" alt="" /></p>
-										<p><b>6.	Average Directional Index (ADX) 平均趨向指標</b></p>
-										<p>平均趨向指標的範圍為0到100。指數低於20的話表示趨勢較弱；高於50的則表示趨勢強勁。與隨機指標不同之處在於這種指標只衡量當前趨勢的強弱。平均趨向指標也可確定市場是否正在開啟新的趨勢，抑或仍在變化範圍內，但這個指標並不會給你買賣的明確信號，但仍可告訴你在持續趨勢中進行交易是否安全。</p>
-										<p class="text-center"><img src="images/education/hant/Chart-Indicators-6.png" alt="" /></p>
-										<p><b>7.	Ichimoku Kinko Hyo (IKH) 一目均衡表</b></p>
-										<p>一目均衡表指標是由五條線組成，用來衡量價格未來的態勢，以及未來的阻力和支撐區域，主要用於包含了日幣的貨幣對。</p>
-										<div class="edu-slide-ul">
-											<p><em></em>基準線 (藍線)：呈現先前26個週期之平均最高價和最低價。</p>
-											<p><em></em>轉換線(紅線)：先前9個週期的平均最高價與最低價。</p>
-											<p><em></em>遲行帶(綠線)：顯示當日收盤價並往後推移26個週期。</p>
-											<p><em></em>先行帶 (咖啡色與土色線)：其中一條先行線平均出轉換線和基準線的距離，並前移了26個週期。另一條先行線則是平均先前52個週期的最高的高點與最低的低點，並前移至未來的26個週期內。</p>
-										</div>
-										<p>一目均衡表把支撐和阻力、趨勢指標、交叉和震盪指標統合在一張圖表中。學會如何正確解讀一目均衡表，你就可以一次接收到大量的市場資訊。 </p>
-										<p class="text-center"><img src="images/education/hant/Chart-Indicators-7.png" alt="" /></p>
-										<p>多數的交易者會使用至少三種指標來幫助他們做交易決策，除非這三種指標都同時提供相同的信號，否則他們不會輕易入單。交易者要選擇的是最適合你的指標，所以最好使用過所有的指標之後，再找出適合你的指標種類。</p>
-									</div>
-								</div>
-								<hr />
-								<div class="edu-tabs-text" id="basic-9">
-									<h3 class="tabs-text-title">交易時段</h3>
-									<div class="tabs-text-box">
-										<p>之前有提到，匯市的交易時間是每周日晚間到每周五晚間，且皆為全天候運作，交易者可挑選自己方便的時間進出場。但當累積了交易經驗之後，所選擇的時段會變得相當關鍵。這是因為最佳的交易時段是在市場最熱絡時。這時你更能夠把握交易機會並獲利；反之，在市場平淡時交易恐怕只是徒勞無功而已。</p>
-										<p>知道各個匯市的交易時間就能在市場最活絡的時機進場：</p>
-										<div class="edu-slide-ul">
-											<p><em></em><b>紐約匯市: 北美東部時間8:00 a.m.到5:00 p.m.</b></p>
-											<p><em></em><b>東京匯市: 北美東部時間7:00 p.m.到4:00 a.m.</b></p>
-											<p><em></em><b>雪梨匯市: 北美東部時間5:00 p.m.到2:00 a.m.</b></p>
-											<p><em></em><b>倫敦匯市: 北美東部時間3:00 a.m.到12:00 p.m.</b></p>
-										</div>
-										<p>你可以從這些交易時間看出有三個交易時段是重疊的：紐約與倫敦匯市在北美東部時間8:00 a.m.至12:00 p.m.之間重疊；雪梨與東京市場在北美東部時間7:00 p.m.至2:00 a.m.重疊，倫敦與東京市場重疊的時段則是北美東部時間3:00 a.m.到4:00 a.m.間。</p>
-										<p>若你想在最有可能獲利的時段進場，在北美東部時間8:00 a.m.到 12:00 p.m.的重疊時段裡，交易歐元/美元以及英鎊/美元貨幣對，你可能獲利的機會最高。所以可以說這個交易時段以及其他重疊的交易時段是市場最為活躍的時期，交易者也有更多良好的交易機會。</p>
-
-									</div>
-								</div>
-								<hr />
-								<div class="edu-tabs-text" id="basic-10">
-									<h3 class="tabs-text-title">外匯交易單種類</h3>
-									<div class="tabs-text-box">
-										<p>外匯中，「交易單」指的是交易者在匯市中開關倉的方式。在你決定交易類型之前，最好先確認你的平台外匯商會接受哪些種類的外匯交易單。</p>
-										<p><b>1. 市價單：</b>這種單指的是用市場上最佳的價格買賣貨幣。例如，歐元/美元對的買入價是1.215，賣出價是1.219，若你想在市場上買入這個貨幣對，那麼你的買入價就會是1.219.。</p>
-										<p><b>2. 限價買/賣掛單：</b>這是指以特定價格買入低於市價的貨幣，或賣出高於市價的貨幣。假設歐元/美元對的成交價是1.2070，而你想在價格達到1.2090時做空，你可以選擇在電腦前耐心等待成交價達到你要的價格，然後用市價單賣出；或者在交易系統上以該價格設置限價賣單，不用守在電腦前，訂單就會按照所設定的價格自動執行。</p>
-										<p><b>3. 止損買/賣掛單：</b>若你想以低於市價的價格賣出，或以高於市價的價格買入時可採用這種下單方法，通常應用在交易者認為價格會突破某個價位時。 </p>
-										<p><b>4. 止損單：</b>這種交易單可在市場走勢不如交易者預期時，幫你避免額外的損失。除非該筆訂單已經執行或被取消，否則會維持不變。這種下單方法對於不想整天坐在電腦前，經常擔心會全盤皆輸的交易者相當有幫助。</p>
-										<p><b>5. 移動止損單：</b>這種特定的止損單會隨著價格變動而變動。止損線會與價格的最高(低)點，維持一個恆定的距離，一旦移動止損值被觸發，該交易會被自動平倉。</p>
-										<p>要注意的是，如果你持倉超過一天，多數的外匯商會向你收取隔夜利息。所以在下任何單之前，可先查看商品規格/屬性確認隔夜利息的收取情況。</p>
-									</div>
-								</div>
-								<hr />
-								<div class="edu-tabs-text" id="basic-11">
-									<h3 class="tabs-text-title">點</h3>
-									<div class="tabs-text-box">
-										<p>「點」指的是用來衡量貨幣對價值變動的單位。例如，歐元/美元對的價格為1.2360，之後價格變動為1.2361，這裡0.0001的價值漲幅為1點。通常1點是報價的小數點最後一位。大部分的貨幣對報價會到小數點後四位，但有些含有日幣的貨幣對報價最多至小數點後兩位。</p>
-										<p>有的外匯商提供的貨幣對報價會超過小數點後四位，也就是0.1點，這被稱為pipette/point。若歐元/美元對的價格由1.23600漲到1.23601，這裡的0.00001點差就是0.1個點(十分之一點)。</p>
-										<p>交易者最好先計算要想要交易的貨幣對之點值，因為每種基礎貨幣在跟計價貨幣對照時價值會不同。</p>
-										<p>要知道帳戶的點值，可以將「已知的點值」乘以或除以你帳戶中的貨幣兌換匯率。通常外匯平台商會幫你計算好，所以交易者無需自己進行計算。即便如此，交易者還是可以了解一下如何計算帳戶點值，以防發現到點值的差異時可自行驗算。</p>
-									</div>
-								</div>
-								<hr />
-								<div class="edu-tabs-text" id="basic-12">
-									<h3 class="tabs-text-title">新聞的重要性</h3>
-									<div class="tabs-text-box">
-										<p>交易者除了要會分析圖表、趨勢與指標之外，你也要了解外匯市場變動的原因。世界新聞是市場變動的根本力量，會影響交易者做出的決定。外匯市場與股票市場不同，越早得知會影響匯市的新聞，對交易越有利。在外匯市場中，交易者不但不會因內線交易吃上官司，實際上還能受益匪淺。</p>
-										<p>RADEX MARKETS瑞德克斯官網亦提供實時的財經日曆供使用者隨時查看重大的新聞信息。你可以透過財經日曆上的新聞，了解新聞將發生的時間點與新聞對市場的衝擊力道，幫助因應市場變化採取對策。</p>
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-
-				</li>
-				<li>
-					<div class="container tabs-text-scope">
-						<div class="edu-tabs">
-							<div class="edu-tabs-nav">
-								<div class="nav-list">
-									<div class="operate hide"></div>
-									<div class="tabs-list-menu">
-										<div class="list-group">
-											<a class="list-group-item" href="#fundamental-1">什麼是基本面分析</a>
-											<a class="list-group-item" href="#fundamental-2">財經日曆</a>
-											<a class="list-group-item" href="#fundamental-3">新聞點交易</a>
-											<a class="list-group-item" href="#fundamental-4">基本面分析的優勢</a>
-										</div>
-										<div class="switch-wrap">
-											<a class="btnLeft" href="javascript:;"><img src="images/swiper-button-prev.png" alt="" /></a>
-											<a class="btnRight" href="javascript:;"><img src="images/swiper-button-next.png" alt="" /></a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="edu-tabs-r">
-								<div class="edu-tabs-text" id="fundamental-1">
-									<h3 class="tabs-text-title">什麼是基本面分析？</h3>
-									<div class="tabs-text-box">
-										<p>當你更深入研究外匯市場時，必定要研究影響貨幣價格的特定因素，這就是所謂的基礎面分析。交易者要探討的層面包括了經濟、政治、社會以及影響貨幣的供需因素。基本面分析的概念跟經濟學的基本原理沒有什麼不同，也就是供需決定價格。</p>
-										<p>身為一名外匯交易者，你的最終目標是要可以分辨哪些國家的經濟蓬勃，而哪些國家的經濟不景氣。要做到這一點，要先了解某些層面，例如失業率上升的事件為何會影響該國的經濟與貨幣的需求。</p>
-										<p>許多人進行基本面分析是為了要預測各個國家的經濟發展。建議你分析經濟發展良好的國家，因為這樣的國家會增強購買該國貨幣的需求。剛開始學習基礎面分析時，初學者只需要了解這種分析法是以觀察一個國家經濟的強弱來觀察貨幣價格的方法。</p>
-									</div>
-								</div>
-								<hr />
-								<div class="edu-tabs-text" id="fundamental-2">
-									<h3 class="tabs-text-title">外匯財經日曆</h3>
-									<div class="tabs-text-box">
-										<p>要分析各個國家的經濟，交易者要先知道全球的經濟狀況。所以成功的外匯交易者都會利用外匯財經日曆來追蹤影響市場的重大財經事件。</p>
-										<p>特定的經濟新聞每年會在差不多的時間點發布，所以相關事件都會紀載於財經日曆中。再加上大部分的經濟事件都會提前計畫好，這樣才能預告交易者接下來市場會有什麼樣的波動。例如，如果歐洲中央銀行預計要開會商討利率，那麼開會的日期會被放在財經日曆中，如此一來每個交易者就可以同步接收到該會議的相關資訊了。</p>
-										<p>大部分的外匯平台商都會提供即時更新的財經日曆，當經濟或政治新聞點發布時會自動更新。通常財經日曆會提供該事件的相關數據，像是時間點、數據本身、前期的數據以及會如何影響整個市場。</p>
-										<p class="text-center"><img src="images/education/hant/Economic-Calendar-1.png" alt="" /></p>
-									</div>
-								</div>
-								<hr />
-								<div class="edu-tabs-text" id="fundamental-3">
-									<h3 class="tabs-text-title">新聞點交易</h3>
-									<div class="tabs-text-box">
-										<p>新聞點交易風險相當高，但交易者仍然有機會獲利豐碩。初入匯市的新手交最好一開始先建立鞏固的基礎再嘗試新聞點交易。這個概念很單純，就是交易者在重大新聞發布的前或後即刻下單。這時下單的原因是因為當重大新聞發布時，市場的價格很有可能會有巨大的波動。</p>
-										<p>比方說，假設美聯儲接下來要提高利率，交易者可能會傾向於購入美金，並預測該貨幣價格會上漲。想做新聞點交易的人可能會在美聯儲預計公告日的前一晚就先入單交易，因為一旦在該訊息發布之後才開始交易，這時美金很有可能已經上漲，交易者就會錯失獲利的大好機會。</p>
-										<p>然而，如果實際發布的消息跟預期有落差，你的交易風險會增加。以這個例子來說，假設美聯儲並沒有像交易者預料中地提高利率，且你下的單是預期美金會上漲，這樣你會立即虧損。新聞點交易就是，若不巧地評估錯誤，交易者並沒有時間手動平倉避免進一步虧損。</p>
-										<p>要成功地做新聞點交易，交易者必須要有非常可靠且消息靈通的來源。除了具備這些要素，交易者自身也要有純熟的技術，這樣方能在最佳時機點入單。這種交易方式的優點是不用花很多時間研究指標跟價格指數，只需等待重大新聞發布再進場交易即可。</p>
-										<p>會影響外匯市場變動的新聞事件相當多。主要會導致價格波動的新聞事件包括利率相關新聞、零售數字、美聯儲公開市場委員會公布利率決議、消費者物價指數，還有其他通貨膨脹指標、工業生產指數、失業率，以及企業與消費者信心。</p>
-										<p>經濟新聞與重大事件發佈對市場有不同層級的影響力，但交易者要關注的是作用力會持續至少好幾分鐘或幾小時的新聞點。新聞一公布後是波動最大的時候，這時候進場交易是相當高風險的，交易者還是要搭配新聞跟圖表分析一起使用。所以如果你想要做新聞點交易，還是記得也要把圖表分析的結果考慮進去。</p>
-
-									</div>
-								</div>
-								<hr />
-								<div class="edu-tabs-text" id="fundamental-4">
-									<h3 class="tabs-text-title">基本面分析的優勢</h3>
-									<div class="tabs-text-box">
-										<p>基本面分析的核心價值是幫交易者確認某貨幣是否值得交易，因為此分析法旨在研究市場變動的成因。它最大的優勢是，採用此分析方法的交易者有機會在短時間內受益匪淺。能成功駕馭基本面分析法的交易者通常是長期投資者，但也有短期或中期投資者受益於此分析法。</p>
-										<p>基本面分析還有其他優點，像是從此分析法學習到全球市場的相關知識，並更了解市場運作機制，可幫助交易者對全球經濟有更全面的視野。</p>
-										<p>熟悉了這個方法之後，你也能夠研判預料外的市場動態之成因。能夠理解價格高低起伏的原因對交易者來說是一大優勢，因為當你能夠預測某個特定的事件之影響力，就能夠藉由新聞點交易獲利。</p>
-										<p>這個分析法當然不是百分之百完美的。除了會有潛在的風險之外，交易者要整理過濾大量的資訊。再者，你要避免解讀錯誤的信號，否則可能會遭受龐大的損失。</p>
-										<p>熟捻這些要點之後，你就可以利用基本面分析法在匯市中大展身手，但要確認你自身願意且可以承擔經濟新聞交易所帶來的潛在風險。</p>
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-
-				</li>
-				<li>
-					<div class="container tabs-text-scope">
-						<div class="edu-tabs">
-							<div class="edu-tabs-nav">
-								<div class="nav-list">
-									<div class="operate hide"></div>
-									<div class="tabs-list-menu">
-										<div class="list-group">
-											<a class="list-group-item" href="#technical-1">什麼是技術性分析</a>
-											<a class="list-group-item" href="#technical-2">外匯圖表</a>
-											<a class="list-group-item" href="#technical-3">價格趨勢</a>
-											<a class="list-group-item" href="#technical-4">支撐與壓力線</a>
-											<a class="list-group-item" href="#technical-5">突破</a>
-											<a class="list-group-item" href="#technical-6">趨勢線</a>
-											<a class="list-group-item" href="#technical-7">通道線</a>
-											<a class="list-group-item" href="#technical-8">時間區間</a>
-											<a class="list-group-item" href="#technical-9">使用技術性分析的交易者類型</a>
-											<a class="list-group-item" href="#technical-10">斐波那契回調線（交易界的黃金分割線）</a>
-											<a class="list-group-item" href="#technical-11">技術性分析的優勢</a>
-										</div>
-										<div class="switch-wrap">
-											<a class="btnLeft" href="javascript:;"><img src="images/swiper-button-prev.png" alt="" /></a>
-											<a class="btnRight" href="javascript:;"><img src="images/swiper-button-next.png" alt="" /></a>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="edu-tabs-r">
-								<div class="edu-tabs-text">
-									<h3 class="tabs-text-title" id="technical-1">什麼是技術性分析？</h3>
-									<div class="tabs-text-box">
-										<p>從上一章節我們知道了基本面分析是剖析市場價格變動的研究方法之一。技術性分析也是如此，但這個分析法的根據是已經發生過的事件來探討造成影響的原因。許多交易者會將這兩種分析方法合併使用來預測未來走向。但有的單獨使用技術性分析的交易者認為，市場的變數都歸因為價格變動，所以不需要使用其他分析方法做外匯交易。 </p>
-										<p>當你採用此方法來分析貨幣時，要注意的是重複的圖表型態。許多人相信價格變動是人為因素，只要繼續由人為操控市場，圖表的型態必定會繼續重演。因為人會基於過去相同的情感因素而採取一樣的行動。這些重複的事件可以被分析解讀並進一步用來預測未來的價格變動。</p>
-										<p>技術面分析研究的是趨勢、支撐與壓力線與外匯指標，以預測價格的未來方向。交易者可多加善用這些因素，知道要留意哪種信號之後，你就可以預先掛單且從中獲利的最佳方法。</p>
-									</div>
-								</div>
-								<hr />
-								<div class="edu-tabs-text" id="technical-2">
-									<h3 class="tabs-text-title">外匯圖表</h3>
-									<div class="tabs-text-box">
-										<p>外匯圖表是技術性分析的根本，所提供的資訊可幫助交易者評估並管理貨幣的變動脈絡。如同章節二第一篇所提到的，所有的貨幣報價都是以兩個貨幣為一個單位；其中一個是基礎貨幣，另一個則是相對貨幣。所有的外匯圖表都由貨幣對與其相對價值所組成。</p>
-										<p>想要將利益最大化，交易者就要時常觀察貨幣的變動。你要研究某貨幣在單一日、幾天、一個月、幾個月、一年甚至好幾年當中的報價。如此一來你才能看到該貨幣走勢的全貌，而且心態才不會被這期間的波動影響。</p>
-										<p>第二章第三篇提到，其他類型的外匯圖表包括線性表、柱狀圖與K線圖。交易者要學著如何分析圖表型態，以了解價格變動意涵，屆時你可加以應用技術指標來獲利一番。你選用的圖表要能夠提供即時訊息。建議交易者要在蒐集完整的資訊之後再進場交易，而外匯圖表正是能提供你資訊的工具。</p>
-									</div>
-								</div>
-								<hr />
-								<div class="edu-tabs-text" id="technical-3">
-									<h3 class="tabs-text-title">價格趨勢</h3>
-									<div class="tabs-text-box">
-										<p>外匯價格趨勢是由價格變動型態所定義的。當你觀察價格一段時間之後，就會開始看出圖表呈現的型態。詳加解讀這些型態之後，就可以學著預測價格的未來走勢，接下來你可以利用反覆出現的圖表型態預先掛單，目的是要預測可獲利的價值。</p>
-										<p>你的目標是要可以早早就看出價格趨勢並開始進場，且在趨勢要開始反轉的時後盡快出場。要切記的是，你是利用過去的價格變動型態來預測未來的趨勢，而非利用像是新聞發佈等外在因素來預測。</p>
-										<p>在這裡交易者預想價格會以特定的方向變動，這樣的猜測可能是錯誤的，但當你對技術性分析越來越了解，就能以價格走勢來做正確的判斷。交易者要做好可能會有虧損的心理準備，但若你能從這些經驗中學習，未來就能有更好的交易成績。</p>
-									</div>
-								</div>
-								<hr />
-								<div class="edu-tabs-text" id="technical-4">
-									<h3 class="tabs-text-title">支撐與壓力線</h3>
-									<div class="tabs-text-box">
-										<p>相較於其他分析法，技術性分析法更加仰賴支撐與壓力線。支撐與壓力的意思是，價格變動會在某個階段停止變動然後達到某個程度之後開始反轉。「壓力」指的是貨幣價格到達的最頂端，而「支撐」是價格會達到的最底端，兩者皆不造成突破。通常當價格在支撐與壓力線之間變動時，交易者可以在價格達到「支撐」時買入貨幣（價格最低時），並在達到「壓力」時賣出（價格最高時）。</p>
-										<p>若交易者要想要以支撐與壓力線來決定進出場時機，所使用的交易圖表顯示的價格間隙要符合你的交易策略與時間框架。若你想要炒短線，就要使用分鐘圖；若是做長線交易，則要使用小時、每日、每周或每月圖表。在分析支撐與壓力的時候，也要將指標列入考量因素以評估趨勢反轉的時機。</p>
-										<p>有些用來分析支撐與壓力的方法是較為積極主動的方式，像是衡量移動法、動態或斐波那契法則、投射/融合法 （靜態或九宮格）、趨勢線與移動平均線、以波動率為基礎的分析法、市場概況、計算後的軸心與成交量加權平均價格。也有其他較為被動的方法，例如價格高低點擺動、跳空、成交量概況、K線型態與美國線。我們接下來會討論到其中的幾個分析方法。</p>
-									</div>
-								</div>
-								<hr />
-								<div class="edu-tabs-text" id="technical-5">
-									<h3 class="tabs-text-title">突破</h3>
-									<div class="tabs-text-box">
-										<p>如先前提到的，突破發生在價格突破支撐或壓力線時。交易者在進行技術性分析時要嘗試預測突破會在何時產生。外匯圖表中有三種常見的突破發生時機：</p>
-										<p>1. 價格鞏固一段時期之後產生的突破</p>
-										<p>2. 價格差異縮小時期之後的突破</p>
-										<p>3. 牛市趨勢或熊市趨勢的突破</p>
-										<p>突破的發生是基於交易者對某個特定貨幣的公允價值持有不同意見，這樣會使得該貨幣的價格一下漲一下跌，並觸及支撐線或壓力線。價格最終會朝其中一個方向發展，使價格突破支撐線或者壓力線，造成貨幣價格增值或貶值。出現突破通常意味著新趨勢的開始。善用突破來增加盈利的關鍵是利用技術分析來預測突破的發生時機，且要在突破一開始的時即預先掛單。</p>
-										<p class="text-center"><img src="images/education/hant/Breakouts-1.png" alt="" /></p>
-									</div>
-								</div>
-								<hr />
-								<div class="edu-tabs-text" id="technical-6">
-									<h3 class="tabs-text-title">趨勢線</h3>
-									<div class="tabs-text-box">
-										<p>技術性分析人員使用趨勢線來決定進出場的時機點。有時候趨勢線也被稱為荷蘭線，因為最早在荷蘭被使用。當你把至少兩個價格點以斜線串連起來就會形成趨勢線。在支撐點相連的線之下方的線為支撐趨勢線，而在壓力點相連的線之上方的線為壓力趨勢線。再提醒交易者一次，分析趨勢線時，你所使用的圖表之時間區間要與你的交易策略一致。</p>
-										<p>使用趨勢線的目的是支撐買入，壓力售出 。因為當價格回到趨勢線上時，若你認為這個趨勢會持續往某個方向發展，那麼你可以抓緊趨勢入單。當你想逆勢而為，且將與現有趨勢一致的交易平倉，這時趨勢線的分析也讓你可以明確判斷突破的時機。</p>
-									</div>
-								</div>
-								<hr />
-								<div class="edu-tabs-text" id="technical-7">
-									<h3 class="tabs-text-title">通道線 </h3>
-									<div class="tabs-text-box">
-										<p>通道線與趨勢線相當類似，但通道線通常為使用短期時間區間的交易者所用，而這類的交易者想要從較小的價格變動中獲利。通道線是與趨勢線平行的線，當貨幣價格接近趨勢線時，就是買入的時機。相反的，當貨幣價格趨近於通道線，則是賣出貨幣的時候。有些交易者會使用通道線來做與趨勢相反的交易，但這麼做的風險甚鉅。</p>
-										<p>通道線通常用在辨別趨勢減弱的傾向。若價格在下一個高點或低點未碰到通道線，這可能是趨勢反轉的前兆。雖然這不是一個定律，但使用通道線當技術分析基礎的交易者往往這麼認為。</p>
-										<p class="text-center"><img src="images/education/hant/Channel-Lines.png" alt="" /></p>
-									</div>
-								</div>
-								<hr />
-								<div class="edu-tabs-text" id="technical-8">
-									<h3 class="tabs-text-title">時間區間</h3>
-									
-									<div class="tabs-text-box">
-										<p>時間區間指的是交易者分析的圖表類型。比如說，如果你分析的是小時圖，那麼你看的就是一個小時內的價格變化。以技術分析的目的來說， 你所分析的小時圖可能涵蓋了好幾日、幾個星期或甚至好幾個月的時間區段，只需分析每個小時的某個價格點。這種分析方法可用來觀察整個匯市脈動，且找出長期的交易機會。</p>
-										<p>建議你先研究長期的時間區間，隨著分析的深入再去了解短期的時間區間。長期的圖表所顯示的變動較少，所以交易者較不易分心。當你開始用分鐘圖之後，隨著圖表上大幅增加的變動，你也可得到更多可分析的資訊。研究了所有的圖表後，交易者就可以抓住最佳的交易時機點。分析的圖表越多，你越能夠精準的把握進場機會。</p>
-									</div>
-								</div>
-								<hr />
-								<div class="edu-tabs-text" id="technical-9">
-									<h3 class="tabs-text-title">使用技術性分析的交易者類型</h3>
-									
-									<div class="tabs-text-box">
-										<p>有許多類型的交易者會使用技術分析，但要知道自己是哪種類型的交易者，要到真正開始交易外匯之後才會知道。交易策略都會有風險，所以一個策略並不能套用在每個交易者身上。交易一段時間後會慢慢熟悉不同的策略，但如果剛開始只是想試水溫的話，可以由較保守的策略開始，以磨練自己的技巧。這邊整理出幾種會使用技術性分析的交易者類型：</p>
-										<p><b>1. 趨勢交易者</b>
-											<br /> 這類型的交易者在價格有上漲的趨勢時買入，等到趨勢開始下跌時才會賣出。這樣的交易類型不需要花很多時間管理交易單，因為他們只需順應趨勢，可能是幾天、幾周或甚至幾年的趨勢。這也意味著短期內的獲利有限。
-										</p>
-										<p><b>2. 日內交易者</b>
-											<br /> 日內交易者藉由小幅度的價格波動進出場交易。這類交易者需要無時無刻緊盯著交易帳戶、圖表型態與指標。這類交易方法或許可以在短期之內賺大錢，但也可能短時間之內爆倉慘賠。
-										</p>
-										<p><b>3. 波動交易者</b>
-											<br /> 這類的交易者喜歡在支撐與阻力之間的波動交易。他們會在突破之前退場，且通常會在支撐與壓力的範圍之外入止損單，這樣當突破產生時，才不至於損失龐大。波動交易者的獲利不大，也不太需要時常進行技術性分析。
-										</p>
-										<p><b>4.均值回歸交易者</b>
-											<br /> 此類交易者使用統計工具來預測某貨幣是否與平均價格相差太大，且是否會產生潛在的價格回歸。他們會使用布林帶通道詳盡地計算標準差。這樣的交易型態主要的交易點是基於價格總是回歸到平均價格的可能性。
-										</p>
-										<p><b> 5. 回調型交易者</b>
-											<br /> 回調型交易者會分析不同的指標，並用不同的方法來做交易。當某貨幣的價格破歷史新高時，其價格會稍微回調再繼續往上漲。這樣的交易者買入貨幣之後會等著價格回調後賣出。
-										</p>
-										<p>
-											<b>6. 突破交易者</b> <br /> 總是尋求潛在突破點的交易者稱為突破交易者，他們認為可以利用低風險的進場機會獲取潛在的高獲利。這種交易模式相當受歡迎，因為交易者可以在入單之前提早分析圖表，並盡早下買賣的預掛單，不用整夜盯著想交易的貨幣。
-										</p>
-									</div>
-								</div>
-								<hr />
-								<div class="edu-tabs-text" id="technical-10">
-									<h3 class="tabs-text-title">斐波那契回調線（交易界的黃金分割線）</h3>
-									
-									<div class="tabs-text-box">
-										<p>技術分析員使用斐波那契回調線來預測趨勢當中回調的長度。斐波那契回調線是以百分比的數值來呈現，外匯交易中最常見的回調幅度為38.2%、50%與61.8%。</p>
-										<p>十二世紀一位名叫斐波那契的數學家發現了斐波那契序列，而「斐波那契回調線」是由此序列而命名。這個序列存在許多自然的情況中，它的意思是每個連續數字皆為前兩個數字的總和。 舉例說明，1 1 2 3 5的序列當中，1+1=2，1+2=3，2+3=5，以此類推。任一個數字與前一個數字的比率皆為1.618倍。如果將任一數字與其後兩位的數字相除，所得的比率約恆為0.382，這也就是剛剛說的，38.2%與61.8%的由來。</p>
-										<p>由於外匯市場是世界上最大的金融市場，也是運作方式最趨近於自然機制的市場，所以可以用自然法則來解釋匯市的金融活動。正因如此，斐波那契回調線相當適合應用在技術性分析中；較大的貨幣變動幅度會自然地依照38.2%, 50%或61.8%的比例回調。</p>
-										<p>在強勁的趨勢中，貨幣價格的回測幅度最少是38.2%；若趨勢較無力，價格回測最多可達61.8%。50%是最常被關注的回測幅度，多數交易者會在這個幅度中的上漲趨勢買入，下降趨勢賣出。</p>
-										<p>要畫斐波那契黃金分割線，首要先量測出近期價格最高點與最低點之間的距離，接下來計算出與每個回測水平相對應的距離百分比。比方說，你得到的點距為200點，200點的38%就會是76點；50%就會是100點，¬而61.8%即為124點。最後，若是上升的趨勢，由價格最低點當成起始點，將線拉至最高點的終點；若趨勢為下降趨勢，只要將最高點當成起點，把線拖曳往下拉至最低點，也就是黃金線的終點。</p>
-										<p>交易者除了會將斐波那契線應用在現有的交易中，也會依照潛在趨勢來下新的交易單。分析圖表時，你可以看出某貨幣有超買或超賣的情況，這意味著價格很快會回調。當價格開始回調，價格很可能停在斐波那契回調線上的某個區域。這時進場交易的風險較小，交易者有機會獲益匪淺。</p>
-										<p>大部分的外匯交易者將技術性分析工具與斐波那契回調線合併使用以確認他們的預測是否正確。當不只一個指標都顯示相同的信息時，你更可放心進場交易。</p>
-										<p class="text-center"><img src="images/education/hant/Fibonacci-1.png" alt="" /></p>
-
-									</div>
-								</div>
-								<hr />
-								<div class="edu-tabs-text" id="technical-11">
-									<h3 class="tabs-text-title">技術分析的好處</h3>
-									
-									<div class="tabs-text-box">
-										<p>只憑藉技術分析結果來交易的人，不認為以基礎面分析的新聞點來交易是可靠的。會有這樣的觀念是因為技術分析者認為市場變化迅速，所有發布的新聞都會反映在圖表上，所以忽略圖表釋放出的信息會造成交易的風險。基礎面分析者則認為技術分析者的觀念過時，因為他們只分析已經發生的事件，而非未來可能會發生的情況。所以他們相信新聞點是推動市場前進的唯一推手。要選擇哪一種分析方式完全端看你自己了。以下列出的是採用技術分析對交易的好處。</p>
-										<p>首先，交易者較能夠精確的找出進出場的時機點，相較於枯等新聞點發布再決定進出場時機的交易者而言，能做到上述這點是相當困難的。分析圖表可讓每個交易者同時找出趨勢所向，因為每個人得到數據跟資料都是相同的。這也意味著有非常多外匯交易者都在分析相同的信息，所以當這一群交易者皆以某個特定的方向做交易，更有可能真正去實現市場的預測結果。</p>
-										<p>圖表跟指標並不是一種新潮的流行，打自外匯交易開始就存在了。從以前到現在許多交易者靠著圖表與指標來取得交易上的成功，若分析圖表跟指標沒有用處，那麼應當在很早之前就會被交易者發現。不只如此，任何人都可學會解讀圖表，也就是說你可以依照圖表的信息交易。實際上，善用圖表分析比起只做新聞交易更能讓你精準地掌握你的交易盈虧。</p>
-										<p>不論如何，交易者還是要留意其他可能會影響趨勢的信號 。圖表並不能提供即時的指標，所以不能完全只依賴你的臆測，認為當前的貨幣價格會精準的告訴你未來的價格走向，雖然這種情況頗常見，但並不是百分之百會發生。</p>
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-
-				</li>
-
-				<li>
-					<div class="container tabs-text-scope">
-						<div class="edu-tabs">
-							<div class="edu-tabs-nav">
-								<div class="nav-list">
-									<div class="operate hide"></div>
-									<div class="tabs-list-menu">
-										<div class="list-group">
-											<a class="list-group-item" href="#tying-1">外匯交易心理學</a>
-											<a class="list-group-item" href="#tying-2">掌握風險管理</a>
-											<a class="list-group-item" href="#tying-3">選擇平台商</a>
-											<a class="list-group-item" href="#tying-4">開設真實交易帳戶</a>
-										</div>
-										<div class="switch-wrap">
-											<a class="btnLeft" href="javascript:;"><img src="images/swiper-button-prev.png" alt="" /></a>
-											<a class="btnRight" href="javascript:;"><img src="images/swiper-button-next.png" alt="" /></a>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="edu-tabs-r">
-								<div class="edu-tabs-text" id="tying-1">
-									<h3 class="tabs-text-title">外匯交易心理學</h3>
-									
-									<div class="tabs-text-box">
-										<p>許多人學著做外匯交易之後，自認為肯定會在匯市上大展身手、日進斗金。也有許多人學習指標、圖表、分析方法、交易策略等， 並有不錯的交易結果。然而，如果你希望可以在匯市中取得長遠的成功，就要了解交易決策背後的心理層面。交易者在交易當中，要學著控制自己的情緒，因為情緒會干擾理性抉擇的能力。開始投資外匯之前，你要先了解自己是不是做外匯交易的料。</p>
-										<p>首先，一旦你建立了交易原則並制定交易計畫，就不能破壞這些原則。你可能會發現自己對於交易感到興奮、害怕，或在交易過程的某個階段滿懷希望。這些情緒很容易壞了原本制定的交易原則。交易者對制定好的計畫要有自制能力才能取得成功。</p>
-										<p>當交易虧損時，交易者會感到恐懼，這也往往會讓原本制定好的交易計畫失敗。交易者要先做好心理建設，交易有賺有賠，不要因為虧損而害怕投資未來的獲利機會。當你有機會可以將獲利最大化時，不要因為害怕而提早抽手；應該要相信自己的分析結果可讓你的交易盈大於虧，這是交易者在長遠的投資路上所盼望的 。</p>
-										<p>興奮的情緒常常變成貪婪的心態，這是會破壞原則的情緒之一。交易者要對交易系統持有客觀的態度，所以就算你認為繼續持倉可以獲利更多，但還是要把握原則在正確的時機退場。交易者要對已經擁有的盈利感到知足，按照計畫走且往下一個交易機會前進。</p>
-										<p>另一種可能會毀掉交易的情緒是「希望」。許多人在該退場時仍繼續持倉，希望可以把原本損失的錢賺回來。若你的其中一筆交易成績不盡理想，最謹慎的作法是要盡快平倉，而非繼續拖延下去。「希望」並不建立在任何合理的分析基礎之上，且可能會隨著時間推移讓你更損失慘重。</p>
-										<p>自律是交易者最該擁有優秀特質。這筆交易若不能幫助你獲利，或已達到最大的獲利，你應該要懂得抽手。千萬不要像賭徒一樣，已經賺到了錢但想再賺更大筆。要成為成功的交易者，你要能夠看到事情的全貌，才能將所有的相關事件串聯以找出最佳的投資機會，善用邏輯與分析來下穩固的交易決策，並且要相當有組織性、果斷並堅守原則。</p>
-									</div>
-								</div>
-								<hr />
-								<div class="edu-tabs-text" id="tying-2">
-									<h3 class="tabs-text-title">掌握風險管理</h3>
-									
-									<div class="tabs-text-box">
-										<p>風險管理在外匯交易中不可或缺。交易者要學會一步一步降低虧損幅度，否則在開始真正交易之前就玩完了。交易肯定會有虧損，但是你要運用策略來避免持續虧損，才能保有資金繼續交易。</p>
-										<p>停損單對於控制風險相當關鍵。多數的交易專家會建議你針對每個倉位都下停損單，所以當市場走勢不利你的交易時，系統會自動幫你平倉。新手會太過於擔心交易虧損，所以退場時機太晚，導致虧損更多錢。他們希望市場會反轉，轉虧為盈。但如同前一篇所說的，「希望」並不是一種策略，應善用止損單來幫你的交易更有邏輯的退場 。</p>
-										<p>最一開始交易時，你要先確認自己可承擔虧損的初始資本額多寡。若虧損達到了預估的虧損金額，在平倉之後你不會感覺虧損的比可承擔的多，這可幫你避免掉一些交易時的負面情緒。</p>
-										<p>交易者也要持續地評估交易策略，尤其當你目前的策略表現不佳時。這邊再次提醒交易者，要做任何貨幣交易之前，你就要先決定下次重新審視交易策略的時間。審視的時機點視你的帳戶規模與可承受的損失而定。當虧損達到了你可承受的最大程度，你要重新評估分析方法並思考使用其他指標或方法是否對交易更有益處。</p>
-										<p>入止損單與限價單時，你要決定止損跟止盈點，但要避免以太接近市價的價格下單，因為任何小幅度的波動都會啟動你的止損或止盈。但也不要離市價太遠，否則風險會更高。即便如此，止損單與限價單仍然是用來幫助交易者管控風險的交易單類型，交易者應多加利用。</p>
-									</div>
-								</div>
-								<hr />
-								<div class="edu-tabs-text" id="tying-3">
-									<h3 class="tabs-text-title">選擇平台商</h3>
-									
-									<div class="tabs-text-box">
-										<p>在模擬帳戶上練習了幾個月後，你應該準備好要開真實的交易帳戶了。第一件事情就是要選擇外匯平台商。使用不同的平台商所提供的模擬帳戶，你應該累積了一些與不同平台商交易的經驗，但是要如何做選擇呢？這邊提供了幾個幫你找出適合自己的平台商的步驟：</p>
-										<p>1. 做足研究。交易者應該要選擇有監管牌照的平台商是基本，也要知道該平台商提供點差條件，對於想做短線交易的投資者來說較小的點差很重要。接下來，則是槓桿。較小的槓桿比較適合新手。若你的初始資金低於$2000，最好使用提供小槓桿的帳戶設置。若你想要隔夜持倉，你也該去了解你選用的平台商之隔夜利息政策。最後，最好選擇有附加信息提供服務像是圖表、市場評論與新聞提要等服務的外匯商。這些對於想使用技術性分析來做交易的交易者而言格外重要。</p>
-										<p>2. 要比較至少兩家平台商，你最好也使用過這兩家平台商的模擬帳戶。比較平台商之間的常見特色，例如商業資訊、客戶服務、交易平台等，再來決定哪一家平台商所提供的特色比較適合你的需求。</p>
-										<p>3. 選好了平台商之後，到該網站的首頁，你會看到開啟真實交易帳戶的連結。點擊連結並按照開戶流程來開立真實交易帳戶。</p>
-									</div>
-								</div>
-								<hr />
-								<div class="edu-tabs-text" id="tying-4">
-									<h3 class="tabs-text-title">開設真實交易帳戶</h3>
-									
-									<div class="tabs-text-box">
-										<p>有些平台商對於開設真實交易帳戶的客戶會有許多要求，但有的只需要你提供基本的文件。最好選擇交易平台容易使用，並有提供分析外匯市場的工具之平台商。</p>
-										<p>我們再次建議資本較低的新手先使用微型或迷你帳戶，在你成為匯市老手之前，用這類型的帳戶風險較低。當你身經百戰成為資深老鳥時，屆時再使用標準帳戶也不遲。</p>
-										<p>開戶時你會需要提供居住證明，像是水電費用帳單、銀行簿子等，以及身份證明文件，像是護照或駕照。繳交文件之後會需要等到外匯商審核通過，方能開始在真實帳戶中交易。所有的驗證過程都是線上審核，所以你不必顧慮平台商的國家與位置，你可以選擇任何一個你想使用的平台商。</p>
-										<p>現在你已經準備好開始做真實交易了。只要銘記自己設立的目標，就可以很快地成為成功的交易者！</p>
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-
-				</li>
-			</ul>
-			<div class="switch-wrap mobile-switch-wrap">
-				<a class="btnLeft" href="javascript:;"><img src="images/swiper-button-prev.png" alt="" /></a>
-				<a class="btnRight" href="javascript:;"><img src="images/swiper-button-next.png" alt="" /></a>
-			</div>
-
-		</div>
-
-		<!--education slide -->
-
-		<section id="hl-cta">
-			<div class="hl-cta">
-
-			</div>
 		</section>
-		<!--底部-->
-		<footer class="footer-black-bg">
+		<footer class="main-footer">
 			<div class="container">
-				<div class="footer">
-					<div class="footer-menu">
-						<div class="row">
-							<div class="col-8 col-md-6 col-lg-3">
-								<h2 class="footer-menu-title">About RADEX MARKETS</h2>
-								<div class="footer-menu-list">
-									<ul>
-										<li>
-											<a href="why-radex-markets.html">Why RADEX MARKETS</a>
-										</li>
-										<li>
-											<a href="regulation-safety.html">Regulation & Safety</a>
-										</li>
-										<li>
-											<a href="rm-news-room.html">RM News Room</a>
-										</li>
-										<li>
-											<a href="contact-radex-markets.html">Contact RADEX MARKETS</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-4 col-md-6 col-lg-3">
-								<h2 class="footer-menu-title">Products</h2>
-								<div class="footer-menu-list">
-									<ul>
-										<li>
-											<a href="forex.html">Forex</a>
-										</li>
-										<li>
-											<a href="metals.html">Metals</a>
-										</li>
-										<li>
-											<a href="indices.html">CFD/Indices</a>
-										</li>
-										<li>
-											<a href="share-cfds.html">SHARE CFDs</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-
-							<div class="col-12 col-md-6 col-lg-3">
-								<h2 class="footer-menu-title">Account Types</h2>
-								<div class="footer-menu-list">
-									<ul>
-										<li>
-											<a href="standard-account.html">Standard Account</a>
-										</li>
-										<li>
-											<a href="raw-account.html">RAW Account</a>
-										</li>
-										<li>
-											<a href="promos.html">Promos</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-
-							<div class="col-12  col-md-6 col-lg-3">
-								<h2 class="footer-menu-title">Tools</h2>
-								<div class="footer-menu-list">
-									<ul>
-										<li>
-											<a href="trading-platform.html">Trading Platform</a>
-										</li>
-										<li>
-											<a href="javascript:" class="disabled">Social Trading (coming soon)</a>
-										</li>
-										<li>
-											<a href="trading-central.html">Trading Central</a>
-										</li>
-										<li>
-											<a href="education.html">Education</a>
-										</li>
-										<li>
-											<a href="forex-news.html">Forex News</a>
-										</li>
-										<li>
-											<a href="economic-calendar.html">Economic Calendar</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div>
-							<div class="row">
-								<div class="col-12 col-md-6 d-flex align-items-center justify-content-lg-start">
-									<div class="footer-menu-legal">
-
-										<a href="regulation-safety.html">Legal Documentations</a>
-									</div>
-								</div>
-								<div class="col-12 col-md-6 d-flex lign-items-center justify-content-lg-end">
-									<div class="d-flex flex-wrap justify-content-center footer-menu-fllow">
-										<span class="d-flex justify-content-center align-items-center">FOLLOW US ON</span>
-										<a href="https://www.facebook.com/radexmarkets" class="d-flex justify-content-center align-items-center" target="_blank"><i class="fa fa-facebook"></i></a>
-										<a href="https://www.instagram.com/radexmarkets/" class="d-flex justify-content-center align-items-center" target="_blank"><i class="fa fa-instagram"></i></a>
-										<a href="https://twitter.com/RadexMarkets" class="d-flex justify-content-center align-items-center" target="_blank"><i class="fa fa-twitter"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-					<hr />
-					<div class="footer-text">
-						<p>© 2021 GO Markets International Ltd Co. No. 8425985-1, Securities Dealer Licence No SD043 trading as Radex Markets.</p>
-						<p><strong>Risk Warning:</strong>Trading derivatives and leveraged products carries a high level of risk, including the risk of losing substantially more than your initial investment. It is not suitable for everyone. Before you make any decision in relation to a financial product you should obtain and consider our
-							<a href="regulation-safety.html">Product Disclosure Statement (PDS)</a> available on our website and seek independent advice if necessary.</p>
-						<p>The information on this website is of a general nature only and does not consider your objectives, financial situation or needs. Every effort is made to provide information that is accurate. However, information is subject to change at any time without notice. Radex Markets cannot guarantee, and assumes no legal liability or responsibility for, the relevance, accuracy, currency or completeness of the information.</p>
-						<p>The information on this site is not directed at residents in any country or jurisdiction where such distribution or use would be contrary to local law or regulation.</p>
-						<p>© <span id="footer-year"></span> Radex Markets. All rights reserved.</p>
-					</div>
+				<div class="footer-menu">
+					<a target="_blank" href="https://chn.gomarkets.com/About/ContactUs">联系我们</a>
+					<!--<span>|</span>
+					<a target="_blank" href="https://www.gomarkets.com/legal-documents/">隐私政策</a>
+					<span>|</span>
+					<a target="_blank" href="https://www.gomarkets.com/legal-documents/">风险披露</a>-->
 				</div>
-
+				<div class="footer-text">
+					<p>GO Markets 品牌在多个司法管辖区均获得授权和监管。</p>
+					<p><b>风险提示：</b> 交易外汇和杠杆化金融品种具有高风险，可能导致您损失本金。您所承担的亏损风险不应超过您的承受能力，请确保您完全理解其中所涉风险。交易杠杆化产品并不适合所有投资者。在交易前，请考虑您的经验水平、投资目标，如有必要请寻求独立财务建议。客户有责任确保他/她所居住国法律要求允许其使用 GO Markets 品牌提供的服务。在交易前，请您仔细阅读 GO Markets <a href="https://chn.gomarkets.com/About/LegalDocuments" target="_blank">风险披露</a>。</p>
+					<p>网站运营及所有权归 GO Markets 高汇所有。© <span id="footer-year">2021</span> GO Markets。最终解释权归 GO Markets 高汇所有。</p>
+				</div>
 			</div>
 		</footer>
 
-		<!--底部 end-->
-
-		<div class="online-float-box">
-			<div class="feedback">
-				<span>Feedback</span>
-				<a href="javascript:" data-toggle="modal" data-target="#feedback-modal" id="feedback">
-					<div class="img"><img src="images/float-feedback.svg" alt="" /></div>
-				</a>
-			</div>
-			<div class="service">
-				<span>Chat</span>
-				<a href="javascript:" target="_blank">
-					<div class="img"><img src="images/float-chat.svg" alt="" /></div>
-				</a>
-			</div>
-			<div class="call-back">
-				<span>Callback</span>
-				<a href="javascript:" data-toggle="modal" data-target="#call-back-modal">
-					<div class="img"><img src="images/float-tel.svg" alt="" /></div>
-				</a>
-			</div>
-		</div>
-		<!--feedback-->
-		<div class="modal" id="feedback-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal fade" id="call-back-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 			<div class="modal-dialog">
 				<div class="modal-content">
-					<div class="modal-header">
-						<h4 class="modal-title">我们期待您的想法！</h4><button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="images/modal-close.svg" alt="" /></button></div>
+					<div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						<h4 class="modal-title">Call Back</h4></div>
 					<div class="modal-body">
-						<form action="">
-							<div class="form-group">
-								<div class="input-box mat-failed">
-									<label for="" class="input-label">账户号码<i class="req">*</i></label>
-									<p>
-										<select name="" class="form-control input" data-placeholder="Please select...">
-											<option value="">Please select...</option>
-											<option value="">同名账户1</option>
-											<option value="">同名账户2</option>
-										</select>
-									</p>
-								</div>
-								<p class="mat-error">请选择账户！</p>
+						<p><i class="fa fa-edit"></i>请正确填写您的信息，我们会尽快给您回电</p>
+						<form class="form-horizontal">
+							<div class="form-group"><label for="" class="col-sm-4 control-label"><em>*</em>Name:</label>
+								<div class="col-sm-7"><input type="email" class="form-control" id="" placeholder="Name"></div>
 							</div>
-							<div class="form-group">
-								<div class="input-box">
-									<label for="" class="input-label">问题类别<i class="req">*</i></label>
-									<p>
-										<select name="" class="form-control input" data-placeholder="Please select...">
-											<option value="">Please select...</option>
-											<option value="">交易相关</option>
-											<option value="">账户相关</option>
-											<option value="">出入金相关</option>
-											<option value="">其它</option>
-										</select>
-									</p>
+							<div class="form-group"><label for="" class="col-sm-4 control-label"><em>*</em>Email:</label>
+								<div class="col-sm-7"><input type="text" class="form-control" id="" placeholder="Email"></div>
+							</div>
+							<div class="form-group"><label for="" class="col-sm-4 control-label"><em>*</em>Country:</label>
+								<div class="col-sm-7">
+									<select id="country" class="form-control form-control-chosen" data-placeholder="请选择一项" name="country" title="country" onkeyup="selCountry()" onchange="selCountry()">
+										<option value="" title="-">请选择一项</option>
+										<option value="CN" title="+86">中国</option>
+										<option value="GB" title="+44">英国</option>
+										<option value="US" title="+001">美国</option>
+										<option value="CA" title="+1">加拿大</option>
+										<option value="AU" title="+61">澳大利亚</option>
+										<option value="TW" title="+886">中国台湾</option>
+										<option value="ID" title="+62">印度尼西亚</option>
+										<option value="SG" title="+65">新加坡</option>
+										<option value="" title="">-----------</option>
+										<option value="AL" title="+355">阿尔巴尼亚</option>
+										<option value="DZ" title="+213">阿尔及利亚</option>
+										<option value="AD" title="+376">安道尔</option>
+										<option value="AN" title="+599">荷属安的列斯群岛</option>
+										<option value="AG" title="+1268">安提瓜</option>
+										<option value="AR" title="+54">阿根廷</option>
+										<option value="AM" title="+374">亚美尼亚</option>
+										<option value="AW" title="+297">阿鲁巴</option>
+										<option value="AT" title="+43">奥地利</option>
+										<option value="AZ" title="+994">阿塞拜疆</option>
+										<option value="BS" title="+1242">巴哈马群岛</option>
+										<option value="BH" title="+973">巴林</option>
+										<option value="BD" title="+880">孟加拉</option>
+										<option value="BB" title="+268">巴巴多斯</option>
+										<option value="BY" title="+375">白俄罗斯</option>
+										<option value="BE" title="+32">比利时</option>
+										<option value="BZ" title="+501">伯利兹</option>
+										<option value="BJ" title="+229">贝宁</option>
+										<option value="BM" title="+441">百慕大</option>
+										<option value="BT" title="+975">不丹</option>
+										<option value="BO" title="+591">玻利维亚</option>
+										<option value="BA" title="+00387">波黑</option>
+										<option value="BW" title="+267">博茨瓦纳</option>
+										<option value="BR" title="+55">巴西</option>
+										<option value="VG" title="+001284">英属维尔京群岛</option>
+										<option value="BN" title="+673">文莱达鲁萨兰国</option>
+										<option value="BG" title="+359">保加利亚</option>
+										<option value="BF" title="+226">布基纳法索</option>
+										<option value="KH" title="+855">柬埔寨</option>
+										<option value="CM" title="+237">咔麦隆</option>
+										<option value="CA" title="+1">加拿大</option>
+										<option value="IC" title="+34">加那利群岛</option>
+										<option value="CV" title="+238">佛得角</option>
+										<option value="KY" title="+1-345">开曼群岛</option>
+										<option value="CF" title="+236">中非</option>
+										<option value="TD" title="+235">查德</option>
+										<option value="CL" title="+56">智利</option>
+										<option value="CO" title="+57">哥伦比亚</option>
+										<option value="CK" title="+682">库克群岛</option>
+										<option value="CR" title="+506">哥斯达黎加</option>
+										<option value="HR" title="+385">克罗埃西亚</option>
+										<option value="CY" title="+357">塞浦路斯</option>
+										<option value="CZ" title="+420">捷克共和国</option>
+										<option value="DK" title="+45">丹麦</option>
+										<option value="DJ" title="+253">吉布提</option>
+										<option value="DM" title="+1849">多米尼加岛</option>
+										<option value="TP" title="+670">东帝汶</option>
+										<option value="DO" title="+1849">多米尼加共和国</option>
+										<option value="EC" title="+593">厄瓜多尔</option>
+										<option value="EG" title="+20">埃及</option>
+										<option value="SV" title="+503">萨尔瓦多</option>
+										<option value="GQ" title="+240">赤道几内亚共和国</option>
+										<option value="EE" title="+372">爱沙尼亚</option>
+										<option value="ET" title="+251">埃塞俄比亚</option>
+										<option value="FO" title="+298">法罗群岛</option>
+										<option value="FJ" title="+679">斐济群岛</option>
+										<option value="FI" title="+358">芬兰</option>
+										<option value="FR" title="+33">法国</option>
+										<option value="GF" title="+594">法属圭亚那</option>
+										<option value="GA" title="+241">加蓬共和国</option>
+										<option value="GM" title="+220">冈比亚</option>
+										<option value="GE" title="+995">乔治亚</option>
+										<option value="DE" title="+49">德国</option>
+										<option value="GH" title="+233">加纳</option>
+										<option value="GI" title="+350">直布罗陀</option>
+										<option value="GR" title="+30">希腊</option>
+										<option value="GL" title="+45">格陵兰</option>
+										<option value="GD" title="+1473">格瑞那达国</option>
+										<option value="GP" title="+00590">瓜德罗普</option>
+										<option value="GT" title="+502">瓜地马拉</option>
+										<option value="GN" title="+00224">几内亚</option>
+										<option value="GY" title="+592">盖亚那</option>
+										<option value="HT" title="+509">海地</option>
+										<option value="HN" title="+504">洪都拉斯</option>
+										<option value="HK" title="+852">中国香港</option>
+										<option value="HU" title="+36">匈牙利</option>
+										<option value="IS" title="+354">冰岛</option>
+										<option value="IN" title="+91">印度</option>
+										<option value="ID" title="+62">印度尼西亚</option>
+										<option value="IE" title="+353">爱尔兰</option>
+										<option value="IL" title="+00972">以色列</option>
+										<option value="IT" title="+39">意大利</option>
+										<option value="JM" title="+876">牙买加</option>
+										<option value="JO" title="+962">约旦</option>
+										<option value="KZ" title="+7">哈萨克斯坦</option>
+										<option value="KE" title="+254">肯尼亚</option>
+										<option value="KW" title="+965">科威特</option>
+										<option value="KG" title="+996">吉尔吉斯斯坦</option>
+										<option value="LA" title="+856">老挝</option>
+										<option value="LV" title="+371">拉脱维亚</option>
+										<option value="LB" title="+961">黎巴嫩</option>
+										<option value="LS" title="+266">莱索托</option>
+										<option value="LR" title="+231">利比里亚</option>
+										<option value="LI" title="+423">列支敦斯登</option>
+										<option value="LT" title="+370">立陶宛</option>
+										<option value="LU" title="+352">卢森堡</option>
+										<option value="MO" title="+853">中国澳门</option>
+										<option value="MK" title="+389">马其顿</option>
+										<option value="MG" title="+261">马达加斯加</option>
+										<option value="MW" title="+265">马拉维</option>
+										<option value="MY" title="+60">马来西亚</option>
+										<option value="MV" title="+960">马尔代夫</option>
+										<option value="MT" title="00356">马耳他</option>
+										<option value="MH" title="+692">马绍尔群岛</option>
+										<option value="MQ" title="+596">马提尼克岛</option>
+										<option value="MR" title="+222">茅利塔尼亚</option>
+										<option value="MU" title="+230">毛里求斯</option>
+										<option value="MX" title="+52">墨西哥</option>
+										<option value="MD" title="+373">摩尔多瓦</option>
+										<option value="MC" title="+377">摩纳哥</option>
+										<option value="MN" title="+976">蒙古</option>
+										<option value="ME" title="+382">黑山</option>
+										<option value="MS" title="+001664">蒙特塞拉特</option>
+										<option value="MA" title="+212">摩洛哥</option>
+										<option value="MZ" title="+258">莫桑比克</option>
+										<option value="NA" title="+264">纳米比亚</option>
+										<option value="NR" title="+674">瑙鲁</option>
+										<option value="NP" title="+977">尼泊尔</option>
+										<option value="NL" title="+31">荷兰</option>
+										<option value="NC" title="+687">新喀里多尼亚</option>
+										<option value="NZ" title="+64">新西兰</option>
+										<option value="NI" title="+505">尼加拉瓜</option>
+										<option value="NE" title="+227">尼日尔</option>
+										<option value="NO" title="+47">挪威</option>
+										<option value="OM" title="+968">阿曼</option>
+										<option value="PK" title="+92">巴基斯坦</option>
+										<option value="PA" title="+507">巴拿马</option>
+										<option value="PG" title="+675">巴布亚新几内亚</option>
+										<option value="PY" title="+595">巴拉圭</option>
+										<option value="PE" title="+51">秘鲁</option>
+										<option value="PH" title="+63">菲律宾</option>
+										<option value="PL" title="+48">波兰</option>
+										<option value="PT" title="+351">葡萄牙</option>
+										<option value="QA" title="+974">卡塔尔</option>
+										<option value="RE" title="+262">留尼汪岛</option>
+										<option value="RO" title="+40">罗马尼亚</option>
+										<option value="RU" title="+7">俄国</option>
+										<option value="RW" title="+250">卢旺达</option>
+										<option value="WS" title="+685">西萨摩亚</option>
+										<option value="SM" title="+378">圣马力诺共和国</option>
+										<option value="SA" title="+966">沙特阿拉伯</option>
+										<option value="SN" title="+221">塞内加尔</option>
+										<option value="RS" title="+381">塞尔维亚</option>
+										<option value="SC" title="+248">塞舌尔共和国</option>
+										<option value="SL" title="+232">塞拉利昂</option>
+										<option value="SG" title="+65">新加坡</option>
+										<option value="SK" title="+421">斯洛伐克共和国</option>
+										<option value="SI" title="+386">斯洛文尼亚</option>
+										<option value="SB" title="+677">所罗门群岛</option>
+										<option value="ZA" title="+27">南非</option>
+										<option value="KR" title="+82">韩国</option>
+										<option value="ES" title="+34">西班牙</option>
+										<option value="LK" title="+0094">斯里兰卡</option>
+										<option value="KN" title="+1 869">圣基茨</option>
+										<option value="LC" title="+1-758">圣卢西亚</option>
+										<option value="PM" title="(+7)812">圣彼得堡</option>
+										<option value="VC" title="+1784">圣文森特</option>
+										<option value="SR" title="+597">苏里南</option>
+										<option value="SZ" title="+41">瑞士</option>
+										<option value="SE" title="+46">瑞典</option>
+										<option value="CH" title="+41">瑞士</option>
+										<option value="TJ" title="+992">塔吉克斯坦</option>
+										<option value="PF" title="+00689">大溪地</option>
+										<option value="TW" title="+886">中国台湾</option>
+										<option value="TZ" title="+255">坦桑尼亚</option>
+										<option value="TH" title="+66">泰国</option>
+										<option value="TG" title="+228">多哥</option>
+										<option value="TO" title="+675">汤加</option>
+										<option value="TN" title="+216">突尼斯</option>
+										<option value="TR" title="+90">土耳其</option>
+										<option value="TM" title="+993">土库曼</option>
+										<option value="UG" title="+256">乌干达</option>
+										<option value="UA" title="+380">乌克兰</option>
+										<option value="AE" title="+971">阿拉伯联合酋长国</option>
+										<option value="GB" title="+44">英国</option>
+										<option value="US" title="+001">美国</option>
+										<option value="UY" title="+598">乌拉圭</option>
+										<option value="UZ" title="+998">乌兹别克斯坦</option>
+										<option value="VU" title="+00678">瓦努阿图共和国</option>
+										<option value="VA" title="+379">梵蒂冈</option>
+										<option value="VE" title="+58">委内瑞拉</option>
+										<option value="VN" title="+84">越南</option>
+										<option value="YE" title="+967">也门</option>
+										<option value="ZM" title="+260">赞比亚</option>
+									</select>
 								</div>
 							</div>
-							<div class="form-group">
-								<div class="input-box mat-success">
-									<span class="mat-check"><img src="images/mat-check.svg" alt="" /></span>
-									<label for="" class="input-label">主旨<i class="req">*</i></label>
-									<p><input type="text" maxlength="40" class="input" /></p>
-								</div>
+							<div class="form-group"><label for="" class="col-sm-4 control-label"><em>*</em>City:</label>
+								<div class="col-sm-7"><input type="text" class="form-control" id="" placeholder="City"></div>
 							</div>
-							<div class="form-group">
-								<div class="input-box">
-									<label for="" class="input-label">Comments<i class="req">*</i></label>
-									<p>
-										<textarea name="" rows="5" cols="5" placeholder="请将您的建议反馈给我们！" class="form-control input"></textarea>
-									</p>
-								</div>
+							<div class="form-group"><label for="" class="col-sm-4 control-label"><em>*</em>Phone Number:</label>
+								<div class="col-sm-7 modal-call-back">
+									<div><span id="CountryNumber">+86</span></div><input type="text" class="form-control" placeholder="Phone Number" id="phonenumber"></div>
 							</div>
-							<div class="form-group">
-								<button type="button" class="buttons" disabled="disabled">Submit <i class="fa fa-circle-o-notch fa-spin"></i></button>
+							<div class="form-group"><label for="" class="col-sm-4 control-label">Comments:</label>
+								<div class="col-sm-7"><textarea name="" rows="" cols="" class="form-control"></textarea></div>
 							</div>
 						</form>
 					</div>
-				</div>
-
-			</div>
-		</div>
-
-		<!--call-back-->
-		<div class="modal" id="call-back-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h4 class="modal-title">Call back</h4><button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="images/modal-close.svg" alt="" /></button></div>
-					<div class="modal-body">
-						<form action="">
-							<div class="form-group">
-								<div class="input-box">
-									<label for="" class="input-label">Name<i class="req">*</i></label>
-									<p><input type="text" maxlength="40" class="input" /></p>
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="input-box">
-									<label for="" class="input-label">Email<i class="req">*</i></label>
-									<p><input type="text" maxlength="40" class="input" /></p>
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="input-box">
-									<label for="" class="input-label">Country<i class="req">*</i></label>
-									<p>
-										<select id="country" class="form-control input" data-placeholder="Please select..." name="country" title="country" onkeyup="selCountry()" onchange="selCountry()">
-
-											<option value="CN" title="+86">中国</option>
-											<option value="GB" title="+44">英国</option>
-											<option value="US" title="+001">美国</option>
-											<option value="CA" title="+1">加拿大</option>
-											<option value="AU" title="+61">澳大利亚</option>
-											<option value="TW" title="+886">中国台湾</option>
-											<option value="ID" title="+62">印度尼西亚</option>
-											<option value="SG" title="+65">新加坡</option>
-											<option value="" title="">-----------</option>
-											<option value="AL" title="+355">阿尔巴尼亚</option>
-											<option value="DZ" title="+213">阿尔及利亚</option>
-											<option value="AD" title="+376">安道尔</option>
-											<option value="AN" title="+599">荷属安的列斯群岛</option>
-											<option value="AG" title="+1268">安提瓜</option>
-											<option value="AR" title="+54">阿根廷</option>
-											<option value="AM" title="+374">亚美尼亚</option>
-											<option value="AW" title="+297">阿鲁巴</option>
-											<option value="AT" title="+43">奥地利</option>
-											<option value="AZ" title="+994">阿塞拜疆</option>
-											<option value="BS" title="+1242">巴哈马群岛</option>
-											<option value="BH" title="+973">巴林</option>
-											<option value="BD" title="+880">孟加拉</option>
-											<option value="BB" title="+268">巴巴多斯</option>
-											<option value="BY" title="+375">白俄罗斯</option>
-											<option value="BE" title="+32">比利时</option>
-											<option value="BZ" title="+501">伯利兹</option>
-											<option value="BJ" title="+229">贝宁</option>
-											<option value="BM" title="+441">百慕大</option>
-											<option value="BT" title="+975">不丹</option>
-											<option value="BO" title="+591">玻利维亚</option>
-											<option value="BA" title="+00387">波黑</option>
-											<option value="BW" title="+267">博茨瓦纳</option>
-											<option value="BR" title="+55">巴西</option>
-											<option value="VG" title="+001284">英属维尔京群岛</option>
-											<option value="BN" title="+673">文莱达鲁萨兰国</option>
-											<option value="BG" title="+359">保加利亚</option>
-											<option value="BF" title="+226">布基纳法索</option>
-											<option value="KH" title="+855">柬埔寨</option>
-											<option value="CM" title="+237">咔麦隆</option>
-											<option value="CA" title="+1">加拿大</option>
-											<option value="IC" title="+34">加那利群岛</option>
-											<option value="CV" title="+238">佛得角</option>
-											<option value="KY" title="+1-345">开曼群岛</option>
-											<option value="CF" title="+236">中非</option>
-											<option value="TD" title="+235">查德</option>
-											<option value="CL" title="+56">智利</option>
-											<option value="CO" title="+57">哥伦比亚</option>
-											<option value="CK" title="+682">库克群岛</option>
-											<option value="CR" title="+506">哥斯达黎加</option>
-											<option value="HR" title="+385">克罗埃西亚</option>
-											<option value="CY" title="+357">塞浦路斯</option>
-											<option value="CZ" title="+420">捷克共和国</option>
-											<option value="DK" title="+45">丹麦</option>
-											<option value="DJ" title="+253">吉布提</option>
-											<option value="DM" title="+1849">多米尼加岛</option>
-											<option value="TP" title="+670">东帝汶</option>
-											<option value="DO" title="+1849">多米尼加共和国</option>
-											<option value="EC" title="+593">厄瓜多尔</option>
-											<option value="EG" title="+20">埃及</option>
-											<option value="SV" title="+503">萨尔瓦多</option>
-											<option value="GQ" title="+240">赤道几内亚共和国</option>
-											<option value="EE" title="+372">爱沙尼亚</option>
-											<option value="ET" title="+251">埃塞俄比亚</option>
-											<option value="FO" title="+298">法罗群岛</option>
-											<option value="FJ" title="+679">斐济群岛</option>
-											<option value="FI" title="+358">芬兰</option>
-											<option value="FR" title="+33">法国</option>
-											<option value="GF" title="+594">法属圭亚那</option>
-											<option value="GA" title="+241">加蓬共和国</option>
-											<option value="GM" title="+220">冈比亚</option>
-											<option value="GE" title="+995">乔治亚</option>
-											<option value="DE" title="+49">德国</option>
-											<option value="GH" title="+233">加纳</option>
-											<option value="GI" title="+350">直布罗陀</option>
-											<option value="GR" title="+30">希腊</option>
-											<option value="GL" title="+45">格陵兰</option>
-											<option value="GD" title="+1473">格瑞那达国</option>
-											<option value="GP" title="+00590">瓜德罗普</option>
-											<option value="GT" title="+502">瓜地马拉</option>
-											<option value="GN" title="+00224">几内亚</option>
-											<option value="GY" title="+592">盖亚那</option>
-											<option value="HT" title="+509">海地</option>
-											<option value="HN" title="+504">洪都拉斯</option>
-											<option value="HK" title="+852">中国香港</option>
-											<option value="HU" title="+36">匈牙利</option>
-											<option value="IS" title="+354">冰岛</option>
-											<option value="IN" title="+91">印度</option>
-											<option value="ID" title="+62">印度尼西亚</option>
-											<option value="IE" title="+353">爱尔兰</option>
-											<option value="IL" title="+00972">以色列</option>
-											<option value="IT" title="+39">意大利</option>
-											<option value="JM" title="+876">牙买加</option>
-											<option value="JO" title="+962">约旦</option>
-											<option value="KZ" title="+7">哈萨克斯坦</option>
-											<option value="KE" title="+254">肯尼亚</option>
-											<option value="KW" title="+965">科威特</option>
-											<option value="KG" title="+996">吉尔吉斯斯坦</option>
-											<option value="LA" title="+856">老挝</option>
-											<option value="LV" title="+371">拉脱维亚</option>
-											<option value="LB" title="+961">黎巴嫩</option>
-											<option value="LS" title="+266">莱索托</option>
-											<option value="LR" title="+231">利比里亚</option>
-											<option value="LI" title="+423">列支敦斯登</option>
-											<option value="LT" title="+370">立陶宛</option>
-											<option value="LU" title="+352">卢森堡</option>
-											<option value="MO" title="+853">中国澳门</option>
-											<option value="MK" title="+389">马其顿</option>
-											<option value="MG" title="+261">马达加斯加</option>
-											<option value="MW" title="+265">马拉维</option>
-											<option value="MY" title="+60">马来西亚</option>
-											<option value="MV" title="+960">马尔代夫</option>
-											<option value="MT" title="00356">马耳他</option>
-											<option value="MH" title="+692">马绍尔群岛</option>
-											<option value="MQ" title="+596">马提尼克岛</option>
-											<option value="MR" title="+222">茅利塔尼亚</option>
-											<option value="MU" title="+230">毛里求斯</option>
-											<option value="MX" title="+52">墨西哥</option>
-											<option value="MD" title="+373">摩尔多瓦</option>
-											<option value="MC" title="+377">摩纳哥</option>
-											<option value="MN" title="+976">蒙古</option>
-											<option value="ME" title="+382">黑山</option>
-											<option value="MS" title="+001664">蒙特塞拉特</option>
-											<option value="MA" title="+212">摩洛哥</option>
-											<option value="MZ" title="+258">莫桑比克</option>
-											<option value="NA" title="+264">纳米比亚</option>
-											<option value="NR" title="+674">瑙鲁</option>
-											<option value="NP" title="+977">尼泊尔</option>
-											<option value="NL" title="+31">荷兰</option>
-											<option value="NC" title="+687">新喀里多尼亚</option>
-											<option value="NZ" title="+64">新西兰</option>
-											<option value="NI" title="+505">尼加拉瓜</option>
-											<option value="NE" title="+227">尼日尔</option>
-											<option value="NO" title="+47">挪威</option>
-											<option value="OM" title="+968">阿曼</option>
-											<option value="PK" title="+92">巴基斯坦</option>
-											<option value="PA" title="+507">巴拿马</option>
-											<option value="PG" title="+675">巴布亚新几内亚</option>
-											<option value="PY" title="+595">巴拉圭</option>
-											<option value="PE" title="+51">秘鲁</option>
-											<option value="PH" title="+63">菲律宾</option>
-											<option value="PL" title="+48">波兰</option>
-											<option value="PT" title="+351">葡萄牙</option>
-											<option value="QA" title="+974">卡塔尔</option>
-											<option value="RE" title="+262">留尼汪岛</option>
-											<option value="RO" title="+40">罗马尼亚</option>
-											<option value="RU" title="+7">俄国</option>
-											<option value="RW" title="+250">卢旺达</option>
-											<option value="WS" title="+685">西萨摩亚</option>
-											<option value="SM" title="+378">圣马力诺共和国</option>
-											<option value="SA" title="+966">沙特阿拉伯</option>
-											<option value="SN" title="+221">塞内加尔</option>
-											<option value="RS" title="+381">塞尔维亚</option>
-											<option value="SC" title="+248">塞舌尔共和国</option>
-											<option value="SL" title="+232">塞拉利昂</option>
-											<option value="SG" title="+65">新加坡</option>
-											<option value="SK" title="+421">斯洛伐克共和国</option>
-											<option value="SI" title="+386">斯洛文尼亚</option>
-											<option value="SB" title="+677">所罗门群岛</option>
-											<option value="ZA" title="+27">南非</option>
-											<option value="KR" title="+82">韩国</option>
-											<option value="ES" title="+34">西班牙</option>
-											<option value="LK" title="+0094">斯里兰卡</option>
-											<option value="KN" title="+1 869">圣基茨</option>
-											<option value="LC" title="+1-758">圣卢西亚</option>
-											<option value="PM" title="(+7)812">圣彼得堡</option>
-											<option value="VC" title="+1784">圣文森特</option>
-											<option value="SR" title="+597">苏里南</option>
-											<option value="SZ" title="+41">瑞士</option>
-											<option value="SE" title="+46">瑞典</option>
-											<option value="CH" title="+41">瑞士</option>
-											<option value="TJ" title="+992">塔吉克斯坦</option>
-											<option value="PF" title="+00689">大溪地</option>
-											<option value="TW" title="+886">中国台湾</option>
-											<option value="TZ" title="+255">坦桑尼亚</option>
-											<option value="TH" title="+66">泰国</option>
-											<option value="TG" title="+228">多哥</option>
-											<option value="TO" title="+675">汤加</option>
-											<option value="TN" title="+216">突尼斯</option>
-											<option value="TR" title="+90">土耳其</option>
-											<option value="TM" title="+993">土库曼</option>
-											<option value="UG" title="+256">乌干达</option>
-											<option value="UA" title="+380">乌克兰</option>
-											<option value="AE" title="+971">阿拉伯联合酋长国</option>
-											<option value="GB" title="+44">英国</option>
-											<option value="US" title="+001">美国</option>
-											<option value="UY" title="+598">乌拉圭</option>
-											<option value="UZ" title="+998">乌兹别克斯坦</option>
-											<option value="VU" title="+00678">瓦努阿图共和国</option>
-											<option value="VA" title="+379">梵蒂冈</option>
-											<option value="VE" title="+58">委内瑞拉</option>
-											<option value="VN" title="+84">越南</option>
-											<option value="YE" title="+967">也门</option>
-											<option value="ZM" title="+260">赞比亚</option>
-										</select>
-
-									</p>
-								</div>
-							</div>
-
-							<div class="form-group">
-								<div class="input-box">
-									<label for="" class="input-label">City<i class="req">*</i></label>
-									<p><input type="text" maxlength="40" class="input" /></p>
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="input-box">
-									<label for="" class="input-label">Phone Number<i class="req">*</i></label>
-									<p>
-										<div class="modal-call-back">
-											<div><span id="CountryNumber">+86</span></div><input type="text" class="form-control input" id="phonenumber"></div>
-								</div>
-
-								</p>
-							</div>
-
-							<div class="form-group">
-								<div class="input-box">
-									<label for="" class="input-label">Comments<i class="req">*</i></label>
-									<p>
-										<textarea name="" rows="5" cols="5" placeholder="请将您的建议反馈给我们！" class="form-control input"></textarea>
-									</p>
-								</div>
-							</div>
-							<div class="form-group">
-								<button type="button" class="buttons" disabled="disabled">Submit <i class="fa fa-circle-o-notch fa-spin"></i></button>
-							</div>
-						</form>
+					<div class="modal-footer"><button type="button" class="buttons buttons-success btn-sm" data-dismiss="modal">Submit<i class="fa fa-angle-right"></i></button>
+						<a class="" href="https://www.gomarkets.com/legal-documents/" target="_blank">Privacy Policy</a>
 					</div>
 				</div>
 			</div>
-
 		</div>
-
-		<div class="float-account">
-			<a href="javascript:" class="float-login-btn">LOGIN</a>
-			<a href="javascript:" class="float-account-btn">OPEN ACCOUNT</a>
-		</div>
-		<div class="fixed-mobile-risk">
-			<div class="d-flex align-items-center">
-				<p>
-					<em>Risk Warning : </em>
-					<span>Trading derivatives and leveraged products carries a high level of risk.</span>
-				</p>
-				<a href="javascript:">OPEN ACCOUNT</a>
-			</div>
-		</div>
-		<a href="javascript:" class="toTop">
-			<img src="images/to-top.svg" alt="" />
-		</a>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="js/main.js"></script>
-		<script src="js/index.js"></script>
-		<script>
-			$(function() {
-				var left = $('.switch-wrap .btnLeft');
-				var right = $('.switch-wrap .btnRight');
-				var aSmall = $('.edu-second-menu li');
-				var aLi = $('.edu-slide-box ul li');
-				var listGroup = $('.list-group');
-				var operate = $('.operate');
-				var iNow = 0;
-
-				var banner_height = $(".edu-banner-box").height();
-				var header_height = $("header").height();
-				var edu_second = $(".edu-second-box").height();
-				var scroller_height = edu_second + banner_height - (header_height - 70);
-				// 重置滚动位置
-				function resetScrollTop() {
-					$('html, body').scrollTop(scroller_height);
-				};
-
-				left.click(function(e) {
-					e.preventDefault();
-					iNow--;
-					if(iNow < 0) {
-						iNow = 4;
-					}
-					aLi.eq(iNow).siblings().stop().fadeOut();
-					aLi.eq(iNow).stop().fadeIn();
-					aSmall.eq(iNow).addClass('active').siblings().removeClass('active');
-					resetScrollTop();
-					operate.eq(iNow).addClass('hide').removeClass('show');
-				});
-				right.click(function() {
-					iNow++;
-					if(iNow > 4) {
-						iNow = 0;
-					}
-					aLi.eq(iNow).siblings().stop().fadeOut();
-					aLi.eq(iNow).stop().fadeIn();
-					aSmall.eq(iNow).addClass('active').siblings().removeClass('active');
-					resetScrollTop();
-					operate.eq(iNow).addClass('hide').removeClass('show');
-				});
-				aSmall.click(function() {
-					$('.operate').removeClass('show').addClass('hide');
-					$('.edu-slide-box .edu-tabs-nav').animate({
-						"margin-left": "120px"
-					},500);
-					$(".tabs-list-menu").fadeIn();
-					$(".edu-tabs-r").animate({
-						"margin-right": "145px"
-					},50);
-					var n = $(this).index();
-					iNow = n;
-					aLi.eq(iNow).siblings().stop().fadeOut();
-					aLi.eq(iNow).stop().fadeIn();
-					aSmall.eq(iNow).addClass('active').siblings().removeClass('active');
-				});
-			})
-		</script>
-
-		<script type="text/javascript">
-			$('.operate').on('click', function() {
-				if($(this).hasClass('show')) {
-					$(this).removeClass('show').addClass('hide');
-					$(".edu-tabs-r").animate({
-						"margin-right": "145px"
-					},50);
-					$('.edu-slide-box .edu-tabs-nav').animate({
-						"margin-left": "120px"
-					},500);
-					$(".tabs-list-menu").fadeIn();
-				} else if($(this).hasClass('hide')) {
-					$(this).removeClass('hide').addClass('show');
-					$(".edu-tabs-r").css({
-						"margin-right": "220px"
-					},500);
-					$('.edu-slide-box .edu-tabs-nav').animate({
-						"margin-left": "0"
-					},500);
-					$(".tabs-list-menu").fadeOut();
-				}
-			});
-			$(document).ready(function() {
-				$(".list-group a").click(function(e) {
-					e.preventDefault();
-					var data_id = $(this).attr("href");
-					$('html, body').animate({
-						scrollTop: $(data_id).offset().top - 70
-					}, 800);
-				});
-			});
-
-			$(window).scroll(function() {
-				var banner_height = $(".edu-banner-box").height(); 
-				var header_height = $("header").height(); 
-				var edu_second = $(".edu-second-box").height(); 
-				var scroller_height = edu_second + banner_height - (header_height - 70);
-				if($(window).scrollTop() > scroller_height) { 
-					$('.edu-tabs-nav').addClass("fixed-nav"); 
-				} else {
-					$('.edu-tabs-nav').removeClass("fixed-nav");
-				}
-				var footer_offset = $(".hl-cta").offset().top - (header_height + $(".edu-tabs-nav").height() + 650);
-				if($(window).scrollTop() > footer_offset) {
-					$('.edu-tabs-nav').addClass("fixed-nav-bottom");
-				} else {
-					$('.edu-tabs-nav').removeClass("fixed-nav-bottom");
-				}
-
-			});
-		</script>
+		<script src="js/jquery-confirm.min.js"></script>
+		<script src="js/chosen-1.1.8.min.js"></script>
+		<script src="js/telInput.js"></script>
+		<script src="js/chosen.js"></script>
+		<script src="js/common.js"></script>
+		<script src="js/chosen-birthday.js"></script>
 	</body>
 
 </html>
